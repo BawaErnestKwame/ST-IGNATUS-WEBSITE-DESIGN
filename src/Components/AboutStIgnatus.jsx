@@ -1,0 +1,84 @@
+import React from "react";
+import { FaRegHandshake, FaStethoscope } from "react-icons/fa6";
+import eye1 from "../assets/eye1.webp";
+import eye2 from "../assets/eye2.webp";
+import eye3 from "../assets/eye3.webp";
+
+const AboutStIgnatus = () => {
+  return (
+    <div className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-24 py-16 gap-12">
+      {/* Right section - text */}
+      <div className="lg:w-1/2 space-y-3">
+        <div className="">
+            <h2 className="text-blue-600 text-2xl lg:text-xl font-semibold tracking-[.5px]">
+            ABOUT ST IGNATIUS</h2>
+            <p className="w-10 h-[2px] bg-red-700 rounded"></p>
+        </div>
+        <h1 className="text-3xl md:text-4xl font-bold">
+          Our Quality System Is Ready To Help You
+        </h1>
+        <p className="text-gray-600">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, fugiat qui facilis
+          reprehenderit, aperiam ab voluptatibus ex dolorum in assumenda cupiditate quia a molestias
+          eveniet impedit obcaecati doloremque, provident placeat.
+        </p>
+        <p className="text-gray-700 font-medium">
+          Need to take care of your family’s health? Call <span className="text-blue-600 font-bold">+233 599 316 218</span>
+        </p>
+
+        <div className="flex flex-col gap-6 mt-6">
+          {/* Card 1 */}
+          <div className="flex items-start gap-4">
+            <div className="p-3 bg-blue-100 text-blue-600 rounded-full">
+              <FaStethoscope size={28} />
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Experienced Physicians</h3>
+              <p className="text-gray-500 text-sm">
+                Our doctors have years of experience in providing top-notch healthcare.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="flex items-start gap-4">
+            <div className="p-3 bg-blue-100 text-blue-600 rounded-full">
+              <FaRegHandshake size={28} />
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Immediate Assistance</h3>
+              <p className="text-gray-500 text-sm">
+                We ensure you get quick and professional help when you need it most.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* button */}
+        <button className="bg-[#0627c2] text-white px-6 mt-6 py-2 rounded-full transition-all hover:bg-[#0e2c8c] text-sm cursor-pointer">
+        Read More
+      </button>
+      </div>
+
+      {/* Left section - images */}
+      <div className="lg:w-1/2 flex gap-4 items-center justify-center relative">
+        <div className="space-y-4">
+          <div className="w-60 -right- rounded h-24 relative top-2 z-10 bg-[#0627c2] text-white flex flex-col items-center justify-center shadow-lg">
+            <h1 className="text-3xl font-bold ">100%</h1>
+            <p className="text-sm">Patients Satisfied</p>
+          </div>
+          <img src={eye3} alt="patient 1" className=" relative -top-10 h-72 object-cover rounded-lg shadow-md -z-10" />
+        </div>
+
+        <div className="space-y-4">
+          <img src={eye2} alt="patient 2" className="w-100 h-52 object-cover rounded-lg shadow-md" />
+          <img src={eye1} alt="patient 3" className="h-52 object-cover rounded-lg shadow-md" />
+        </div>
+
+      </div>
+
+      
+    </div>
+  );
+};
+
+export default AboutStIgnatus;

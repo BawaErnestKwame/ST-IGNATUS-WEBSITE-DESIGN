@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+@import "tailwindcss";
+
+body{
+    font-family: "Smooch Sans", sans-serif;
+}
+
+p,li,button{
+     font-family: "Montserrat", sans-serif;
+}
+
+
+
+.colors{
+    font-size:#404040;
+    font-size: #f5060a;
+    font-size: #0e2c8c;
+    font-size: #0627c2;
+}
