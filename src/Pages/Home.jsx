@@ -11,6 +11,7 @@ const Home = () => {
       <AboutStIgnatus/>
       <HealthcareServices/>
       <AppointmentBooking/>
+      
     </div>
   )
 }

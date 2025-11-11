@@ -1,26 +1,26 @@
 import React from "react";
 import {
+  FaEye,
+  FaTint,
   FaUserMd,
-  FaTeeth,
-  FaHeartbeat,
-  FaDollarSign,
-  FaUserFriends,
-  FaShieldAlt,
-  FaLocationArrow,
-  FaTooth,
+  FaGlasses,
+  FaUsers,
+  FaMicroscope,
+  FaTools,
 } from "react-icons/fa";
+import { MdOutlineAssignmentTurnedIn } from "react-icons/md";
 import bgImage from "../assets/serviceImage.jpg";
 
 const HealthcareFeatures = () => {
   const features = [
-    { icon: <FaUserMd size={28} />, title: "Experienced & Certified Professionals" },
-    { icon: <FaHeartbeat size={28} />, title: "Advanced Technology & Modern Equipment" },
-    { icon: <FaUserFriends size={28} />, title: "Personalized & Compassionate Care" },
-    { icon: <FaTooth size={28} />, title: "Painless & Minimally Invasive Treatments" },
-    { icon: <FaDollarSign size={28} />, title: "Affordable Pricing & Flexible Payment Plans" },
-    { icon: <FaTeeth size={28} />, title: "Emergency Dental & Health Care Services" },
-    { icon: <FaShieldAlt size={28} />, title: "Hygiene & Safety Standards" },
-    { icon: <FaLocationArrow size={28} />, title: "Prime Location & Easy Accessibility" },
+    { icon: <FaEye size={28} />, title: "Comprehensive Eye Care" },
+    { icon: <FaTint size={28} />, title: "Glaucoma Services" },
+    { icon: <FaUserMd size={28} />, title: "Eye Surgeries" },
+    { icon: <FaGlasses size={28} />, title: "Refraction Services" },
+    { icon: <FaUsers size={28} />, title: "Community/Institutional Eye Screening" },
+    { icon: <FaMicroscope size={28} />, title: "Ocular Diagnostics (O.C.T, V.F.T, etc.)" },
+    { icon: <MdOutlineAssignmentTurnedIn size={28} />, title: "DVLA Eye Tests" },
+    { icon: <FaTools size={28} />, title: "Sale & Repair of Spectacles & Contact Lenses" },
   ];
 
   return (
@@ -35,13 +35,13 @@ const HealthcareFeatures = () => {
     >
       {/* Left Section */}
       <div className="lg:w-1/2 space-y-4 mt-8">
-        <h4 className="text-sm tracking-[.8px] text-blue-400 font-semibold uppercase">
+        <h4 className="text-sm tracking-[.8px] text-blue-400 text-white font-semibold uppercase">
           Our Key Features
         </h4>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading">
-          We Provide Best Healthcare <br /> Services
+        <h1 className="text-4xl md:text-5xl lg:text-8xl font-bold font-heading leading-20">
+          We Provide <br /> Best Healthcare <br /> Services
         </h1>
-        <button className="mt-8 border border-gray-500 hover:border-blue-500 text-gray-200 hover:text-blue-400 px-6 py-3 rounded-full flex items-center gap-3 transition-all duration-300">
+        <button className="mt-8 border border-gray-500 hover:border-red-500 text-gray-200 hover:translate-y-2 px-6 py-3 rounded-full flex items-center gap-3 transition-all duration-300">
           Our Services →
         </button>
       </div>
@@ -51,13 +51,13 @@ const HealthcareFeatures = () => {
         {features.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center gap-3 bg-white border border-gray-800 hover:border-gray-500 rounded-lg transition-all duration-300 group"
+            className="flex flex-col gap-3 bg-white border border-gray-800 hover:border-gray-500 rounded-lg transition-all duration-300 group"
           >
-            <div className="flex gap-3 items-center">
-              <div className="text-blue-600 transition-all duration-300 px-8 border-gray-300 border-r py-8">
+            <div className="flex gap-3 items-center p-6">
+              <div className="text-blue-600 transition-all duration-300 border-gray-300 border-r pr-4">
                 {item.icon}
               </div>
-              <p className="text-sm text-gray-950 ">{item.title}</p>
+              <p className="text-sm text-gray-950 font-medium">{item.title}</p>
             </div>
           </div>
         ))}

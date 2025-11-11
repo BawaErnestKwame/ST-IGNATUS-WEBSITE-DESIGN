@@ -6,9 +6,30 @@ body{
     font-family: "Smooch Sans", sans-serif;
 }
 
-p,li,button{
+p,li,button,label, input, option,textarea, select, .contact{
      font-family: "Montserrat", sans-serif;
 }
+
+.arrow{
+    animation-name: arrow;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+
+    }
+    
+}
+
+
 
 
 

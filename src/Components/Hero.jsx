@@ -8,22 +8,22 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Hero = () => {
   const heroSlides = [
     {
-      title: "THE GIFT OF CLEAR VISION",
+      title: "The Gift Of Clear Vision",
       description: "Your eyes deserve expert care and attention. We provide trusted solutions to protect, restore, and enhance your sight helping you see the beauty of life with clarity and confidence.",
       image: hero1,
     },
     {
-      title: "COMPREHENSIVE EYE CARE SERVICES",
+      title: "Comprehensive Eye Care Service",
       description: "From routine eye check-ups to advanced surgical procedures we offer complete eye care under one roof. Our specialists ensure you receive personalized, effective, and compassionate treatment every time.",
       image: hero2,
     },
     {
-      title: "STATE-OF-THE-ART TECHNOLOGY",
+      title: "State-Of-The-Art Technology",
       description: "We combine innovation with precision through world-class diagnostic tools and modern surgical equipment. Experience advanced eye care powered by technology designed to deliver accurate results and faster recovery.",
       image: hero3,
     },
     {
-      title: "DEDICATED TO YOUR EYE HEALTH",
+      title: "Dedicated To Your Health",
       description: "At St. Ignatius Eye Centre, your well-being comes first. Our team is committed to delivering exceptional care built on trust, empathy, and professional excellence.",
       image: hero4,
     },
@@ -57,11 +57,11 @@ const Hero = () => {
             <h1 className="text-3xl md:text-7xl tracking-tight font-semibold text-white mb-2 w-full md:w-1/2">
               {slide.title}
             </h1>
-            <p className="text-white text-sm lg:w-1/2 ">
+            <p className="text-white text-xl leading-7 lg:w-1/2 ">
               {slide.description}
             </p>
             <button className="mt-4 gap-2 hover:bg-red-500 transition-all duration-500 cursor-pointer bg-red-700 px-4 py-1 text-white rounded-full flex items-center">
-             
+            
               Read More
                <ArrowForwardIcon sx={{fontSize:"14px"}}/>
               </button>

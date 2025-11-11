@@ -1,8 +1,10 @@
 import React from "react";
-import { FaRegHandshake, FaStethoscope } from "react-icons/fa6";
+import { FaRegHandshake, FaStethoscope,FaPerson } from "react-icons/fa6";
 import eye1 from "../assets/eye1.webp";
 import eye2 from "../assets/eye2.webp";
 import eye3 from "../assets/eye3.webp";
+import arrow from "../assets/arrow.png";
+
 
 const AboutStIgnatus = () => {
   return (
@@ -14,8 +16,8 @@ const AboutStIgnatus = () => {
             ABOUT ST IGNATIUS</h2>
             <p className="w-10 h-[2px] bg-red-700 rounded"></p>
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold">
-          Our Quality System Is Ready To Help You
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
+          Our Quality System<br />  Is Ready To <span className="text-blue-600">Help You!</span>
         </h1>
         <p className="text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, fugiat qui facilis
@@ -54,7 +56,7 @@ const AboutStIgnatus = () => {
           </div>
         </div>
         {/* button */}
-        <button className="bg-[#0627c2] text-white px-6 mt-6 py-2 rounded-full transition-all hover:bg-[#0e2c8c] text-sm cursor-pointer">
+        <button className="bg-red-600 text-white px-6 mt-6 py-2 rounded-full transition-all hover:bg-red-700 text-sm cursor-pointer">
         Read More
       </button>
       </div>
@@ -62,9 +64,18 @@ const AboutStIgnatus = () => {
       {/* Left section - images */}
       <div className="lg:w-1/2 flex gap-4 items-center justify-center relative">
         <div className="space-y-4">
-          <div className="w-60 -right- rounded h-24 relative top-2 z-10 bg-[#0627c2] text-white flex flex-col items-center justify-center shadow-lg">
-            <h1 className="text-3xl font-bold ">100%</h1>
+          {/* image */}
+          <img src={arrow} alt="" className=" arrow relative right-20 w-50 "/>
+          <div className="w-60 -right-32 rounded h-24 relative top-2 z-10 bg-[#0627c2]
+           text-white flex flex-col md:flex-row items-center pl-8 gap-2 shadow-lg">
+            <FaPerson size={50}  />
+
+
+            <div className="">
+              <h1 className="text-3xl font-bold ">100%</h1>
             <p className="text-sm">Patients Satisfied</p>
+
+            </div>
           </div>
           <img src={eye3} alt="patient 1" className=" relative -top-10 h-72 object-cover rounded-lg shadow-md -z-10" />
         </div>
