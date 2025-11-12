@@ -75,7 +75,7 @@ const Navbar = () => {
                   isActive ? "text-blue-600" : "hover:text-blue-600"
                 }
               >
-                Pages
+                Branches
               </NavLink>
             </li>
             <li>

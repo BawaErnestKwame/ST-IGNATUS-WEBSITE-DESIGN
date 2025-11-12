@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import image from '../assets/footerImage2.png';
+import React, { useState, useEffect } from 'react';
+import image from '../assets/footerImage2.jpg';
+import logo from '../assets/logo.png';
 import {
   MapPin,
   Phone,
@@ -9,18 +10,30 @@ import {
   Linkedin,
   Share2,
   MessageCircle,
-  ArrowUp,
-  Activity
+  ArrowUp
 } from 'lucide-react';
-
 
 const Footer = () => {
   const [email, setEmail] = useState('');
+  const [showScroll, setShowScroll] = useState(false);
 
   const handleSignUp = () => {
     console.log('Email submitted:', email);
     setEmail('');
   };
+
+  // ✅ Show button when user scrolls down
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -30,7 +43,7 @@ const Footer = () => {
     <footer
       className="text-gray-300 bg-cover bg-center bg-no-repeat relative"
       style={{
-        backgroundImage: `linear-gradient(rgba(14, 44, 140, 0.9), rgba(14, 44, 140, 0.95)), url(${image})`,
+        backgroundImage: `linear-gradient(#082583DD, #06227DE2), url(${image})`,
       }}
     >
       {/* Main Footer Content */}
@@ -39,8 +52,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                <Activity className="w-6 h-6 text-white" strokeWidth={2.5} />
+              <div className="w-12 h-12 bg-gray-100 flex items-center justify-center">
+                <img src={logo} alt="MediLink logo" />
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg">MediLink.</h3>
@@ -55,17 +68,23 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                <span className="text-sm">59 Street, 1200 Techpark</span>
+                <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
+                  59 Street, 1200 Techpark
+                </span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <span className="text-sm">+59888555</span>
+                <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
+                  +59888555
+                </span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <span className="text-sm">medilink@gmail.com</span>
+                <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
+                  medilink@gmail.com
+                </span>
               </div>
             </div>
           </div>
@@ -74,7 +93,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">
               Departments
-              <div className="w-12 h-0.5 bg-blue-500 mt-2"></div>
+              <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
             </h3>
             <ul className="space-y-2">
               {['Dental Care', 'Medicine', 'Orthopedic', 'Emergency', 'Skilled Doctors', 'Certified Clinic'].map(
@@ -96,7 +115,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">
               Quick Links
-              <div className="w-12 h-0.5 bg-blue-500 mt-2"></div>
+              <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
             </h3>
             <ul className="space-y-2">
               {['About Us', 'What We Do', "Faq's", 'Appointment', 'Contact', '24/7 Support'].map((item) => (
@@ -111,11 +130,12 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+
           {/* Opening Hours */}
           <div>
             <h3 className="text-white font-bold text-lg mb-4">
               Opening Hours
-              <div className="w-12 h-0.5 bg-blue-500 mt-2"></div>
+              <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
             </h3>
             <ul className="space-y-2 text-sm">
               <li className="flex justify-between">
@@ -136,7 +156,7 @@ const Footer = () => {
               </li>
               <li className="flex justify-between">
                 <span>Sunday:</span>
-                <span className="text-blue-400 font-medium">Closed</span>
+                <span className="text-blue-300 font-medium">Closed</span>
               </li>
             </ul>
           </div>
@@ -144,20 +164,22 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer Bar */}
-      <div className="border-t border-blue-800 bg-[#0b2470]/80 backdrop-blur-sm">
+      <div className="border-t border-gray-500 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Social Links */}
             <div className="flex items-center gap-4">
-              <span className="text-sm font-medium">Follow Us:</span>
+              <span className="text-sm font-medium" style={{ fontFamily: 'Montserrat' }}>
+                Follow Us:
+              </span>
               <div className="flex gap-3">
                 {[Facebook, Twitter, Linkedin, Share2, MessageCircle].map((Icon, index) => (
                   <a
                     key={index}
                     href="#"
-                    className="w-8 h-8 rounded-full bg-blue-900/60 hover:bg-blue-600 flex items-center justify-center transition-colors"
+                    className="w-8 h-8 rounded-full group bg-blue-600/60 hover:bg-red-600 flex items-center justify-center transition-colors"
                   >
-                    <Icon className="w-4 h-4 text-white" />
+                    <Icon className="w-4 h-4 text-white transition-all group-hover:rotate-360 duration-300" />
                   </a>
                 ))}
               </div>
@@ -165,14 +187,19 @@ const Footer = () => {
 
             {/* Newsletter */}
             <div className="flex items-center gap-3">
-              <span className="text-sm font-medium whitespace-nowrap">Stay informed and healthy</span>
+              <span
+                className="text-sm font-medium whitespace-nowrap"
+                style={{ fontFamily: 'Montserrat' }}
+              >
+                Stay informed and healthy
+              </span>
               <div className="flex gap-2">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="enter your e-mail"
-                  className="px-4 py-2 bg-blue-950/40 border border-blue-700 rounded-md text-sm focus:outline-none focus:border-blue-400 w-48"
+                  className="px-4 py-2 border border-gray-100 rounded-md text-sm focus:outline-none focus:border-gray-400 w-48"
                 />
                 <button
                   onClick={handleSignUp}
@@ -182,21 +209,25 @@ const Footer = () => {
                 </button>
               </div>
             </div>
-
-            {/* Scroll to Top */}
-            <button
-              onClick={scrollToTop}
-              className="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
-              aria-label="Scroll to top"
-            >
-              <ArrowUp className="w-5 h-5 text-white" />
-            </button>
           </div>
         </div>
       </div>
 
+      {/* Floating Scroll-to-Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-500 ${
+          showScroll
+            ? 'opacity-100 translate-y-0 bg-blue-600 hover:bg-blue-700'
+            : 'opacity-0 translate-y-10 pointer-events-none'
+        }`}
+        aria-label="Scroll to top"
+      >
+        <ArrowUp className="w-5 h-5 text-white" />
+      </button>
+
       {/* Copyright Section */}
-      <div className="text-center py-4 bg-[#091b59]/90 border-t border-blue-900">
+      <div className="text-center py-4 bg-red-700 border-t border-blue-900">
         <p className="text-sm text-gray-300">
           &copy; {new Date().getFullYear()} MediLink Central Hospital. All rights reserved.
         </p>

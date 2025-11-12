@@ -53,7 +53,7 @@ const ExpertCare = () => {
 
                 {/* Doctor Info */}
                 <div className="bg-gray-900 text-center p-5">
-                  <h3 className="text-lg font-semibold text-white mb-1">
+                  <h3 className="text-lg font-semibold text-white mb-1" style={{ fontFamily: 'Montserrat' }}>
                     {doctor.name}
                   </h3>
                   <p className="text-blue-300 text-sm font-medium">

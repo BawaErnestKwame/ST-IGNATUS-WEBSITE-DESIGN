@@ -6,6 +6,7 @@ import AppointmentBooking from '../Components/AppointmentBooking'
 import Department from '../Components/Department'
 import ExpertCare from '../Components/ExpertCare'
 
+
 const Home = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Home = () => {
       <AppointmentBooking/>
       <Department/>
       <ExpertCare/>
+     
       
     </div>
   )
