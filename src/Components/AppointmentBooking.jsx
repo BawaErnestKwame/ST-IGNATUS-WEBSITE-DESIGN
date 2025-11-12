@@ -47,7 +47,7 @@ export default function AppointmentBooking() {
               
               <div className="grid  grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-blue-500 rounded-lg p-3">
+                  <div className="bg-red-600 rounded-lg p-3">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
