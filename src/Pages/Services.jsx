@@ -1,8 +1,12 @@
 import React from 'react'
+import AppointmentBooking from '../Components/AppointmentBooking';
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+          <AppointmentBooking/>
+          
+    </div>
   )
 }
 
