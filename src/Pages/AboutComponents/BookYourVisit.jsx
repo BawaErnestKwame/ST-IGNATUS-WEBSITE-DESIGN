@@ -3,12 +3,12 @@ import { ArrowRight } from 'lucide-react';
 
 const BookYourVisit = () => {
   return (
-    <div className=" bg-[#0627c2]  py-8 px-4 sm:px-6 lg:px-8">
+    <div className=" bg-[#0627c2]  py-8 px-4 sm:px-6 lg:px-8 mb">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Text Content */}
           <div className="text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
+            <h2 className="text-2xl sm:text-3xl w-[70%] lg:text-4xl font-bold text-white leading-tight">
               Clear Vision Starts Here. Schedule Your Eye Exam Today
             </h2>
           </div>

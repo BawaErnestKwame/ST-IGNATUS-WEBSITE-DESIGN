@@ -7,6 +7,8 @@ import HospitalOverview from './AboutComponents/HospitalOverview';
 import HealthyLifeSteps from './AboutComponents/HealthyLifeSteps';
 import BookYourVisit from './AboutComponents/BookYourVisit';
 import HealthcareServices from '../Components/HealthcareServices'
+import ExpertCare from '../Components/ExpertCare';
+import Department from '../Components/Department';
 
 
 
@@ -38,8 +40,11 @@ const About = () => {
     </div>
     <AboutStatistics/>
     <HospitalOverview/>
+    <HealthcareServices/>
+    <ExpertCare/>
+    <Department/>
     <HealthyLifeSteps/>
-     <HealthcareServices/>
+  
 
     <BookYourVisit/>
     </>

@@ -28,6 +28,14 @@ p,li,button,label, input, option,textarea, select, .contact{
     }
     
 }
+/* Hide scrollbar for all browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 
 

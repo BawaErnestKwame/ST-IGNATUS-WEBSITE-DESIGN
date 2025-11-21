@@ -1,5 +1,8 @@
 import React from 'react';
 import { Calendar, Stethoscope, Heart, ArrowRight } from 'lucide-react';
+import cycle from '../../assets/lifecycleimage.webp';
+import cycle1 from '../../assets/lifecycleimage1.webp';
+import cycle2 from '../../assets/lifecycleimage2.webp'; // fixed duplicate
 
 const HealthyLifeSteps = () => {
   const steps = [
@@ -8,22 +11,27 @@ const HealthyLifeSteps = () => {
       number: '01',
       icon: Calendar,
       title: 'Get Appointment',
-      description: "Book & pay online. We'll match you with a trusted house cleaner"
+      description:
+        "Book & pay online. We'll match you with a trusted house cleaner",
+      image: cycle,
     },
     {
       id: 2,
       number: '02',
       icon: Stethoscope,
       title: 'Start Check-Up',
-      description: 'Every cleaner is friendly and reliable. They have been experts'
+      description:
+        'Every cleaner is friendly and reliable. They have been experts',
+      image: cycle1,
     },
     {
       id: 3,
       number: '03',
       icon: Heart,
       title: 'Enjoy Healthy Life',
-      description: 'Quisqu tell us risus adpis viera bibe um urna.'
-    }
+      description: 'Quisqu tell us risus adpis viera bibe um urna.',
+      image: cycle2,
+    },
   ];
 
   return (
@@ -54,7 +62,7 @@ const HealthyLifeSteps = () => {
                 y1="0"
                 x2="80%"
                 y2="0"
-                stroke="#e5e7eb"
+                stroke="#F25D00FF"
                 strokeWidth="2"
                 strokeDasharray="8,8"
               />
@@ -79,19 +87,28 @@ const HealthyLifeSteps = () => {
                     {/* Circle with Image/Icon */}
                     <div className="relative mb-6">
                       {/* Dotted Border Circle */}
-                      <div className="absolute inset-0 rounded-full border-4 border-dashed border-gray-300 animate-[spin_20s_linear_infinite]"></div>
-                      
+                      <div
+                        className="absolute inset-0 rounded-full border-8 border-dashed border-orange-600
+                       animate-[spin_20s_linear_infinite]"
+                      ></div>
+
                       {/* Main Circle */}
                       <div className="relative w-48 h-48 rounded-full bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                        {/* Icon placeholder - replace with actual images */}
-                        <div className="w-32 h-32 bg-white/80 rounded-full flex items-center justify-center">
-                          <IconComponent className="w-16 h-16 text-blue-600" strokeWidth={1.5} />
+                        {/* Image inside circle */}
+                        <div className="w-32 h-32 rounded-full flex items-center justify-center overflow-hidden">
+                          <img
+                            src={step.image}
+                            alt={step.title}
+                            className="object-cover w-full h-full rounded-full"
+                          />
                         </div>
                       </div>
 
                       {/* Step Number Badge */}
                       <div className="absolute -top-2 -left-2 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
-                        <span className="text-white font-bold text-lg">{step.number}</span>
+                        <span className="text-white font-bold text-lg">
+                          {step.number}
+                        </span>
                       </div>
                     </div>
 
