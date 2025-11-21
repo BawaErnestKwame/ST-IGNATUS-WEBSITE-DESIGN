@@ -2,10 +2,15 @@ import React from 'react'
 import hero from '../assets/hero4.jpg';
 import { Link } from 'react-router-dom';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ExpertCare from '../Components/ExpertCare';
+import HealthcareServices from '../Components/HealthcareServices'
+import Facilities from './ServiceComponents/Facilities';
+import BookYourVisit from './AboutComponents/BookYourVisit';
 
-const Blog = () => {
+const Branches = () => {
   return (
-    <>
+
+  <>
      <div
       className="w-full h-[50vh] flex items-center px-4 md:px-8 lg:px-24"
       style={{
@@ -30,8 +35,14 @@ const Blog = () => {
     </div>
     </div>
 
+    <ExpertCare/>
+    <HealthcareServices/>
+     <Facilities/>
+     <BookYourVisit/>
+    
+
     </>
   )
 }
 
-export default Blog
+export default Branches

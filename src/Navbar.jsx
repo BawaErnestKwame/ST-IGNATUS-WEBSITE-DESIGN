@@ -70,22 +70,12 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/pages"
+                to="/branches"
                 className={({ isActive }) =>
                   isActive ? "text-blue-600" : "hover:text-blue-600"
                 }
               >
                 Branches
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/blog"
-                className={({ isActive }) =>
-                  isActive ? "text-blue-600" : "hover:text-blue-600"
-                }
-              >
-                Blog
               </NavLink>
             </li>
             <li>

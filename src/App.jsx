@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Pages from "./pages/Pages";
-import Blog from "./pages/Blog";
+import Branches from "./pages/Branches";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Footer from "./Components/Footer";
@@ -16,6 +16,7 @@ import Mission from "./pages/AboutComponents/Mission";
 import Awards from "./pages/AboutComponents/Awards";
 import Experience from "./pages/AboutComponents/Experience";
 import SuccessStory from "./pages/AboutComponents/SuccessStory";
+
 
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
           </Route>
 
           <Route path="/pages" element={<Pages />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/branches" element={<Branches />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
