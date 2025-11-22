@@ -16,6 +16,8 @@ import Mission from "./pages/AboutComponents/Mission";
 import Awards from "./pages/AboutComponents/Awards";
 import Experience from "./pages/AboutComponents/Experience";
 import SuccessStory from "./pages/AboutComponents/SuccessStory";
+import Blog from "./Pages/Blog";
+import BookAppointment from "./Components/BookAppointment";
 
 
 const App = () => {
@@ -38,8 +40,11 @@ const App = () => {
 
           <Route path="/pages" element={<Pages />} />
           <Route path="/branches" element={<Branches />} />
+          <Route path="/blog" element={<Blog/>} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/bookAppointment" element={<BookAppointment/> } />
+
         </Routes>
 
         <Footer />

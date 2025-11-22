@@ -25,7 +25,7 @@ const Blog = () => {
         </Link>
          <ArrowForwardIosIcon sx={{fontSize:"16px", fontWeight:"bold"}} />
         <span className='text-2xl'
-        >About</span>
+        >Blog</span>
       </div>
     </div>
     </div>

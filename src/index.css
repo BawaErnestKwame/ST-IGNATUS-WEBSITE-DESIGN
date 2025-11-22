@@ -47,3 +47,23 @@ p,li,button,label, input, option,textarea, select, .contact{
     font-size: #0e2c8c;
     font-size: #0627c2;
 }
+
+
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
+}
+.mobile-menu-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 300ms ease-in-out;
+}
