@@ -18,6 +18,7 @@ import Experience from "./pages/AboutComponents/Experience";
 import SuccessStory from "./pages/AboutComponents/SuccessStory";
 import Blog from "./Pages/Blog";
 import BookAppointment from "./Components/BookAppointment";
+import DrIgnatus from "./Components/DrIgnatus";
 
 
 const App = () => {
@@ -44,7 +45,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/bookAppointment" element={<BookAppointment/> } />
-
+          <Route path="/drIgnatus" element={<DrIgnatus/> } />
         </Routes>
 
         <Footer />

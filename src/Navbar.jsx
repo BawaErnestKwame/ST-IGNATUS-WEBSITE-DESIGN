@@ -79,7 +79,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/ignatus"
+                      to="/drignatus"
                       className={({ isActive }) =>
                         isActive
                           ? "text-blue-600 block px-4 py-2"
