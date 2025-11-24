@@ -1,48 +1,98 @@
-import React from 'react'
-import hero from '../assets/hero4.jpg';
+import React from 'react';
+import hero from '../assets/branches.webp';
 import { Link } from 'react-router-dom';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { motion } from 'framer-motion';
 import ExpertCare from '../Components/ExpertCare';
-import HealthcareServices from '../Components/HealthcareServices'
+import HealthcareServices from '../Components/HealthcareServices';
 import Facilities from './ServiceComponents/Facilities';
 import BookYourVisit from './AboutComponents/BookYourVisit';
 
+// ICONS
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import BloodtypeIcon from '@mui/icons-material/Bloodtype';
+import BiotechIcon from '@mui/icons-material/Biotech';
+import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
+import HearingIcon from '@mui/icons-material/Hearing';
+import LocalPharmacyIcon from '@mui/icons-material/LocalPharmacy';
+
 const Branches = () => {
+  // Hero cards data with links
+  const heroCardsData = [
+    { name: "Nutrition", icon: <LocalDiningIcon className="text-white" />, link: "/nutrition" },
+    { name: "Phlebotomy", icon: <BloodtypeIcon className="text-white" />, link: "/phlebotomy" },
+    { name: "Lab Tech", icon: <BiotechIcon className="text-white" />, link: "/lab-tech" },
+    { name: "EKG Tech", icon: <MonitorHeartIcon className="text-white" />, link: "/ekg-tech" },
+    { name: "Audiology", icon: <HearingIcon className="text-white" />, link: "/audiology" },
+    { name: "Pharmacy", icon: <LocalPharmacyIcon className="text-white" />, link: "/pharmacy" },
+  ];
+
   return (
+    <>
+      {/* HERO SECTION */}
+      <div
+        className="w-full h-[70vh] flex flex-col items-center text-center px-4 md:px-8 lg:px-24 mb-20 relative"
+        style={{
+          backgroundImage: `linear-gradient(to right, #04207AE3 35%, #05207AD0), url(${hero})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="max-w-3xl mt-10 space-y-4">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-extrabold leading-tight drop-shadow-lg">
+            Allied Health Career
+          </h1>
 
-  <>
-     <div
-      className="w-full h-[50vh] flex items-center px-4 md:px-8 lg:px-24"
-      style={{
-        backgroundImage: `linear-gradient(to right, #04207AFF 35%,#05207A45), url(${hero})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="">
-        <h1 className='text-white text-2xl md:text-6xl'>About Us</h1>
-      {/* style={{fontFamily:"Montserrat"}} */}
-      <div className="flex items-center gap-1 text-white">
-        
-        <Link to="/" className="flex items-center gap-1 hover:underline underline-offset-4 hover:text-orange-500 transition-all duration-500 text-2xl"
-        >
-          Home
-        </Link>
-         <ArrowForwardIosIcon sx={{fontSize:"16px", fontWeight:"bold"}} />
-        <span className='text-2xl'
-        >About</span>
+          <p className="text-white text-sm md:text-lg lg:text-xl leading-relaxed px-2">
+            Looking for career in allied health? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Itaque iste nobis laborum debitis earum odio dignissimos molestiae pariatur.
+          </p>
+        </div>
+
+        {/* HERO CARDS INSIDE BRANCHES */}
+        <div className="absolute top-[85%] md:top-[80%] lg:top-[75%] w-full">
+          <div className="w-full text-center space-y-4 px-4 mb-10">
+            <p className="text-base md:text-lg font-semibold text-white">
+              Learn About Degree and Training Programs
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
+              {heroCardsData.map((card, index) => (
+                <Link to={card.link} key={index}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.15 }}
+                    whileHover={{ scale: 1.07 }}
+                    className="flex flex-col justify-center items-center gap-3 
+                               w-28 h-32 md:w-32 md:h-36 
+                               rounded-2xl shadow-lg cursor-pointer
+                             bg-white
+                               hover:shadow-2xl transition-all duration-300"
+                  >
+                    <div className="bg-gradient-to-br from-indigo-500 to-blue-700 
+                                    p-3 md:p-4 rounded-full flex items-center justify-center shadow-md">
+                      {card.icon}
+                    </div>
+
+                    <p className="font-semibold text-gray-800 text-sm md:text-base">
+                      {card.name}
+                    </p>
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
 
-    <ExpertCare/>
-    <HealthcareServices/>
-     <Facilities/>
-     <BookYourVisit/>
-    
-
+      {/* SECTIONS */}
+      <ExpertCare />
+      <HealthcareServices />
+      <Facilities />
+      <BookYourVisit />
     </>
-  )
-}
+  );
+};
 
-export default Branches
+export default Branches;
