@@ -6,6 +6,7 @@ import AppointmentBooking from '../Components/AppointmentBooking'
 import Department from '../Components/Department'
 import ExpertCare from '../Components/ExpertCare'
 import TrustedPartners from '../Components/TrustedPartners'
+import Testimonials from '../Components/Testimonials'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <AppointmentBooking/>
       <Department/>
       <ExpertCare/>
+      <Testimonials/>
       <TrustedPartners/>
      
       
