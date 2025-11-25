@@ -7,6 +7,7 @@ import HospitalOverview from './AboutComponents/HospitalOverview';
 import HealthyLifeSteps from './AboutComponents/HealthyLifeSteps';
 import BookYourVisit from './AboutComponents/BookYourVisit';
 import Facilities from './ServiceComponents/Facilities';
+import Servistlist from './serviceList/ServicetList';
 const Services = () => {
   return (
     <>
@@ -34,7 +35,7 @@ const Services = () => {
     </div>
     </div>
     <div>
-       <HospitalOverview/>
+       <Servistlist/>
        <HealthyLifeSteps/>
        <AppointmentBooking/>
        <Facilities/>

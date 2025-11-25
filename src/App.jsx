@@ -21,6 +21,11 @@ import DrIgnatus from "./Components/DrIgnatus";
 import Berekum from './Components/Berekum';
 import Sunyani from './Components/Sunyani';
 import Dormaa from './Components/Dormaa';
+import Glaucoma from './Pages/serviceList/Glaucoma';
+import DvlEyeTeste from './Pages/serviceList/DvlEyeTeste';
+import EyeSurgeries from './Pages/serviceList/EyeSurgeries';
+import Refraction from './Pages/serviceList/Refraction';
+import InstitutionalEye from './Pages/serviceList/InstitutionalEye';
 
 
 const App = () => {
@@ -41,10 +46,18 @@ const App = () => {
             <Route path="success" element={<SuccessStory />} />
           </Route>
 
+         <Route path="/services" element={<Services/>}>
+          <Route index element={<Glaucoma/>} />
+          <Route path="dvlEyeTeste" element={<DvlEyeTeste/>} />
+          <Route path="eyeSurgeries" element={<EyeSurgeries/>} />
+          <Route path="refraction" element={<Refraction/>} />
+          <Route path="institutionalEye" element={<InstitutionalEye/>} />
+        </Route>
+
+
           <Route path="/pages" element={<Pages />} />
           <Route path="/branches" element={<Branches />} />
           <Route path="/blog" element={<Blog/>} />
-          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/drIgnatus" element={<DrIgnatus/> } />
           <Route path="/sunyani" element={<Sunyani/> } />
