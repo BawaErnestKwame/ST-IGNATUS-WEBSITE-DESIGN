@@ -13,7 +13,7 @@ const Hero = () => {
       image: hero1,
     },
     {
-      title: "Comprehensive Eye Care Service",
+      title: "Comprehensive Eye Care",
       description: "From routine eye check-ups to advanced surgical procedures we offer complete eye care under one roof. Our specialists ensure you receive personalized, effective, and compassionate treatment every time.",
       image: hero2,
     },
@@ -94,45 +94,6 @@ const Hero = () => {
         </div>
       ))}
 
-      {/* NAVIGATION BUTTONS */}
-      <button
-        onClick={prevSlide}
-        aria-label="Previous slide"
-        className="absolute top-1/2 left-2 sm:left-3 md:left-4 lg:left-6
-                   transform -translate-y-1/2 
-                   bg-white bg-opacity-20 hover:bg-opacity-40 backdrop-blur-sm
-                   text-red-600 font-bold 
-                   px-2.5 sm:px-3 md:px-4 lg:px-5
-                   py-2 sm:py-2.5 md:py-2
-                   text-xl sm:text-2xl md:text-3xl lg:text-4xl
-                   rounded-full transition-all duration-300
-                   hover:scale-110 
-                   focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2
-                   shadow-lg hover:shadow-xl
-                   z-10"
-      >
-        ‹
-      </button>
-
-      <button
-        onClick={nextSlide}
-        aria-label="Next slide"
-        className="absolute top-1/2 right-2 sm:right-3 md:right-4 lg:right-6
-                   transform -translate-y-1/2 
-                   bg-white bg-opacity-100 hover:bg-opacity-40 backdrop-blur-sm
-                   text-red-700 font-bold
-                   px-2.5 sm:px-3 md:px-4 lg:px-5
-                   py-2 sm:py-2.5 md:py-3 lg:py-4
-                   text-xl sm:text-2xl md:text-3xl lg:text-4xl
-                   rounded-full transition-all duration-300
-                   hover:scale-110 
-                   focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2
-                   shadow-lg hover:shadow-xl
-                   z-10"
-      >
-        ›
-      </button>
-
       {/* PAGINATION DOTS */}
       <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-10 
                       left-1/2 transform -translate-x-1/2 
@@ -143,12 +104,12 @@ const Hero = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             aria-label={`Go to slide ${index + 1}`}
-            className={`h-2 sm:h-2.5 md:h-3 lg:h-3.5
+            className={`h-2 sm:h-2 md:h-3
                        rounded-full transition-all duration-300 
                        ${
               index === currentIndex 
-                ? "bg-red-700 w-8 sm:w-10 md:w-12 lg:w-14" 
-                : "bg-white bg-opacity-50 hover:bg-opacity-75 w-2 sm:w-2.5 md:w-3 lg:w-3.5"
+                ? "bg-orange-600 w-2.5" 
+                : "bg-white bg-opacity-50 hover:bg-opacity-75 w-2.5 "
             }`}
           ></button>
         ))}

@@ -38,7 +38,7 @@ const Branches = () => {
         }}
       >
         <div className="max-w-3xl mt-10 space-y-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-extrabold leading-tight drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl text-white font-semibold leading-tight drop-shadow-lg">
             Allied Health Career
           </h1>
 

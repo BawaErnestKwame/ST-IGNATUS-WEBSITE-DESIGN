@@ -17,8 +17,10 @@ import Awards from "./pages/AboutComponents/Awards";
 import Experience from "./pages/AboutComponents/Experience";
 import SuccessStory from "./pages/AboutComponents/SuccessStory";
 import Blog from "./Pages/Blog";
-import BookAppointment from "./Components/BookAppointment";
 import DrIgnatus from "./Components/DrIgnatus";
+import Berekum from './Components/Berekum';
+import Sunyani from './Components/Sunyani';
+import Dormaa from './Components/Dormaa';
 
 
 const App = () => {
@@ -44,8 +46,10 @@ const App = () => {
           <Route path="/blog" element={<Blog/>} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/bookAppointment" element={<BookAppointment/> } />
           <Route path="/drIgnatus" element={<DrIgnatus/> } />
+          <Route path="/sunyani" element={<Sunyani/> } />
+          <Route path="/dormaa" element={<Dormaa/> } />
+          <Route path="/berekum" element={<Berekum/> } />
         </Routes>
 
         <Footer />

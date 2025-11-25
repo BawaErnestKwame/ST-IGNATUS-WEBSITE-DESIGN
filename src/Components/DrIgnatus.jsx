@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../public/ignatus.jpeg'
+import image from '/ignatus.jpeg'
 
 const DrIgnatus = () => {
   return (

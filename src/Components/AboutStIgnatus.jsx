@@ -13,16 +13,14 @@ const AboutStIgnatus = () => {
       <div className="lg:w-1/2 space-y-3">
         <div className="">
             <h2 className="text-blue-600 text-2xl lg:text-xl font-semibold tracking-[.5px]">
-            ABOUT ST IGNATIUS</h2>
+            ABOUT ST IGNATIUS EYE CENTER</h2>
             <p className="w-10 h-[2px] bg-red-700 rounded"></p>
         </div>
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
-          Our Quality System<br />  Is Ready To <span className="text-blue-600">Help You!</span>
+          Excellence Eye Care <br /> <span className="text-blue-600">You Can Trust!</span>
         </h1>
         <p className="text-gray-600">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, fugiat qui facilis
-          reprehenderit, aperiam ab voluptatibus ex dolorum in assumenda cupiditate quia a molestias
-          eveniet impedit obcaecati doloremque, provident placeat.
+          At St. Ignatius Eye Centre, we are committed to delivering excellence in eye care you can trust. With advanced technology, skilled professionals, and compassionate service, we ensure every patient receives precise diagnosis, quality treatment, and personalized attention for clearer, healthier vision.”
         </p>
         <p className="text-gray-700 font-medium">
           Need to take care of your family’s health? Call <span className="text-blue-600 font-bold">+233 599 316 218</span>

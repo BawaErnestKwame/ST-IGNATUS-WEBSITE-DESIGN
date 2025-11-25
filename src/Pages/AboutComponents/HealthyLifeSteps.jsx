@@ -45,11 +45,11 @@ const HealthyLifeSteps = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            How It Helps You to
+            Our Health Process
           </h2>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             Keep Healthy
-          </h2>
+          </h2> */}
         </div>
 
         {/* Steps Container */}

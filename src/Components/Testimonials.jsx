@@ -12,7 +12,7 @@ export default function TestimonialSection() {
       name: "Emily Thomas",
       role: "PRODUCT DESIGNER",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-      quote: "Fashion design can generally be divided into tiers, and while there exists some overlap and subcategorization, Luxury Fashion.",
+      quote: "What impressed me most was their patience and willingness to explain every detail. You can tell they genuinely care about their clients.",
       rating: 5
     },
     {
@@ -20,7 +20,7 @@ export default function TestimonialSection() {
       name: "Michael Chen",
       role: "CREATIVE DIRECTOR",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-      quote: "The attention to detail and craftsmanship in every piece is extraordinary. It's a perfect blend of innovation and tradition.",
+      quote: "They exceeded my expectations in every way. From communication to execution, everything was top-tier. I felt confident and supported throughout.",
       rating: 5
     },
     {
@@ -28,7 +28,7 @@ export default function TestimonialSection() {
       name: "Sarah Johnson",
       role: "FASHION BLOGGER",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-      quote: "Absolutely stunning collection! The quality and design philosophy behind each creation speaks volumes about the brand's commitment.",
+      quote: "I can confidently say this is one of the best decisions I’ve made. The quality, expertise, and customer care are on another level.",
       rating: 5
     }
   ];
@@ -47,21 +47,20 @@ export default function TestimonialSection() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center p-8"
+      className=" flex items-center justify-center p-4 flex-col"
       style={{
         backgroundImage: `linear-gradient(rgba(229,229,229,0.9), rgba(160,160,160,0.9)), url(${bgimage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <div className="max-w-5xl w-full bg-white rounded-3xl p-12">
-        <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Testimonials</h2>
-
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">Testimonials</h2>
+      <div className="max-w-5xl w-full bg-white rounded-3xl p-8 mb-4">
         <div className="relative">
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Image Section */}
             <div className="flex-shrink-0">
-              <div className="w-64 h-80 rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-pink-300 to-pink-400 relative">
+              <div className="w-44 h-60 rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-pink-300 to-pink-400 relative">
                 <img
                   src={testimonials[currentIndex].image}
                   alt={testimonials[currentIndex].name}
@@ -72,18 +71,18 @@ export default function TestimonialSection() {
 
             {/* Content Section */}
             <div className="flex-1">
-              <div className="mb-6">
-                <Quote className="w-12 h-12 text-blue-600 mb-4" />
-                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              <div className="mb-2">
+                <Quote className="w-8 h-8 text-blue-600 mb-2" />
+                <p className="text-gray-700 text-lg leading-relaxed mb-2">
                   {testimonials[currentIndex].quote}
                 </p>
 
                 {/* Star Rating */}
-                <div className="flex gap-1 mb-6">
+                <div className="flex gap-1 mb-4">
                   {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
                     <svg
                       key={i}
-                      className="w-5 h-5 fill-yellow-400"
+                      className="w-4 h-4 fill-yellow-400"
                       viewBox="0 0 20 20"
                     >
                       <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
@@ -93,12 +92,12 @@ export default function TestimonialSection() {
               </div>
 
               {/* Author Info Card */}
-              <div className="bg-gray-900 text-white rounded-2xl p-6 flex items-center justify-between">
+              <div className="bg-blue-800 text-white rounded-2xl p-4 flex items-center justify-between">
                 <div>
                   <h3 className="text-xl font-bold mb-1">
                     {testimonials[currentIndex].name}
                   </h3>
-                  <p className="text-gray-400 text-sm tracking-wider">
+                  <p className="text-gray-200 text-sm tracking-wider">
                     {testimonials[currentIndex].role}
                   </p>
                 </div>
@@ -107,17 +106,17 @@ export default function TestimonialSection() {
                 <div className="flex gap-4">
                   <button
                     onClick={prevSlide}
-                    className="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
+                    className="w-8 h-8 rounded-full bg-gray-100  flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous testimonial"
                   >
-                    <ChevronLeft className="w-6 h-6" />
+                    <ChevronLeft className="w-6 h-6 text-gray-900 font-bold" />
                   </button>
                   <button
                     onClick={nextSlide}
-                    className="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
+                    className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next testimonial"
                   >
-                    <ChevronRight className="w-6 h-6" />
+                    <ChevronRight className="w-6 h-6 font-bold text-gray-900" />
                   </button>
                 </div>
               </div>
@@ -125,14 +124,14 @@ export default function TestimonialSection() {
             
           </div>
           {/* Dots Indicator */}
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-2 mt-4">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'w-8 bg-red-600'
+                    ? 'w-2 bg-red-600'
                     : 'w-2 bg-gray-300 hover:bg-gray-400'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
@@ -140,12 +139,6 @@ export default function TestimonialSection() {
             ))}
           </div>
         </div>
-       
-        <button className='flex items-center gap-2 bg-blue-700 text-white
-         px-4 py-2 rounded-full cursor-pointer hover:bg-blue-800 transition-colors translate-y-2'>Review More
-            <ArrowRightAltIcon/>
-          </button>
-
       </div>
     </div>
   );

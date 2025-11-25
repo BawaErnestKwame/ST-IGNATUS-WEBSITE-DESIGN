@@ -92,9 +92,29 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <NavLink to="/branches" className={({ isActive }) => (isActive ? "text-blue-600" : "hover:text-blue-600")}>
-            Branches
-          </NavLink>
+           <div className="relative group">
+            <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+            style={{
+              fontFamily: "Montserrat"
+            }}
+            >
+              Branches <ArrowDropDownIcon />
+            </span>
+            <ul
+              className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 min-w-[150px]"
+            >
+              
+              <li>
+                <NavLink to="/branches" className="block px-4 py-2 hover:text-blue-600">Sunyani</NavLink>
+              </li>
+              <li>
+                <NavLink to="/dormaa" className="block px-4 py-2 hover:text-blue-600">Dormaa</NavLink>
+              </li>
+              <li>
+                <NavLink to="/berekum" className="block px-4 py-2 hover:text-blue-600">Berekum</NavLink>
+              </li>
+            </ul>
+          </div>
           <NavLink to="/blog" className={({ isActive }) => (isActive ? "text-blue-600" : "hover:text-blue-600")}>Blog</NavLink>
           <NavLink to="/services" className={({ isActive }) => (isActive ? "text-blue-600" : "hover:text-blue-600")}>Services</NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? "text-blue-600" : "hover:text-blue-600")}>Contact</NavLink>
@@ -176,6 +196,9 @@ const Navbar = () => {
                   { name: "Blog", link: "/blog" },
                   { name: "Services", link: "/services" },
                   { name: "Contact", link: "/contact" },
+                  { name: "Sunyani", link: "/sunyani"},
+                  { name: "Dormaa", link: "/dormaa"},
+                  { name: "Berekum", link: "/berekum"}
                 ].map((item, index) => (
                   <motion.li key={index} variants={linkVariants}>
                     <NavLink
