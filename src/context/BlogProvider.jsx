@@ -1,28 +1,30 @@
 // src/context/BlogProvider.jsx
 import React, { createContext, useContext, useState } from "react";
-import { eyeBlogData } from "../data/eyeBlogData"; // your data file
+import { eyeBlogData } from "../data/eyeBlogData";
 
 const BlogContext = createContext();
 
 export const BlogProvider = ({ children }) => {
-  const [blogs, setBlogs] = useState(eyeBlogData);
-  const [selectedBlog, setSelectedBlog] = useState(null); // for "Read More"
+  const [blogs] = useState(eyeBlogData);
+  const [selectedBlogId, setSelectedBlogId] = useState(null); // store only ID
 
+  // toggle accordion
   const selectBlog = (id) => {
-    const blog = blogs.find((b) => b.id === id);
-    setSelectedBlog(blog);
+    if (selectedBlogId === id) {
+      setSelectedBlogId(null); // close if already open
+    } else {
+      setSelectedBlogId(id); // open selected blog
+    }
   };
-
-  const clearSelection = () => setSelectedBlog(null);
 
   return (
     <BlogContext.Provider
-      value={{ blogs, selectedBlog, selectBlog, clearSelection }}
+      value={{ blogs, selectedBlogId, selectBlog }}
     >
       {children}
     </BlogContext.Provider>
   );
 };
 
-// Custom hook for easy use
+// Custom hook
 export const useBlogContext = () => useContext(BlogContext);
