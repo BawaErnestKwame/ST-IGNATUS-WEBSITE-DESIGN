@@ -5,9 +5,11 @@ import { FiPhone } from "react-icons/fi";
 import { FaUserPlus } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+
 import logo from "./assets/logo.png";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 // POPUP COMPONENT
 import BookAppointment from "./Components/BookAppointment";
@@ -44,22 +46,33 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full shadow px-4 md:px-8 border-b border-gray-400 relative z-50">
-
+    <header className="w-full shadow flex gap-4 md:gap-8 px-4 md:px-8 border-b border-gray-400 relative z-50">
+      <img src={logo} className="lg:w-38 w-24 h-auto object-contain" />
+      
+    <div className=" w-full lg:border-l lg:border-gray-400 lg:pl-8">
+      <ArrowRightIcon className="text-gray-500  hidden md:block relative top-20 right-11"/>
       {/* TOP BAR */}
-      <div className="bg-[#f8faff] text-sm flex justify-between items-center py-2">
-        <div className="flex items-center gap-4 text-gray-600">
-          <div className="flex items-center gap-2">
+      <div className="bg-[#f8faff] text-sm flex justify-between items-center py-2 flex-wrap">
+        <div className="flex items-center gap-2 flex-wrap text-gray-600">
+          <div className="flex items-center gap-2"
+            style={{
+               fontFamily:"Montserrat"
+            }}
+          >
             <MdEmail className="text-blue-600" />
             support@medidoc.com
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center"
+            style={{
+               fontFamily:"Montserrat"
+            }}
+          >
             <FiPhone className="text-blue-600" />
             660-242-3358
           </div>
         </div>
 
-        <div className="flex items-center gap-4 text-gray-600">
+        <div className="flex items-center gap-4 mt-2 text-gray-600">
           <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
           <FaTwitter className="hover:text-blue-600 cursor-pointer" />
           <FaLinkedinIn className="hover:text-blue-600 cursor-pointer" />
@@ -68,8 +81,7 @@ const Navbar = () => {
       </div>
 
       {/* MAIN NAVBAR */}
-      <div className="flex items-center justify-between py-4">
-        <img src={logo} className="w-24" />
+      <div className="flex items-center justify-between py-4 relative">
 
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex items-center gap-10 text-gray-700">
@@ -78,11 +90,16 @@ const Navbar = () => {
 
           {/* ABOUT DROPDOWN */}
           <div className="relative group">
-            <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600">
+            <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+            style={{
+               fontFamily:"Montserrat"
+            }}
+            
+            >
               About <ArrowDropDownIcon />
             </span>
 
-            <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md opacity-0
+            <ul className="absolute left-0 mt-2 bg-white w-32 shadow-md rounded-md opacity-0
                            group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
 
               <li><NavLink to="/about" className="block px-4 py-2 hover:text-blue-600">About Us</NavLink></li>
@@ -93,7 +110,11 @@ const Navbar = () => {
 
           {/* Branches */}
           <div className="relative group">
-            <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600">
+            <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+              style={{
+               fontFamily:"Montserrat"
+            }} 
+            >
               Branches <ArrowDropDownIcon />
             </span>
 
@@ -118,11 +139,14 @@ const Navbar = () => {
           <FaUserPlus /> Book Appointment
         </button>
 
+        
+
         {/* MOBILE MENU ICON */}
         <button onClick={toggleMobileMenu} className="md:hidden">
-          {isMobileMenuOpen ? <HiOutlineX className="text-3xl" /> : <HiOutlineMenu className="text-3xl" />}
+          {isMobileMenuOpen ? <HiOutlineX className="text-3xl" /> : <HiOutlineMenu className="text-3xl absolute right-0 bottom-14" />}
         </button>
       </div>
+    </div>
 
       {/* MOBILE MENU */}
       <AnimatePresence>

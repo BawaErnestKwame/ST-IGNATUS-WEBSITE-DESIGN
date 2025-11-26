@@ -19,9 +19,9 @@ const BookAppointment = ({ isOpen, onClose }) => {
 
   const services = [
     'General Consultation',
-    'Follow-up Visit',
-    'Specialist Appointment',
-    'Routine Checkup'
+    'Eye Examination',
+    'Contact Lens',
+    'Glasses Selection'
   ]
 
   const timeSlots = [

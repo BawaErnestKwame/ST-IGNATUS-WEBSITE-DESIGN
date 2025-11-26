@@ -193,7 +193,7 @@ const Footer = () => {
               >
                 Stay informed and healthy
               </span>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 <input
                   type="email"
                   value={email}
