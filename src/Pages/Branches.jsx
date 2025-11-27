@@ -38,8 +38,8 @@ const Branches = () => {
         }}
       >
         <div className="max-w-3xl mt-10 space-y-4">
-          <h1 className="text-4xl md:text-5xl text-white font-semibold leading-tight drop-shadow-lg">
-            Allied Health Career
+          <h1 className="text-4xl md:text-8xl text-white font-semibold leading-tight drop-shadow-lg">
+            Sunyani Branch
           </h1>
 
           <p className="text-white text-sm md:text-lg lg:text-xl leading-relaxed px-2">
