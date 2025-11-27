@@ -18,10 +18,14 @@ const BookAppointment = ({ isOpen, onClose }) => {
   })
 
   const services = [
-    'General Consultation',
-    'Eye Examination',
-    'Contact Lens',
-    'Glasses Selection'
+    "Comprehensive Eye Care",
+    "Glaucoma Services",
+    "Eye Surgeries",
+    "Refraction Services" ,
+    "Community/Institutional Eye Screening" ,
+    "Ocular Diagnostics (O.C.T, V.F.T, etc.)",
+    "DVLA Eye Tests",
+    "Sale & Repair of Spectacles & Contact Lenses"
   ]
 
   const timeSlots = [

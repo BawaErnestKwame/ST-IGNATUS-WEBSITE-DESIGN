@@ -26,6 +26,7 @@ import DvlEyeTeste from './Pages/serviceList/DvlEyeTeste';
 import EyeSurgeries from './Pages/serviceList/EyeSurgeries';
 import Refraction from './Pages/serviceList/Refraction';
 import InstitutionalEye from './Pages/serviceList/InstitutionalEye';
+import Team from "./Pages/Team";
 
 
 const App = () => {
@@ -60,6 +61,7 @@ const App = () => {
           <Route path="/blog" element={<Blog/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/drIgnatus" element={<DrIgnatus/> } />
+          <Route path="/team" element={<Team/> } />
           <Route path="/sunyani" element={<Sunyani/> } />
           <Route path="/dormaa" element={<Dormaa/> } />
           <Route path="/berekum" element={<Berekum/> } />

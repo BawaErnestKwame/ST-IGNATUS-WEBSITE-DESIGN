@@ -4,6 +4,7 @@ import eye1 from "../assets/eye1.webp";
 import eye2 from "../assets/eye2.webp";
 import eye3 from "../assets/eye3.webp";
 import arrow from "../assets/arrow.png";
+import { Link } from "react-router";
 
 
 const AboutStIgnatus = () => {
@@ -54,9 +55,11 @@ const AboutStIgnatus = () => {
           </div>
         </div>
         {/* button */}
+        <Link to="/about">
         <button className="bg-red-600 text-white px-6 mt-6 py-2 rounded-full transition-all hover:bg-red-700 text-sm cursor-pointer">
         Read More
       </button>
+        </Link>
       </div>
 
       {/* Left section - images */}

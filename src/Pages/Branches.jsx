@@ -30,7 +30,7 @@ const Branches = () => {
     <>
       {/* HERO SECTION */}
       <div
-        className="w-full h-[70vh] flex flex-col items-center text-center px-4 md:px-8 lg:px-24 mb-20 relative"
+        className="w-full h-[60vh] flex flex-col items-center text-center px-4 md:px-8 lg:px-24 mb-20 relative"
         style={{
           backgroundImage: `linear-gradient(to right, #04207AE3 35%, #05207AD0), url(${hero})`,
           backgroundSize: 'cover',
@@ -43,8 +43,7 @@ const Branches = () => {
           </h1>
 
           <p className="text-white text-sm md:text-lg lg:text-xl leading-relaxed px-2">
-            Looking for career in allied health? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque iste nobis laborum debitis earum odio dignissimos molestiae pariatur.
+           Abesim Dominase (Ohene Djan)
           </p>
         </div>
 
@@ -83,6 +82,7 @@ const Branches = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
 

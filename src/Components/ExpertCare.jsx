@@ -2,6 +2,7 @@ import React from 'react';
 import expert1 from '../assets/expert1.webp';
 import expert2 from '../assets/expert2.webp';
 import expert3 from '../assets/expert3.webp';
+import { Link } from 'react-router';
 
 const doctors = [
   { id: 1, name: 'Steve Hendery', specialty: 'Optometrist', image: expert1 },
@@ -28,9 +29,11 @@ const ExpertCare = () => {
               Our experienced team of eye care professionals is dedicated to providing
               personalized care using modern diagnostic and treatment technologies.
             </p>
+           <Link to="/team">
             <button className="bg-red-600 hover:bg-red-700 text-white font-medium px-8 py-3 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg">
               Discover More
             </button>
+           </Link>
           </div>
 
           {/* Right Doctor Cards */}
