@@ -34,7 +34,7 @@ const Team = () => {
           backgroundPosition: 'center',
         }}
       >
-        <h1 className="text-white text-4xl md:text-5xl font-extrabold mb-2">
+        <h1 className="text-white text-4xl md:text-8xl font-extrabold mb-2">
           Meet Our Team
         </h1>
         <p className="text-gray-200 text-sm mt-2">Home / Team</p>

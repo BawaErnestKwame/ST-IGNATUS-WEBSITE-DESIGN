@@ -71,77 +71,7 @@ export const eyeBlogData = [
     content: "Children's eyes are constantly developing. Regular screenings, limiting screen time, and encouraging outdoor play are essential for healthy vision development...",
     tags: ["children", "pediatric", "eye development"],
     readTime: "6 min read"
-  },
-  {
-    id: 7,
-    title: "The Truth About Carrots and Night Vision",
-    date: "2025-11-12",
-    category: "Myths & Facts",
-    author: "Dr. Robert Harris",
-    image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=800&q=80",
-    excerpt: "Can carrots really improve your night vision? We separate fact from fiction and explore the real science behind vitamin A and eye health.",
-    content: "The carrot myth originated during World War II. While carrots contain vitamin A which is essential for vision, they won't give you superhuman night vision...",
-    tags: ["myths", "nutrition", "vitamin A"],
-    readTime: "4 min read"
-  },
-  {
-    id: 8,
-    title: "Dry Eye Syndrome: Causes and Solutions",
-    date: "2025-11-10",
-    category: "Eye Conditions",
-    author: "Dr. Patricia Lee",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
-    excerpt: "Experiencing itchy, burning eyes? Dry eye syndrome affects millions. Learn about causes, symptoms, and effective treatment options.",
-    content: "Dry eye occurs when your eyes don't produce enough tears or the right quality of tears. Environmental factors, aging, and screen time all contribute...",
-    tags: ["dry eyes", "treatment", "eye conditions"],
-    readTime: "7 min read"
-  },
-  {
-    id: 9,
-    title: "UV Protection: Sunglasses Are Not Just Fashion",
-    date: "2025-11-08",
-    category: "Protection",
-    author: "Dr. Kevin Martinez",
-    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&q=80",
-    excerpt: "UV rays can damage your eyes just like they damage your skin. Discover why proper UV protection is essential year-round.",
-    content: "UV exposure increases risk of cataracts and macular degeneration. Look for sunglasses that block 99-100% of UVA and UVB rays...",
-    tags: ["UV protection", "sunglasses", "eye safety"],
-    readTime: "5 min read"
-  },
-  {
-    id: 10,
-    title: "Age-Related Macular Degeneration: What You Need to Know",
-    date: "2025-11-05",
-    category: "Eye Conditions",
-    author: "Dr. Nancy White",
-    image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80",
-    excerpt: "AMD is a leading cause of vision loss in older adults. Learn about risk factors, early detection, and available treatments.",
-    content: "Age-related macular degeneration affects central vision. While there's no cure, early detection and lifestyle changes can slow progression...",
-    tags: ["AMD", "aging", "eye disease"],
-    readTime: "9 min read"
-  },
-  {
-    id: 11,
-    title: "Sleep and Eye Health: The Surprising Connection",
-    date: "2025-11-02",
-    category: "Wellness",
-    author: "Dr. Thomas Brown",
-    image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&q=80",
-    excerpt: "Not getting enough sleep? Your eyes might be suffering too. Explore the important relationship between quality sleep and eye health.",
-    content: "Sleep allows your eyes to rest and replenish. Lack of sleep can lead to dry eyes, eye spasms, and even vision problems...",
-    tags: ["sleep", "wellness", "eye health"],
-    readTime: "6 min read"
-  },
-  {
-    id: 12,
-    title: "LASIK Surgery: Is It Right for You?",
-    date: "2025-10-30",
-    category: "Surgery",
-    author: "Dr. Jennifer Clark",
-    image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80",
-    excerpt: "Considering laser eye surgery? Get the facts about LASIK, including benefits, risks, and what to expect during and after the procedure.",
-    content: "LASIK can correct nearsightedness, farsightedness, and astigmatism. Good candidates are over 18, have stable vision, and healthy eyes...",
-    tags: ["LASIK", "surgery", "vision correction"],
-    readTime: "10 min read"
   }
+
+
 ];

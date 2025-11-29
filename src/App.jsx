@@ -18,9 +18,8 @@ import Experience from "./pages/AboutComponents/Experience";
 import SuccessStory from "./pages/AboutComponents/SuccessStory";
 import Blog from "./Pages/Blog";
 import DrIgnatus from "./Components/DrIgnatus";
-import Berekum from './Components/Berekum';
-import Sunyani from './Components/Sunyani';
-import Dormaa from './Components/Dormaa';
+import Berekum from './Pages/Berekum';
+import Dormaa from './Pages/Dormaa';
 import Glaucoma from './Pages/serviceList/Glaucoma';
 import DvlEyeTeste from './Pages/serviceList/DvlEyeTeste';
 import EyeSurgeries from './Pages/serviceList/EyeSurgeries';
@@ -62,7 +61,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/drIgnatus" element={<DrIgnatus/> } />
           <Route path="/team" element={<Team/> } />
-          <Route path="/sunyani" element={<Sunyani/> } />
           <Route path="/dormaa" element={<Dormaa/> } />
           <Route path="/berekum" element={<Berekum/> } />
         </Routes>

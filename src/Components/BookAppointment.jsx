@@ -80,10 +80,11 @@ const BookAppointment = ({ isOpen, onClose }) => {
           {/* Popup Box */}
           <motion.div
             ref={modalRef}
-            className="fixed top-1/2 left-1/2 w-[95%] md:w-[600px] 
-                      max-h-[90vh] overflow-y-auto 
-                      -translate-x-1/2 -translate-y-1/2 
-                      bg-white rounded-2xl shadow-xl p-6 z-50"
+       className="fixed top-1/2 left-1/2 w-[95%] md:w-[600px] 
+              max-h-[90vh] overflow-y-auto hide-scrollbar
+              -translate-x-1/2 -translate-y-1/2 
+              bg-white rounded-2xl shadow-xl p-6 z-50"
+
             initial={{ scale: 0.6, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.6, opacity: 0 }}

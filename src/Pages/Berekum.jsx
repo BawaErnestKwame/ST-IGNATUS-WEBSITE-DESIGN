@@ -15,7 +15,7 @@ import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
 import HearingIcon from '@mui/icons-material/Hearing';
 import LocalPharmacyIcon from '@mui/icons-material/LocalPharmacy';
 
-const Branches = () => {
+const Berekum = () => {
   // Hero cards data with links
   const heroCardsData = [
     { name: "Nutrition", icon: <LocalDiningIcon className="text-white" />, link: "/nutrition" },
@@ -38,9 +38,7 @@ const Branches = () => {
         }}
       >
         <div className="max-w-3xl mt-10 space-y-4">
-          <h1 className="text-4xl md:text-8xl text-white font-semibold leading-tight drop-shadow-lg">
-            Sunyani Branch
-          </h1>
+          <h1 className="text-4xl md:text-8xl text-white font-semibold leading-tight drop-shadow-lg">Berekum Branch</h1>
 
           <p className="text-white text-sm md:text-lg lg:text-xl leading-relaxed px-2">
            Abesim Dominase (Ohene Djan)
@@ -91,4 +89,4 @@ const Branches = () => {
   );
 };
 
-export default Branches;
+export default Berekum;
