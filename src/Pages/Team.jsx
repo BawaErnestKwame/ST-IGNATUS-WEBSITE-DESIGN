@@ -75,18 +75,7 @@ const Team = () => {
                   className="w-full h-64 object-cover rounded-lg"
                 />
 
-                {/* SOCIAL ICONS */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3">
-                  {[Facebook, Twitter, Linkedin].map((Icon, i) => (
-                    <a
-                      key={i}
-                      href="#"
-                      className="w-10 h-10 bg-blue-900 hover:bg-blue-800 rounded-full flex items-center justify-center"
-                    >
-                      <Icon className="w-5 h-5 text-white" />
-                    </a>
-                  ))}
-                </div>
+              
               </div>
 
               {/* INFO */}

@@ -11,6 +11,7 @@ import {
   ClipboardList,
   Building2,
 } from 'lucide-react';
+import { motion } from "framer-motion";   // <-- Added
 import image from '../assets/departmentbanner.avif';
 
 const departments = [
@@ -28,16 +29,6 @@ const Department = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 4;
 
-  // // Auto-slide effect
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentIndex((prev) =>
-  //       prev + 1 >= departments.length ? 0 : prev + 1
-  //     );
-  //   }, 9000); // slide every 4 seconds
-  //   return () => clearInterval(interval);
-  // }, []);
-
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 < 0 ? 0 : prev - 1));
   };
@@ -52,15 +43,26 @@ const Department = () => {
   ];
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: false }}
       className="h-auto md:h-[75vh] py-8 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat relative"
       style={{
         backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.75)), url(${image})`,
       }}
     >
       <div className="max-w-7xl mx-auto">
+        
         {/* Header Section */}
-        <div className="flex justify-between items-start mb-8">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: false }}
+          className="flex justify-between items-start mb-8"
+        >
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
               Our Departments
@@ -72,7 +74,13 @@ const Department = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex gap-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false }}
+            className="flex gap-2"
+          >
             <button
               onClick={handlePrev}
               disabled={currentIndex === 0}
@@ -87,16 +95,20 @@ const Department = () => {
             >
               <ChevronRight size={20} />
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Department Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-700">
-          {visibleDepartments.slice(0, itemsPerPage).map((dept) => {
+          {visibleDepartments.slice(0, itemsPerPage).map((dept, index) => {
             const IconComponent = dept.icon;
             return (
-              <div
+              <motion.div
                 key={dept.id}
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                viewport={{ once: false }}
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-xl transition-all duration-300 group"
               >
                 <p className="text-gray-300 text-xl font-light mb-4">{dept.number}</p>
@@ -114,12 +126,12 @@ const Department = () => {
                   READ MORE
                   <span className="inline-block transition-transform group-hover/btn:translate-x-1">→</span>
                 </button>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

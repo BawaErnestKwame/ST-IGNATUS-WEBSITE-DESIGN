@@ -12,6 +12,7 @@ import {
   MessageCircle,
   ArrowUp
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -22,14 +23,10 @@ const Footer = () => {
     setEmail('');
   };
 
-  // ✅ Show button when user scrolls down
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowScroll(true);
-      } else {
-        setShowScroll(false);
-      }
+      if (window.scrollY > 300) setShowScroll(true);
+      else setShowScroll(false);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -47,7 +44,12 @@ const Footer = () => {
       }}
     >
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <motion.div
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
@@ -161,7 +163,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Bottom Footer Bar */}
       <div className="border-t border-gray-500 backdrop-blur-sm">
@@ -173,14 +175,22 @@ const Footer = () => {
                 Follow Us:
               </span>
               <div className="flex gap-3">
-                {[Facebook, Twitter, Linkedin, Share2, MessageCircle].map((Icon, index) => (
-                  <a
+                {[
+                  { Icon: Facebook }, 
+                  { Icon: Twitter }, 
+                  { Icon: Linkedin }, 
+                  { Icon: Share2 }, 
+                  { Icon: MessageCircle }
+                ].map(({ Icon }, index) => (
+                  <motion.a
                     key={index}
                     href="#"
-                    className="w-8 h-8 rounded-full group bg-blue-600/60 hover:bg-red-600 flex items-center justify-center transition-colors"
+                    className="w-8 h-8 rounded-full group bg-blue-600/60 flex items-center justify-center transition-colors"
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.5 }}
                   >
-                    <Icon className="w-4 h-4 text-white transition-all group-hover:rotate-360 duration-300" />
-                  </a>
+                    <Icon className="w-4 h-4 text-white" />
+                  </motion.a>
                 ))}
               </div>
             </div>
@@ -214,17 +224,18 @@ const Footer = () => {
       </div>
 
       {/* Floating Scroll-to-Top Button */}
-      <button
+      <motion.button
         onClick={scrollToTop}
-        className={`fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-500 ${
-          showScroll
-            ? 'opacity-100 translate-y-0 bg-blue-600 hover:bg-blue-700'
-            : 'opacity-0 translate-y-10 pointer-events-none'
-        }`}
+        className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg"
+        animate={{
+          opacity: showScroll ? 1 : 0,
+          y: showScroll ? 0 : 20,
+        }}
+        transition={{ duration: 0.5 }}
         aria-label="Scroll to top"
       >
         <ArrowUp className="w-5 h-5 text-white" />
-      </button>
+      </motion.button>
 
       {/* Copyright Section */}
       <div className="text-center py-4 bg-red-700 border-t border-blue-900">

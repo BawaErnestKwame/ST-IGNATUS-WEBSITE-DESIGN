@@ -26,12 +26,15 @@ import EyeSurgeries from './Pages/serviceList/EyeSurgeries';
 import Refraction from './Pages/serviceList/Refraction';
 import InstitutionalEye from './Pages/serviceList/InstitutionalEye';
 import Team from "./Pages/Team";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 const App = () => {
   return (
    
+   
       <div className="min-h-screen flex flex-col">
+         <ScrollToTop />
         <Navbar />
 
         <Routes>

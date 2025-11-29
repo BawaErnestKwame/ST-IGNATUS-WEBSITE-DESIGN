@@ -9,6 +9,7 @@ import {
   FaTools,
 } from "react-icons/fa";
 import { MdOutlineAssignmentTurnedIn } from "react-icons/md";
+import { motion } from "framer-motion"; // <-- ADDED
 import bgImage from "../assets/serviceImage.jpg";
 
 const HealthcareFeatures = () => {
@@ -34,7 +35,13 @@ const HealthcareFeatures = () => {
       }}
     >
       {/* Left Section */}
-      <div className="lg:w-1/2 space-y-4 mt-8">
+      <motion.div
+        className="lg:w-1/2 space-y-4 mt-8"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false }}
+      >
         <h4 className="text-sm tracking-[.8px] text-blue-400 text-white font-semibold uppercase">
           Our Key Features
         </h4>
@@ -44,13 +51,24 @@ const HealthcareFeatures = () => {
         <button className="mt-8 border border-gray-500 hover:border-red-500 text-gray-200 hover:translate-y-2 px-6 py-3 rounded-full flex items-center gap-3 transition-all duration-300">
           Our Services →
         </button>
-      </div>
+      </motion.div>
 
       {/* Right Section - Feature Grid */}
-      <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <motion.div
+        className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        transition={{ staggerChildren: 0.15 }}
+      >
         {features.map((item, index) => (
-          <div
+          <motion.div
             key={index}
+            variants={{
+              hidden: { opacity: 0, scale: 0.9 },
+              show: { opacity: 1, scale: 1 },
+            }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className="flex flex-col gap-3 bg-white border border-gray-800 hover:border-gray-500 rounded-lg transition-all duration-300 group"
           >
             <div className="flex gap-3 items-center p-6">
@@ -59,9 +77,9 @@ const HealthcareFeatures = () => {
               </div>
               <p className="text-sm text-gray-950 font-medium">{item.title}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

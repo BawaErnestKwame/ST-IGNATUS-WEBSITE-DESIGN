@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import bgimage from '../assets/testimonialbg.jpeg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { motion } from 'framer-motion'; // <-- ADDED
 
 export default function TestimonialSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,20 +47,51 @@ export default function TestimonialSection() {
   };
 
   return (
-    <div
-      className=" flex items-center justify-center p-4 flex-col"
+    <motion.div
+      className="flex items-center justify-center p-4 flex-col"
       style={{
         backgroundImage: `linear-gradient(rgba(229,229,229,0.9), rgba(160,160,160,0.9)), url(${bgimage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: false }}
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">Testimonials</h2>
-      <div className="max-w-5xl w-full bg-white rounded-3xl p-8 mb-4">
+      <motion.h2
+        className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false }}
+      >
+        Testimonials
+      </motion.h2>
+
+      <motion.div
+        className="max-w-5xl w-full bg-white rounded-3xl p-8 mb-4"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: false}}
+      >
         <div className="relative">
-          <div className="flex flex-col md:flex-row items-center gap-8">
+          <motion.div
+            key={currentIndex}
+            className="flex flex-col md:flex-row items-center gap-8"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.6 }}
+          >
             {/* Image Section */}
-            <div className="flex-shrink-0">
+            <motion.div
+              className="flex-shrink-0"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               <div className="w-44 h-60 rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-pink-300 to-pink-400 relative">
                 <img
                   src={testimonials[currentIndex].image}
@@ -67,10 +99,15 @@ export default function TestimonialSection() {
                   className="w-full h-full object-cover transition-all duration-500"
                 />
               </div>
-            </div>
+            </motion.div>
 
             {/* Content Section */}
-            <div className="flex-1">
+            <motion.div
+              className="flex-1"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <div className="mb-2">
                 <Quote className="w-8 h-8 text-blue-600 mb-2" />
                 <p className="text-gray-700 text-lg leading-relaxed mb-2">
@@ -92,7 +129,12 @@ export default function TestimonialSection() {
               </div>
 
               {/* Author Info Card */}
-              <div className="bg-blue-800 text-white rounded-2xl p-4 flex items-center justify-between">
+              <motion.div
+                className="bg-blue-800 text-white rounded-2xl p-4 flex items-center justify-between"
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
                 <div>
                   <h3 className="text-xl font-bold mb-1">
                     {testimonials[currentIndex].name}
@@ -106,7 +148,7 @@ export default function TestimonialSection() {
                 <div className="flex gap-4">
                   <button
                     onClick={prevSlide}
-                    className="w-8 h-8 rounded-full bg-gray-100  flex items-center justify-center transition-colors cursor-pointer"
+                    className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous testimonial"
                   >
                     <ChevronLeft className="w-6 h-6 text-gray-900 font-bold" />
@@ -119,12 +161,17 @@ export default function TestimonialSection() {
                     <ChevronRight className="w-6 h-6 font-bold text-gray-900" />
                   </button>
                 </div>
-              </div>
-            </div>
-            
-          </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+
           {/* Dots Indicator */}
-          <div className="flex justify-center gap-2 mt-4">
+          <motion.div
+            className="flex justify-center gap-2 mt-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -137,9 +184,9 @@ export default function TestimonialSection() {
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
