@@ -25,7 +25,7 @@ import DvlEyeTeste from './Pages/serviceList/DvlEyeTeste';
 import EyeSurgeries from './Pages/serviceList/EyeSurgeries';
 import Refraction from './Pages/serviceList/Refraction';
 import InstitutionalEye from './Pages/serviceList/InstitutionalEye';
-import Team from "./Pages/Team";
+import Team from "./pages/Team";
 import ScrollToTop from "./Components/ScrollToTop";
 
 
