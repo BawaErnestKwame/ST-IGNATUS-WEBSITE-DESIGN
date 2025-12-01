@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/f
 import { MdEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { FaUserPlus } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 import logo from "./assets/logo.png";
@@ -120,7 +120,7 @@ const Navbar = () => {
       
     <header className={`w-full shadow border-b border-gray-400 z-50 transition-all duration-500 ${
       isSticky 
-        ? "fixed top-0 left-0 right-0 shadow-2xl bg-white/95 backdrop-blur-md animate-slideDown" 
+        ? "fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md animate-slideDown" 
         : "relative bg-white"
     }`}>
       
@@ -134,9 +134,11 @@ const Navbar = () => {
       <div className={`lg:hidden flex items-center justify-between px-4 gap-2 transition-all duration-300 ${
         isSticky ? "py-2" : "py-3"
       }`}>
+       <Link to='/'>
         <img src={logo} className={`h-auto object-contain flex-shrink-0 transition-all duration-300 ${
           isSticky ? "w-16" : "w-20"
         }`} alt="Logo" />
+       </Link>
         
         {/* Mobile Contact Info */}
         <div className="flex items-center gap-2 text-gray-600 text-xs flex-1 justify-center flex-wrap"
@@ -162,9 +164,11 @@ const Navbar = () => {
 
       {/* Desktop Layout */}
       <div className="hidden lg:flex gap-4 md:gap-8 px-4 md:px-8">
+        <Link to='/'>
         <img src={logo} className={`h-auto object-contain transition-all duration-300 ${
           isSticky ? "lg:w-32 w-20" : "lg:w-38 w-24"
         }`} alt="Logo" />
+        </Link>
         
         <div className="w-full lg:border-l lg:border-gray-400 lg:pl-8">
           <ArrowRightIcon className="text-gray-500 hidden lg:block absolute top-20 -left-3"/>

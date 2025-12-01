@@ -11,6 +11,7 @@ import {
 import { MdOutlineAssignmentTurnedIn } from "react-icons/md";
 import { motion } from "framer-motion"; // <-- ADDED
 import bgImage from "../assets/serviceImage.jpg";
+import { Link } from "react-router";
 
 const HealthcareFeatures = () => {
   const features = [
@@ -48,9 +49,11 @@ const HealthcareFeatures = () => {
         <h1 className="text-4xl md:text-5xl lg:text-8xl font-bold font-heading leading-20">
           We Provide <br /> Best Healthcare <br /> Services
         </h1>
-        <button className="mt-8 border border-gray-500 hover:border-red-500 text-gray-200 hover:translate-y-2 px-6 py-3 rounded-full flex items-center gap-3 transition-all duration-300">
+        <Link to='/services'>
+        <button className="mt-8 border border-gray-300 hover:border-white text-gray-200 hover:translate-y-2 px-6 py-3 rounded-full flex items-center gap-3 transition-all duration-300">
           Our Services →
         </button>
+        </Link>
       </motion.div>
 
       {/* Right Section - Feature Grid */}

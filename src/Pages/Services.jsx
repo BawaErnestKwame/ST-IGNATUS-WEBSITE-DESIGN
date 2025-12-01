@@ -24,14 +24,18 @@ const Services = () => {
       {/* style={{fontFamily:"Montserrat"}} */}
       <div className="flex items-center gap-1 text-white">
         
-        <Link to="/" className="flex items-center gap-1 hover:underline underline-offset-4 hover:text-orange-400 transition-all duration-500 text-2xl"
+        <Link to="/" className="flex items-center gap-1 hover:underline underline-offset-4 hover:text-orange-400 transition-all duration-500 text-xl"
          style={{
           fontFamily: "Smooch Sans"
          }}>
           Home
         </Link>
-         <ArrowForwardIosIcon sx={{fontSize:"16px", fontWeight:"bold", color:"red"}} />
-        <span className='text-2xl text-orange-400'
+         <ArrowForwardIosIcon sx={{fontSize:"16px", fontWeight:"bold", color:"white"}} />
+        <span className='text-xl text-orange-400'
+          style={{
+          fontFamily: "Smooch Sans"
+         }}
+        
         >Service</span>
       </div>
     </div>
