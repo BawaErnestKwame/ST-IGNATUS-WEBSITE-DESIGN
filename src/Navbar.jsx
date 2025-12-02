@@ -136,7 +136,7 @@ const Navbar = () => {
 
         {/* Mobile Header */}
         <div className={`lg:hidden flex items-center justify-between px-4 gap-2 transition-all duration-300 ${
-          isSticky ? "py-2" : "py-3"
+          isSticky ? "py-4" : "py-5"
         }`}>
           <Link to='/'><img src={logo} className={`h-auto object-contain flex-shrink-0 transition-all duration-300 ${isSticky ? "w-16" : "w-20"}`} alt="Logo" /></Link>
           
@@ -160,13 +160,13 @@ const Navbar = () => {
 
         {/* Desktop Header */}
         <div className="hidden lg:flex gap-4 md:gap-8 px-4 md:px-8">
-          <Link to='/'><img src={logo} className={`h-auto object-contain transition-all duration-300 ${isSticky ? "lg:w-32 w-20" : "lg:w-38 w-24"}`} alt="Logo" /></Link>
+          <Link to='/'><img src={logo} className={`h-auto object-contain pt-2 lg:pt-4 transition-all duration-300 ${isSticky ? "lg:w-32 w-20" : "lg:w-38 w-24"}`} alt="Logo" /></Link>
 
           <div className="w-full lg:border-l lg:border-gray-400 lg:pl-8">
             <ArrowRightIcon className="text-gray-500 hidden lg:block absolute top-20 -left-3"/>
             
             {/* Top Bar */}
-            <div className={`bg-[#f8faff] text-xs sm:text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 transition-all duration-300 ${isSticky ? "py-1" : "py-2"}`}>
+            <div className={`bg-[#f8faff] pt-2 lg:pt-4 text-xs sm:text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 transition-all duration-300 ${isSticky ? "py-1" : "py-2"}`}>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-gray-600 w-full sm:w-auto">
                 <div className="flex items-center gap-2" style={{ fontFamily:"Montserrat" }}>
                   <MdEmail className="text-blue-600 flex-shrink-0" />

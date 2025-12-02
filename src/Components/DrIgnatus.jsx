@@ -15,7 +15,7 @@ const DrIgnatus = () => {
 
         {/* PROFILE */}
         <motion.div
-          className="flex gap-6 md:w-1/3"
+          className="flex gap-6  md:w-1/3"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}

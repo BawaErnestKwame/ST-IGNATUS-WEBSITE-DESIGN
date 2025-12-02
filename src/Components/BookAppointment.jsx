@@ -96,7 +96,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
             <motion.div
               key="modal"
               ref={modalRef}
-              className="w-[95%] md:w-[600px] max-h-[90vh] overflow-y-auto hide-scrollbar bg-white rounded-2xl shadow-xl p-6 relative"
+              className="w-[98%] md:w-[700px] max-h-[90vh] overflow-y-auto hide-scrollbar bg-white rounded-2xl shadow-xl p-6 relative"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}

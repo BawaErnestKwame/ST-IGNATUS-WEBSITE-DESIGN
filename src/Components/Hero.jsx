@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="absolute inset-0 flex flex-col justify-center items-start 
                           px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 
                           py-6 sm:py-8 md:py-10">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl 
+            <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl 
                            tracking-tight font-semibold text-white 
                            mb-3 sm:mb-4 md:mb-5 lg:mb-6 
                            w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2

@@ -58,8 +58,8 @@ const Footer = () => {
                 <img src={logo} alt="MediLink logo" />
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg">MediLink.</h3>
-                <p className="text-xs text-gray-400">CENTRAL HOSPITAL</p>
+                <h3 className="text-white font-bold text-lg tracking-normal">ST IGNATIUS.</h3>
+                <p className="text-xs text-gray-400">EYE CENTRE</p>
               </div>
             </div>
 
@@ -124,7 +124,7 @@ const Footer = () => {
                 <li key={item}>
                   <a
                     href="#"
-                    className="text-sm hover:text-blue-400 transition-colors hover:pl-2 inline-block duration-300"
+                    className="text-sm hover:text-blue-400  transition-colors hover:pl-2 inline-block duration-300"
                   >
                     {item}
                   </a>
@@ -185,7 +185,7 @@ const Footer = () => {
                   <motion.a
                     key={index}
                     href="#"
-                    className="w-8 h-8 rounded-full group bg-blue-600/60 flex items-center justify-center transition-colors"
+                    className="w-8 h-8 rounded-full group hover:bg-red-600 bg-blue-600/60 flex items-center justify-center transition-colors"
                     whileHover={{ rotate: 360, scale: 1.1 }}
                     transition={{ duration: 0.5 }}
                   >
@@ -240,7 +240,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="text-center py-4 bg-red-700 border-t border-blue-900">
         <p className="text-sm text-gray-300">
-          &copy; {new Date().getFullYear()} MediLink Central Hospital. All rights reserved.
+          &copy; {new Date().getFullYear()} ST Ignatius Eye Centre. All rights reserved.
         </p>
       </div>
     </footer>

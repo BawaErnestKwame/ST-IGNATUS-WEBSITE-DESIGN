@@ -21,10 +21,14 @@ const Contact = () => {
       {/* style={{fontFamily:"Montserrat"}} */}
       <div className="flex items-center gap-1 text-white">
         
-        <Link to="/" className="flex items-center gap-1 hover:underline underline-offset-4 hover:text-orange-500 transition-all duration-500 text-2xl">
+        <Link to="/" className="flex items-center gap-1 hover:underline underline-offset-4 hover:text-orange-500 transition-all duration-500 text-2xl"
+        style={{
+          fontFamily:"Smooch Sans"
+        }}
+        >
           Home
         </Link>
-         <ArrowForwardIosIcon sx={{fontSize:"16px", fontWeight:"900", color:"red"}} />
+         <ArrowForwardIosIcon sx={{fontSize:"16px", fontWeight:"900", color:"white"}} />
         <span className='text-2xl'
         >Contact</span>
       </div>
