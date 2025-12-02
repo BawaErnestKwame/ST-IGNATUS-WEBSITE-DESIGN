@@ -3,8 +3,8 @@ import hero from "../assets/hero4.jpg";
 import { Link } from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useBlogContext } from "../context/BlogProvider";
-import service from '../assets/eyeservice.webp'
-import contact from '../assets/contactservice.webp'
+import service from '../assets/blog2.jpg'
+import contact from '../assets/blog1.jpg'
 
 const Blog = () => {
   const { blogs, selectedBlogId, selectBlog } = useBlogContext();

@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import bgimage from '../assets/testimonialbg.jpeg';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import { motion } from 'framer-motion'; // <-- ADDED
+import { motion } from 'framer-motion';
+import testimonialimg1 from '../assets/testimonial1.jpg'
+import testimonialimg2 from '../assets/testimonial2.jpg'
+import testimonialimg3 from '../assets/testimonial3.jpg'
 
 export default function TestimonialSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,7 +15,7 @@ export default function TestimonialSection() {
       id: 1,
       name: "Emily Thomas",
       role: "PRODUCT DESIGNER",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      image: testimonialimg1,
       quote: "What impressed me most was their patience and willingness to explain every detail. You can tell they genuinely care about their clients.",
       rating: 5
     },
@@ -20,7 +23,7 @@ export default function TestimonialSection() {
       id: 2,
       name: "Michael Chen",
       role: "CREATIVE DIRECTOR",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      image: testimonialimg2,
       quote: "They exceeded my expectations in every way. From communication to execution, everything was top-tier. I felt confident and supported throughout.",
       rating: 5
     },
@@ -28,7 +31,7 @@ export default function TestimonialSection() {
       id: 3,
       name: "Sarah Johnson",
       role: "FASHION BLOGGER",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      image: testimonialimg3,
       quote: "I can confidently say this is one of the best decisions I’ve made. The quality, expertise, and customer care are on another level.",
       rating: 5
     }

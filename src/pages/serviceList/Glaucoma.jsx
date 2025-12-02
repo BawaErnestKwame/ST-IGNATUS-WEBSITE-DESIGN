@@ -1,6 +1,6 @@
 import React from 'react'
-import image from '../../assets/glaucomaimg1.webp'
-import image2 from '../../assets/glaucomaimg2.webp'
+import image from '../../assets/glaucomaimg1.jpg'
+import image2 from '../../assets/glaucomaimg2.jpg'
 
 const Glaucoma = () => {
   return (

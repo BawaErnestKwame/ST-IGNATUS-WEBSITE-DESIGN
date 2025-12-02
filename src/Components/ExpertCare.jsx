@@ -1,13 +1,13 @@
 import React from 'react';
-import expert1 from '../assets/expert1.webp';
-import expert2 from '../assets/expert2.webp';
-import expert3 from '../assets/expert3.webp';
+import expert1 from '../assets/expert1.jpg';
+import expert2 from '../assets/expert2.jpg';
+import expert3 from '../assets/expert3.jpg';
 import { Link } from 'react-router';
 
 const doctors = [
-  { id: 1, name: 'Steve Hendery', specialty: 'Optometrist', image: expert1 },
-  { id: 2, name: 'Emily Gross', specialty: 'Optometrist', image: expert2 },
-  { id: 3, name: 'Frans Govert', specialty: 'Optometrist', image: expert3 },
+  { id: 1, name: 'IGNATIUS KWAKU YEBOAH', specialty: 'Optometrist', image: expert1 },
+  { id: 2, name: 'IGNATIUS KWAKU YEBOAH', specialty: 'Optometrist', image: expert2 },
+  { id: 3, name: 'IGNATIUS KWAKU YEBOAH', specialty: 'Optometrist', image: expert3 },
 ];
 
 const ExpertCare = () => {
@@ -55,7 +55,7 @@ const ExpertCare = () => {
                 </div>
 
                 {/* Doctor Info */}
-                <div className="bg-gray-900 text-center p-5">
+                <div className="bg-gray-900 text-center p-2">
                   <h3 className="text-lg font-semibold text-white mb-1" style={{ fontFamily: 'Montserrat' }}>
                     {doctor.name}
                   </h3>

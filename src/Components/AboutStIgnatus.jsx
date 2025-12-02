@@ -1,8 +1,8 @@
 import React from "react";
 import { FaRegHandshake, FaStethoscope, FaPerson } from "react-icons/fa6";
-import eye1 from "../assets/eye1.webp";
-import eye2 from "../assets/eye2.webp";
-import eye3 from "../assets/eye3.webp";
+import eye1 from "../assets/eye1.jpg";
+import eye2 from "../assets/eye2.jpg";
+import eye3 from "../assets/eye3.jpg";
 import arrow from "../assets/arrow.png";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
@@ -21,7 +21,7 @@ const AboutStIgnatus = () => {
       >
         <div>
           <h2 className="text-blue-600 text-2xl lg:text-xl font-semibold tracking-[.5px]">
-            ABOUT ST IGNATIUS EYE CENTER
+            ABOUT ST.IGNATIUS EYE CENTRE
           </h2>
           <p className="w-10 h-[2px] bg-red-700 rounded"></p>
         </div>
@@ -41,7 +41,7 @@ const AboutStIgnatus = () => {
 
         <p className="text-gray-700 font-medium">
           Need to take care of your family’s health? Call{" "}
-          <span className="text-blue-600 font-bold">+233 599 316 218</span>
+          <span className="text-blue-600 font-bold">+233 20 716 4944</span>
         </p>
 
         <motion.div

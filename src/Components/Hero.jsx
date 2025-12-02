@@ -31,11 +31,11 @@ const Hero = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-slide every 9 seconds
+  // Auto-slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [heroSlides.length]);
 
@@ -52,8 +52,8 @@ const Hero = () => {
       {heroSlides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out transform 
-            ${index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-105"}`}
+          className={`absolute inset-0 w-full h-full transition-all duration-2000 ease-in-out
+            ${index === currentIndex ? "opacity-100 translate-x-0" : index < currentIndex ? "opacity-0 -translate-x-full" : "opacity-0 translate-x-full"}`}
           style={{
             backgroundImage: `linear-gradient(to right, darkblue, rgba(255, 255, 255, 0.1)), url(${slide.image})`,
             backgroundSize: "cover",

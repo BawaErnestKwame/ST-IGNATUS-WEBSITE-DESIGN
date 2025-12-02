@@ -124,7 +124,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
               <div className="flex justify-between mb-6">
                 {[1, 2, 3].map((num) => (
                   <div key={num} className="flex items-center">
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${step >= num ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-500'}`}>
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${step >= num ? 'bg-indigo-600 text-white' : 'bg-gray-200 w-10 h-10 rounded-full text-gray-500'}`}>
                       {num}
                     </div>
                     {num < 3 && <div className={`w-full h-1 mx-2 ${step > num ? 'bg-indigo-600' : 'bg-gray-200'}`} />}
@@ -135,7 +135,11 @@ const BookAppointment = ({ isOpen, onClose }) => {
               {/* Step 1 */}
               {step === 1 && (
                 <div className="space-y-6">
-                  <h2 className="text-xl font-semibold text-gray-800 mb-4">Select a Service</h2>
+                  <h2 className="text-2xl font-semibold text-red-600 mb-4"
+                  style={{
+                    fontFamily:"Montserrat"
+                  }}
+                  >Select a Service</h2>
                   <div className="grid grid-cols-1 gap-3">
                     {services.map(service => (
                       <button
@@ -152,7 +156,8 @@ const BookAppointment = ({ isOpen, onClose }) => {
                   <button
                     onClick={() => setStep(2)}
                     disabled={!formData.service}
-                    className="w-full py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 disabled:bg-gray-300"
+                    className="w-full py-3 bg-indigo-600 text-white rounded-lg
+                     font-semibold hover:bg-indigo-700 disabled:bg-gray-300"
                     type="button"
                   >
                     Continue
@@ -222,7 +227,6 @@ const BookAppointment = ({ isOpen, onClose }) => {
                     <label className="block mb-2"><Phone className="inline w-4 h-4 mr-1" /> Phone</label>
                     <input type="tel" value={formData.phone} onChange={(e) => handleInputChange('phone', e.target.value)} required className="w-full p-3 border-2 rounded-lg" placeholder="+233 000 0000" />
                   </div>
-
                   <div className="flex gap-3">
                     <button onClick={() => setStep(2)} type="button" className="flex-1 py-3 border-2 rounded-lg">Back</button>
                     <button type="submit" className="flex-1 py-3 bg-indigo-600 text-white rounded-lg">Book Appointment</button>

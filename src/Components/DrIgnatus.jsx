@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '/ignatus.jpeg'
+import image from '/ignatus.jpg'
 import { motion } from 'framer-motion' // <-- ADDED
 
 const DrIgnatus = () => {
@@ -29,9 +29,10 @@ const DrIgnatus = () => {
 
           <div>
             <h1 className="text-xl md:text-2xl font-bold text-gray-800">
-              Dr. Ignatus
+              IGNATIUS KWAKU YEBOAH
             </h1>
             <p className="text-gray-500 font-medium">CEO & Founder</p>
+            <p className='text-blue-500'>st.ignatiuseyecaregh@gmail.com </p>
           </div>
         </motion.div>
 

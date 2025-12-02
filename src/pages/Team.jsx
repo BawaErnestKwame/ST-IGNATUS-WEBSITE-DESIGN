@@ -1,19 +1,52 @@
 import React, { useState } from 'react';
 import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import teamImage from '../assets/teamimg.webp';
+import testimonialimg1 from '../assets/testimonial1.jpg'
+import testimonialimg2 from '../assets/testimonial2.jpg'
+import testimonialimg3 from '../assets/testimonial3.jpg'
+import testimonialimg4 from '../assets/testimonial4.jpg'
+import testimonialimg5 from '../assets/testimonial5.jpg'
+import testimonialimg6 from '../assets/testimonial6.jpg'
+import testimonialimg7 from '../assets/testimonial7.jpg'
+import testimonialimg8 from '../assets/testimonial8.jpg'
 
 const Team = () => {
   const [activeFilter, setActiveFilter] = useState('All Team');
 
   const specialists = [
-    { name: 'Dr. Brian Adam', specialty: 'Cardiologist', category: 'Cardiology', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop' },
-    { name: 'Dr. Jessica Brown', specialty: 'Endocrinologist', category: 'Endocrinology', image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop' },
-    { name: 'Dr. Lauren Brown', specialty: 'Neurologist', category: 'Neurology', image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop' },
-    { name: 'Dr. Norman Walker', specialty: 'Pediatrician', category: 'Pediatric', image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop' },
-    { name: 'Dr. Daniel Brown', specialty: 'Endocrinologist', category: 'Endocrinology', image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=400&fit=crop' },
-    { name: 'Dr. Sophia Lee', specialty: 'Neurologist', category: 'Neurology', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop' },
-    { name: 'Dr. Edwin Brown', specialty: 'Neurologist', category: 'Neurology', image: 'https://images.unsplash.com/photo-1618498082410-b4aa22193b38?w=400&h=400&fit=crop' },
-    { name: 'Dr. Hannah Smith', specialty: 'Dentist', category: 'Dental', image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop' }
+    { name: 'IGNATIUS KWAKU YEBOAH ', 
+      specialty: 'Cardiologist',
+       category: 'Cardiology', 
+       image: testimonialimg1
+       },
+    { name: 'IGNATIUS KWAKU YEBOAH ',
+       specialty: 'Endocrinologist', 
+       category: 'Endocrinology', 
+       image: testimonialimg2 },
+    { name: 'IGNATIUS KWAKU YEBOAH ', 
+      specialty: 'Neurologist', 
+      category: 'Neurology', 
+      image: testimonialimg3 },
+    { name: 'IGNATIUS KWAKU YEBOAH ', 
+      specialty: 'Pediatrician', 
+      category: 'Pediatric', 
+      image: testimonialimg4 },
+    { name: 'IGNATIUS KWAKU YEBOAH ', 
+      specialty: 'Endocrinologist', 
+      category: 'Endocrinology', 
+      image: testimonialimg5 },
+    { name: 'IGNATIUS KWAKU YEBOAH ',
+       specialty: 'Neurologist', 
+       category: 'Neurology', 
+       image: testimonialimg6 },
+    { name: 'IGNATIUS KWAKU YEBOAH ', 
+      specialty: 'Neurologist', 
+      category: 'Neurology',
+       image: testimonialimg7 },
+    { name: 'IGNATIUS KWAKU YEBOAH ', 
+      specialty: 'Eye Doctor',
+      category: 'Dental',
+      image: testimonialimg8}
   ];
 
   const filters = ['All Team', 'Cardiology', 'Dental', 'Neurology'];

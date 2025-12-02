@@ -14,30 +14,9 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 // POPUP COMPONENT
 import BookAppointment from "./Components/BookAppointment";
 
-// Add this style tag for the slide-down animation
-const style = document.createElement('style');
-style.textContent = `
-  @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .animate-slideDown {
-    animation: slideDown 0.4s ease-out;
-  }
-`;
-document.head.appendChild(style);
-
 const Navbar = () => {
   const [isAppointmentOpen, setIsAppointmentOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [branchesOpen, setBranchesOpen] = useState(false);
@@ -50,20 +29,14 @@ const Navbar = () => {
   const toggleAbout = () => setAboutOpen((prev) => !prev);
   const toggleBranches = () => setBranchesOpen((prev) => !prev);
 
-  // Sticky navbar on scroll with progress bar
+  // Progress bar on scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
+      const scrollPercent = (scrollTop / docHeight) * 10;
       
       setScrollProgress(scrollPercent);
-      
-      if (scrollTop > 50) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
     };
     
     window.addEventListener("scroll", handleScroll);
@@ -118,15 +91,11 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Sticky Spacer */}
-      {isSticky && <div className="h-[100px] lg:h-[120px]" />}
+      {/* Fixed Spacer */}
+      <div className="h-[100px] lg:h-[120px]" />
 
       {/* HEADER */}
-      <header className={`w-full shadow border-b border-gray-400 z-50 transition-all duration-500 ${
-        isSticky 
-          ? "fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md animate-slideDown" 
-          : "relative bg-white"
-      }`}>
+      <header className="w-full shadow border-b border-gray-400 z-50 fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md">
         
         {/* Scroll Progress Bar */}
         <div 
@@ -135,20 +104,18 @@ const Navbar = () => {
         />
 
         {/* Mobile Header */}
-        <div className={`lg:hidden flex items-center justify-between px-4 gap-2 transition-all duration-300 ${
-          isSticky ? "py-4" : "py-5"
-        }`}>
-          <Link to='/'><img src={logo} className={`h-auto object-contain flex-shrink-0 transition-all duration-300 ${isSticky ? "w-16" : "w-20"}`} alt="Logo" /></Link>
+        <div className="lg:hidden flex items-center justify-between px-4 gap-2 py-4">
+          <Link to='/'><img src={logo} className="w-16 h-auto object-contain flex-shrink-0" alt="Logo" /></Link>
           
           {/* Mobile Contact */}
           <div className="flex items-center gap-2 text-gray-600 text-xs flex-1 justify-center flex-wrap" style={{ fontFamily:"Montserrat" }}>
             <div className="flex items-center gap-1">
               <MdEmail className="text-blue-600 flex-shrink-0" />
-              <span className="truncate">support@medidoc.com</span>
+              <span className="truncate">st.ignatiuseyecaregh@gmail.com</span>
             </div>
             <div className="flex items-center gap-1">
               <FiPhone className="text-blue-600 flex-shrink-0" />
-              <span>660-242-3358</span>
+              <span>+233 20 716 4944</span>
             </div>
           </div>
 
@@ -160,21 +127,21 @@ const Navbar = () => {
 
         {/* Desktop Header */}
         <div className="hidden lg:flex gap-4 md:gap-8 px-4 md:px-8">
-          <Link to='/'><img src={logo} className={`h-auto object-contain pt-2 lg:pt-4 transition-all duration-300 ${isSticky ? "lg:w-32 w-20" : "lg:w-38 w-24"}`} alt="Logo" /></Link>
+          <Link to='/'><img src={logo} className="lg:w-32 w-20 h-auto object-contain pt-2 lg:pt-4" alt="Logo" /></Link>
 
           <div className="w-full lg:border-l lg:border-gray-400 lg:pl-8">
             <ArrowRightIcon className="text-gray-500 hidden lg:block absolute top-20 -left-3"/>
             
             {/* Top Bar */}
-            <div className={`bg-[#f8faff] pt-2 lg:pt-4 text-xs sm:text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0 transition-all duration-300 ${isSticky ? "py-1" : "py-2"}`}>
+            <div className="bg-[#f8faff] pt-2 lg:pt-4 py-1 text-xs sm:text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-gray-600 w-full sm:w-auto">
                 <div className="flex items-center gap-2" style={{ fontFamily:"Montserrat" }}>
                   <MdEmail className="text-blue-600 flex-shrink-0" />
-                  <span className="truncate">support@medidoc.com</span>
+                  <span className="truncate">st.ignatiuseyecaregh@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2" style={{ fontFamily:"Montserrat" }}>
                   <FiPhone className="text-blue-600 flex-shrink-0" />
-                  <span>660-242-3358</span>
+                  <span>+233 20 716 4944</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 sm:gap-4 text-gray-600">
@@ -186,7 +153,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className={`flex items-center justify-between relative transition-all duration-300 ${isSticky ? "py-2" : "py-4"}`}>
+            <div className="flex items-center justify-between relative py-2">
               <nav className="flex items-center gap-10 text-gray-700">
                 <NavLink to="/" className={navLinkStyles}>Home</NavLink>
                 
@@ -198,7 +165,7 @@ const Navbar = () => {
                   <ul className="absolute left-0 mt-2 bg-white w-32 shadow-md rounded-md opacity-0
                                 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
                     <li><NavLink to="/about" className={({ isActive }) => `block border-b border-gray-400 rounded px-4 py-2 ${isActive ? 'text-blue-600 font-semibold' : 'hover:text-blue-600'}`}>About Us</NavLink></li>
-                    <li><NavLink to="/drignatus" className={({ isActive }) => `block px-4 border-b border-gray-400 rounded py-2 ${isActive ? 'text-blue-600 font-semibold' : 'hover:text-blue-600'}`}>Dr. Ignatus</NavLink></li>
+                    <li><NavLink to="/drignatus" className={({ isActive }) => `block px-4 border-b border-gray-400 rounded py-2 ${isActive ? 'text-blue-600 font-semibold' : 'hover:text-blue-600'}`}>Dr.Ignatius</NavLink></li>
                     <li><NavLink to="/team" className={({ isActive }) => `block px-4 border-b border-gray-400 rounded py-2 ${isActive ? 'text-blue-600 font-semibold' : 'hover:text-blue-600'}`}>Our Team</NavLink></li>
                   </ul>
                 </div>

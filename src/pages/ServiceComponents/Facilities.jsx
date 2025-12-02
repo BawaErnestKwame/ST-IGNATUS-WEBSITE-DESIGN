@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 
-import facility1 from '../../assets/facilities/facility1.webp';
-import facility2 from '../../assets/facilities/facility2.webp';
-import facility3 from '../../assets/facilities/facility3.webp';
-import facility4 from '../../assets/facilities/facility4.webp';
-import facility5 from '../../assets/facilities/facility5.webp';
-import facility6 from '../../assets/facilities/facility6.webp';
-import facility7 from '../../assets/facilities/facility7.webp';
-import facility8 from '../../assets/facilities/facility8.webp';
-import facility9 from '../../assets/facilities/facility9.webp';
+import facility1 from '../../assets/facilities/facility1.jpg';
+import facility2 from '../../assets/facilities/facility2.jpg';
+import facility3 from '../../assets/facilities/facility3.jpg';
+import facility4 from '../../assets/facilities/facility4.jpg';
+import facility5 from '../../assets/facilities/facility5.jpg';
+import facility6 from '../../assets/facilities/facility6.jpg';
+import facility7 from '../../assets/facilities/facility7.jpg';
+import facility8 from '../../assets/facilities/facility8.jpg';
+import facility9 from '../../assets/facilities/facility9.jpg';
 
 const Facilities = () => {
   const facilities = [

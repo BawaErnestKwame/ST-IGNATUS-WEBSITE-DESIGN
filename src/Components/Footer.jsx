@@ -58,34 +58,35 @@ const Footer = () => {
                 <img src={logo} alt="MediLink logo" />
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg tracking-normal">ST IGNATIUS.</h3>
+                <h3 className="text-white font-bold text-lg tracking-normal">ST.IGNATIUS</h3>
                 <p className="text-xs text-gray-400">EYE CENTRE</p>
               </div>
             </div>
 
             <p className="text-sm mb-6 leading-relaxed">
-              We are ipsum dolor sit amet aeaett consectetuer adipiscing elitseder diam nonummy.
+              Our doctors have years of experience in providing top-notch
+                healthcare.
             </p>
 
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
-                  59 Street, 1200 Techpark
+                  Abesim Dominase (Ohene Djan)
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
-                  +59888555
+                  +233 20 716 4944
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
-                  medilink@gmail.com
+                  st.ignatiuseyecaregh@gmail.com
                 </span>
               </div>
             </div>
@@ -120,7 +121,7 @@ const Footer = () => {
               <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
             </h3>
             <ul className="space-y-2">
-              {['About Us', 'What We Do', "Faq's", 'Appointment', 'Contact', '24/7 Support'].map((item) => (
+              {['About Us', 'What We Do','Appointment', 'Contact', '24/7 Support'].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -158,7 +159,7 @@ const Footer = () => {
               </li>
               <li className="flex justify-between">
                 <span>Sunday:</span>
-                <span className="text-blue-300 font-medium">Closed</span>
+                <span className="text-blue-300 font-medium">10:00 - 15:00</span>
               </li>
             </ul>
           </div>
@@ -203,21 +204,6 @@ const Footer = () => {
               >
                 Stay informed and healthy
               </span>
-              <div className="flex gap-2 flex-wrap">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="enter your e-mail"
-                  className="px-4 py-2 border border-gray-100 rounded-md text-sm focus:outline-none focus:border-gray-400 w-48"
-                />
-                <button
-                  onClick={handleSignUp}
-                  className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm font-medium transition-colors whitespace-nowrap"
-                >
-                  SIGN UP
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -240,7 +226,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="text-center py-4 bg-red-700 border-t border-blue-900">
         <p className="text-sm text-gray-300">
-          &copy; {new Date().getFullYear()} ST Ignatius Eye Centre. All rights reserved.
+          &copy; {new Date().getFullYear()} St.Ignatius Eye Centre. All rights reserved.
         </p>
       </div>
     </footer>
