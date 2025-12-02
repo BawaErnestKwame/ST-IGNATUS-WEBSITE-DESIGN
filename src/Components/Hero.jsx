@@ -35,7 +35,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
-    }, 6000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [heroSlides.length]);
 
@@ -52,7 +52,7 @@ const Hero = () => {
       {heroSlides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 w-full h-full transition-all duration-2000 ease-in-out
+          className={`absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out
             ${index === currentIndex ? "opacity-100 translate-x-0" : index < currentIndex ? "opacity-0 -translate-x-full" : "opacity-0 translate-x-full"}`}
           style={{
             backgroundImage: `linear-gradient(to right, darkblue, rgba(255, 255, 255, 0.1)), url(${slide.image})`,
