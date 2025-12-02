@@ -60,7 +60,6 @@ const App = () => {
           <Route path="institutionalEye" element={<InstitutionalEye />} />
         </Route>
 
-        <Route path="/pages" element={<Pages />} />
         <Route path="/branches" element={<Branches />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
