@@ -38,7 +38,6 @@ const App = () => {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
 

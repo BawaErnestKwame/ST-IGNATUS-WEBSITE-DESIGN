@@ -101,7 +101,7 @@ const Navbar = () => {
       {/* HEADER */}
       <header className="w-full shadow border-b border-gray-400 z-50 fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md">
 
-        {/* ✅ FIXED & SMOOTH SCROLL PROGRESS BAR */}
+        {/* FIXED & SMOOTH SCROLL PROGRESS BAR */}
         <div
           className="absolute top-0 left-0 h-1 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 transition-[width] duration-200 ease-out"
           style={{ width: `${scrollProgress}%` }}
@@ -111,9 +111,7 @@ const Navbar = () => {
         <div className="lg:hidden flex items-center justify-between px-4 gap-2 py-4">
           <Link to="/">
             <img src={logo} className="w-16 h-auto object-contain" alt="Logo" />
-          </Link>
-
-          <div
+          </Link> <div
             className="flex items-center gap-2 text-gray-600 text-xs flex-1 justify-center flex-wrap"
             style={{ fontFamily: "Montserrat" }}
           >
@@ -127,7 +125,6 @@ const Navbar = () => {
               <span>+233 20 716 4944</span>
             </div>
           </div>
-
           <button onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? (
               <HiOutlineX className="text-3xl" />
@@ -136,7 +133,6 @@ const Navbar = () => {
             )}
           </button>
         </div>
-
         {/* DESKTOP HEADER */}
         <div className="hidden lg:flex gap-4 md:gap-8 px-4 md:px-8">
           <Link to="/">
@@ -149,7 +145,6 @@ const Navbar = () => {
 
           <div className="w-full lg:border-l lg:border-gray-400 lg:pl-8">
             <ArrowRightIcon className="text-gray-500 hidden lg:block absolute top-20 -left-3" />
-
             {/* TOP CONTACT BAR */}
             <div className="bg-[#f8faff] pt-2 lg:pt-4 py-1 text-xs sm:text-sm flex justify-between items-center text-gray-600">
               <div className="flex gap-4">
@@ -223,8 +218,7 @@ const Navbar = () => {
                               ? "text-blue-600 font-semibold"
                               : "hover:text-blue-600"
                           }`
-                        }
-                      >
+                        }>
                         Our Team
                       </NavLink>
                     </li>

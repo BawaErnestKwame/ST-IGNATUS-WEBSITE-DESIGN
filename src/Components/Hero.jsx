@@ -4,6 +4,7 @@ import hero2 from "../assets/hero2.jpg";
 import hero3 from "../assets/hero3.jpg";
 import hero4 from "../assets/hero4.jpg";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link } from "react-router";
 
 const Hero = () => {
   const heroSlides = [
@@ -76,6 +77,7 @@ const Hero = () => {
                           mb-4 sm:mb-5 md:mb-6">
               {slide.description}
             </p>
+          <Link to='/about'>
             <button className="mt-2 sm:mt-3 md:mt-4 
                                gap-2 
                                hover:bg-red-500 transition-all duration-500 cursor-pointer 
@@ -90,6 +92,7 @@ const Hero = () => {
               Read More
               <ArrowForwardIcon sx={{fontSize: {xs: "14px", sm: "16px", md: "18px"}}}/>
             </button>
+          </Link>
           </div>
         </div>
       ))}
