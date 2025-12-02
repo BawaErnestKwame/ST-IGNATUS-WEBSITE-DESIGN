@@ -10,7 +10,6 @@ import ScrollToTop from "./Components/ScrollToTop.jsx";
 // Pages
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import Pages from "./pages/Pages.jsx";
 import Branches from "./pages/Branches.jsx";
 import Services from "./pages/Services.jsx";
 import Contact from "./pages/Contact.jsx";
