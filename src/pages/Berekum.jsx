@@ -8,29 +8,25 @@ import Facilities from './ServiceComponents/Facilities';
 import BookYourVisit from './AboutComponents/BookYourVisit';
 
 // ICONS
-import LocalDiningIcon from '@mui/icons-material/LocalDining';
-import BloodtypeIcon from '@mui/icons-material/Bloodtype';
-import BiotechIcon from '@mui/icons-material/Biotech';
-import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
-import HearingIcon from '@mui/icons-material/Hearing';
-import LocalPharmacyIcon from '@mui/icons-material/LocalPharmacy';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import LocalPharmacyIcon from '@mui/icons-material/LocalPharmacy'; 
+import { GiSpectacles } from "react-icons/gi";
 
 const Berekum = () => {
   // Hero cards data with links
-  const heroCardsData = [
-    { name: "Nutrition", icon: <LocalDiningIcon className="text-white" />, link: "/nutrition" },
-    { name: "Phlebotomy", icon: <BloodtypeIcon className="text-white" />, link: "/phlebotomy" },
-    { name: "Lab Tech", icon: <BiotechIcon className="text-white" />, link: "/lab-tech" },
-    { name: "EKG Tech", icon: <MonitorHeartIcon className="text-white" />, link: "/ekg-tech" },
-    { name: "Audiology", icon: <HearingIcon className="text-white" />, link: "/audiology" },
-    { name: "Pharmacy", icon: <LocalPharmacyIcon className="text-white" />, link: "/pharmacy" },
-  ];
+const heroCardsData = [
+    { name: "DVLA Test", icon: <DirectionsCarIcon className="text-white" />},
+    { name: "Spectacles", icon: <GiSpectacles className="text-white text-3xl"/>  },
+    { name: "NHIS", icon: <LocalHospitalIcon className="text-white" />},
+    { name: "Pharmacy", icon: <LocalPharmacyIcon className="text-white" />},
+];
 
   return (
     <>
       {/* HERO SECTION */}
       <div
-        className="w-full h-[50vh] flex flex-col items-center text-center px-4 md:px-8 lg:px-24 mb-20 relative"
+        className="w-full h-[50vh] flex flex-col items-center text-center px-4 md:px-8 lg:px-24 mb-38 lg:mb-20 relative"
         style={{
           backgroundImage: `linear-gradient(to right, #04207AE3 35%, #05207AD0), url(${hero})`,
           backgroundSize: 'cover',
