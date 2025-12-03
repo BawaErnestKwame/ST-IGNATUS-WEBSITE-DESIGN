@@ -1,6 +1,6 @@
 import React from 'react'
-import image1 from '../../assets/refraction1.webp'   // replace with your image
-import image2 from '../../assets/refraction2.webp'   // replace with your image
+import image1 from '../../assets/refraction1.png'   // replace with your image
+import image2 from '../../assets/refraction.png'   // replace with your image
 
 const Refraction = () => {
   return (

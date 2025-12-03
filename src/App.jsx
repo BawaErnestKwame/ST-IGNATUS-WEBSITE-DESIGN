@@ -32,6 +32,9 @@ import DvlEyeTeste from './pages/serviceList/DvlEyeTeste.jsx';
 import EyeSurgeries from './pages/serviceList/EyeSurgeries.jsx';
 import Refraction from './pages/serviceList/Refraction.jsx';
 import InstitutionalEye from './pages/serviceList/InstitutionalEye.jsx';
+import ContactLenses from './pages/serviceList/ContactLenses';
+import Diagnostics from './pages/serviceList/Diagnostics';
+import Comprehensive from "./pages/serviceList/Comprehensive.jsx";
 
 const App = () => {
   return (
@@ -57,6 +60,9 @@ const App = () => {
   <Route path="refraction" element={<Refraction />} />
   <Route path="dvlEyeTeste" element={<DvlEyeTeste />} />
   <Route path="institutionalEye" element={<InstitutionalEye />} />
+  <Route path="comprehensive" element={<Comprehensive/> } />
+  <Route path="diagnostics" element={<Diagnostics/>} />
+  <Route path="contactLenses" element={<ContactLenses/> } />
 </Route>
 
         <Route path="/branches" element={<Branches />} />

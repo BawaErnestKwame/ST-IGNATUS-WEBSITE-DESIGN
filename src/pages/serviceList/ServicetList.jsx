@@ -10,6 +10,9 @@ const Servistlist = () => {
     { path: '/services/refraction', label: 'Refraction Services' },
     { path: '/services/dvlEyeTeste', label: 'DVLA Eye Tests' },
     { path: '/services/institutionalEye', label: 'Institutional Eye Screening' },
+    { path: '/services/comprehensive', label: 'Comprehensive Eye Care' },
+    { path: '/services/diagnostics', label: 'Ocular Diagnostics (O.C.T, V.F.T, etc.)' },
+    { path: '/services/contactLenses', label: 'Sale & Repair of Spectacles & Contact Lenses' },
   ];
 
   return (

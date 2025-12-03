@@ -1,6 +1,6 @@
 import React from 'react'
-import image1 from '../../assets/institutional1.webp'   // replace with your image
-import image2 from '../../assets/institutional2.webp'   // replace with your image
+import image1 from '../../assets/institution1.png'   // replace with your image
+import image2 from '../../assets/institution2.png'   // replace with your image
 
 const InstitutionalEye = () => {
   return (
