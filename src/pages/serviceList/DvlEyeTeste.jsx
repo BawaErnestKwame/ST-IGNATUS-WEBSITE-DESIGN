@@ -7,14 +7,15 @@ const DvlEyeTeste = () => {
     <div className="w-full px-6 md:px-20 py-12">
       {/* TITLE */}
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug mb-4">
-        Let's Know Short Story About <span className="text-blue-600">Developmental Eye Test.</span>
+        About <span className="text-blue-600">Developmental Eye Test.</span>
       </h1>
 
       {/* DESCRIPTION */}
       <p className="text-gray-600 leading-relaxed mb-10">
         Developmental eye tests are specialized examinations that assess how well a child’s visual
         system is growing and functioning. These tests detect issues like focusing problems, eye
-        coordination difficulties, lazy eye, or visual processing delays. Early detection helps ensure
+        coordination difficulties, lazy eye, or visual processing delays. <br />
+         <b> Early detection</b> helps ensure
         proper visual development, improves learning abilities, and prevents long-term vision problems.
         These tests are essential for infants, toddlers, and school-age children to support healthy eye growth.
       </p>

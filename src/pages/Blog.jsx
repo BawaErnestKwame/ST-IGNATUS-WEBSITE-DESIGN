@@ -32,12 +32,11 @@ const Blog = () => {
             >
               Home
             </Link>
-            <ArrowForwardIosIcon sx={{ fontSize: "16px", fontWeight: "bold", color:"red" }} />
+            <ArrowForwardIosIcon sx={{ fontSize: "16px", fontWeight: "bold", color:"white" }} />
             <span className="text-2xl text-orange-500">Blog</span>
           </div>
         </div>
       </div>
-
       {/* Blog List */}
       <div className="flex flex-col lg:flex-row px-4 md:px-8 lg:px-32 py-8 gap-20 ">
       <div className=" grid grid-cols-1 gap-6 w-[98%]">

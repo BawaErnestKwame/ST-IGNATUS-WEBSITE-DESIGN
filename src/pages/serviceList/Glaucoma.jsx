@@ -7,14 +7,14 @@ const Glaucoma = () => {
     <div className="w-full px-6 md:px-20 py-12">
       {/* TITLE */}
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug mb-4">
-        Let's Know Short Story About <span className="text-blue-600">Glaucoma.</span>
+         About <span className="text-blue-600">Glaucoma.</span>
       </h1>
 
       {/* DESCRIPTION */}
       <p className="text-gray-600 leading-relaxed mb-10">
         Glaucoma is an eye disease that damages the optic nerve, often caused by increased eye pressure.
         It develops slowly and may not show symptoms early, making regular eye check-ups important.
-        If untreated, glaucoma can lead to gradual loss of peripheral vision, blurred vision, and in
+        If untreated, <b>glaucoma </b>can lead to gradual loss of peripheral vision, blurred vision, and in
         severe cases, blindness. Treatment includes eye drops, laser therapy, or surgery to reduce the
         pressure within the eye.
       </p>

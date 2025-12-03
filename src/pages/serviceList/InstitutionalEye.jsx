@@ -7,15 +7,15 @@ const InstitutionalEye = () => {
     <div className="w-full px-6 md:px-20 py-12">
       {/* TITLE */}
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug mb-4">
-        Let's Know Short Story About <span className="text-blue-600">Institutional Eye Screening.</span>
+        About <span className="text-blue-600">Institutional Eye Screening.</span>
       </h1>
 
       {/* DESCRIPTION */}
       <p className="text-gray-600 leading-relaxed mb-10">
         Institutional eye screening involves conducting comprehensive eye examinations for groups within
         institutions such as schools, workplaces, and community organizations. These screenings help detect
-        early vision problems, identify refractive errors, and prevent long-term eye diseases. Regular
-        institutional screening promotes better eye health, boosts productivity, and ensures that both
+        early vision problems, identify refractive errors, and prevent long-term eye diseases. <b> Regular
+        institutional screening</b> promotes better eye health, boosts productivity, and ensures that both
         children and adults receive timely eye care and corrective solutions when needed.
       </p>
 

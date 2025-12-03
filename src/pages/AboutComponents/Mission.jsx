@@ -13,7 +13,7 @@ const Mission = () => {
 
         </h1>
         <p className="text-gray-600 leading-relaxed">
-          In a bid to achieve our vision, our mission is to provide clinical excellence, quality products as well as exceptional personal and professional service to afford our clients the best opportunity for a lifetime of healthy eyes and excellent vision.
+        In a bid to achieve our vision, our mission is to provide clinical excellence, quality products as well as exceptional personal and professional service to afford our clients the best opportunity for a lifetime of healthy eyes and excellent vision.
         </p>
       </div>
 

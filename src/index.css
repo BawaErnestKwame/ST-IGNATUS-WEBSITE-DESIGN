@@ -21,7 +21,7 @@ p,li,button,label, input, option,textarea, select, .contact{
     0%{
         transform: translateY(-20px);
     }
-
+    
     100%{
         transform: translateY(0px);
 

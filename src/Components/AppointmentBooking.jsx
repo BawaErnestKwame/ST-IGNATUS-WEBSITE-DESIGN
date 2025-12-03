@@ -67,7 +67,7 @@ export default function AppointmentBooking() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Call Center</p>
-                    <p className="text-gray-600 text-sm">+12 3456 7890</p>
+                    <p className="text-gray-600 text-sm">+233 20 716 4944</p>
                   </div>
                 </div>
 
@@ -77,7 +77,7 @@ export default function AppointmentBooking() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Email Address</p>
-                    <p className="text-gray-600 text-sm">support@medidoc.com</p>
+                    <p className="text-gray-600 text-sm">st.ignatiuseyecaregh@gmail.com </p>
                   </div>
                 </div>
               </div>

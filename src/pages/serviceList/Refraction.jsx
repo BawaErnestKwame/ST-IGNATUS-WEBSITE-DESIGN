@@ -7,7 +7,7 @@ const Refraction = () => {
     <div className="w-full px-6 md:px-20 py-12">
       {/* TITLE */}
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug mb-4">
-        Let's Know Short Story About <span className="text-blue-600">Refraction.</span>
+         About <span className="text-blue-600">Refraction.</span>
       </h1>
 
       {/* DESCRIPTION */}

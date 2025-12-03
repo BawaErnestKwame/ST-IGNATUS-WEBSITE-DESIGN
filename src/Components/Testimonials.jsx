@@ -13,7 +13,7 @@ export default function TestimonialSection() {
   const testimonials = [
     {
       id: 1,
-      name: "Emily Thomas",
+      name: "IGNATIUS KWAKU YEBOAH",
       role: "PRODUCT DESIGNER",
       image: testimonialimg1,
       quote: "What impressed me most was their patience and willingness to explain every detail. You can tell they genuinely care about their clients.",
@@ -21,7 +21,7 @@ export default function TestimonialSection() {
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "IGNATIUS KWAKU YEBOAH",
       role: "CREATIVE DIRECTOR",
       image: testimonialimg2,
       quote: "They exceeded my expectations in every way. From communication to execution, everything was top-tier. I felt confident and supported throughout.",
@@ -29,7 +29,7 @@ export default function TestimonialSection() {
     },
     {
       id: 3,
-      name: "Sarah Johnson",
+      name: "IGNATIUS KWAKU YEBOAH",
       role: "FASHION BLOGGER",
       image: testimonialimg3,
       quote: "I can confidently say this is one of the best decisions I’ve made. The quality, expertise, and customer care are on another level.",
@@ -139,7 +139,11 @@ export default function TestimonialSection() {
                 transition={{ duration: 0.6 }}
               >
                 <div>
-                  <h3 className="text-xl font-bold mb-1">
+                  <h3 className="text-xl font-bold mb-1"
+                  style={{
+                    fontFamily:"Montserrat"
+                  }}
+                  >
                     {testimonials[currentIndex].name}
                   </h3>
                   <p className="text-gray-200 text-sm tracking-wider">

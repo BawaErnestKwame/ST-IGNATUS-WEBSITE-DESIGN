@@ -73,7 +73,7 @@ export default function Form() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">E-mail</p>
-                  <p className="text-gray-900 font-semibold">soluvent***@gmail.com</p>
+                  <p className="text-gray-900 font-semibold">st.ignatiuseyecaregh@gmail.com </p>
                 </div>
               </div>
 
@@ -83,7 +83,7 @@ export default function Form() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Phone Number</p>
-                  <p className="text-gray-900 font-semibold">+123 - 456 - 7890</p>
+                  <p className="text-gray-900 font-semibold">+233 20 716 4944</p>
                 </div>
               </div>
             </div>

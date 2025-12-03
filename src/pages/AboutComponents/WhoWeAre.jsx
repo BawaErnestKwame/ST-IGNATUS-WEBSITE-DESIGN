@@ -9,17 +9,14 @@ const WhoWeAre = () => {
       {/* Text Section */}
       <div className="max-w-4xl mb-5">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 leading-10">
-          Let's Know Short Story About  <span className="text-blue-600">
-            ST Ignatus Hospital.
+           About  <span className="text-blue-600">
+            St.Ignatius Eye Centre
           </span>
         </h1>
         <p className="text-gray-600 leading-relaxed">
-          Quisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipisc
-          iquam class bibendum non mattis fusccut perspiciatis undelustque.
-          Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipiscing. Aliquam
-          class bibendum mattis fusceut persecenas. Quisque. Maecenas. Eros mus.
-          Hymenaeos eros. Nisi mauris et adipisc iquam class bibendum non mattis
-          fusccut perspiciatis undelustque.
+          St. Ignatius Eye Centre is a state-of-the-art eye care service provider in Sunyani, Ghana located at Abesim Dominase (Ohene Djan) on the road toward Dreamfield International School. St. Ignatius Eye Centre is accredited by the Health Facility and Regulatory Authority (HeFRA) and has a competent team of Eye Doctors including Optometrists and Ophthalmologist.
+
+
         </p>
       </div>
 

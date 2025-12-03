@@ -46,7 +46,7 @@ const HospitalOverview = () => {
             <h1 style={{ fontFamily: "Montserrat" }} className="text-gray-900 font-semibold">
               Emergency Cases
             </h1>
-            <p className="text-blue-700 font-medium">2-700-800-620</p>
+            <p className="text-blue-700 font-medium">+233 20 716 4944</p>
           </div>
         </div>
       </div>

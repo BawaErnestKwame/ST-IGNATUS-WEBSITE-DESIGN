@@ -9,9 +9,7 @@ const SuccessStory = () => {
       {/* Text Section */}
       <div className="max-w-4xl mb-5">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 leading-10">
-          Let's Know Short Story About  <span className="text-blue-600">
-            ST Ignatus Hospital.
-          </span>
+          Experience
         </h1>
         <p className="text-gray-600 leading-relaxed">
           Quisque. Maecenas. Eros mus. Hymenaeos eros. Nisi mauris et adipisc
