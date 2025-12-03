@@ -9,6 +9,7 @@ import testimonialimg5 from '../assets/testimonial5.jpg'
 import testimonialimg6 from '../assets/testimonial6.jpg'
 import testimonialimg7 from '../assets/testimonial7.jpg'
 import testimonialimg8 from '../assets/testimonial8.jpg'
+import { Link } from 'react-router';
 
 const Team = () => {
   const [activeFilter, setActiveFilter] = useState('All Team');
@@ -67,10 +68,17 @@ const Team = () => {
           backgroundPosition: 'center',
         }}
       >
-        <h1 className="text-white text-4xl md:text-8xl font-extrabold mb-2">
+        <h1 className="text-white text-4xl md:text-8xl font-bold mb-2">
           Meet Our Team
         </h1>
-        <p className="text-gray-200 text-sm mt-2">Home / Team</p>
+      <div className=" flex items-center gap-2 tex-2xl md:text-3xl text-white">
+         <Link to="/">
+          <span className='cursor-pointer tex-2xl md:text-2xl hover:text-orange-400 hover:underline transition-colors'>Home</span>
+         </Link>
+        <span>/</span>
+        <span> Team</span>
+      </div>
+       
       </div>
 
       {/* FILTER + GRID */}

@@ -23,7 +23,7 @@ const About = () => {
         }}
       >
         <div>
-          <h1 className='text-white text-2xl md:text-6xl'>About Us</h1>
+          <h1 className='text-white text-2xl md:text-8xl font-bold'>About Us</h1>
           <div className="flex items-center gap-1 text-white">
             <Link
               to="/"
@@ -33,7 +33,7 @@ const About = () => {
               Home
             </Link>
             <ArrowForwardIosIcon sx={{ fontSize:"16px", fontWeight:"bold" }} />
-            <span className='text-2xl'>About</span>
+            <span className='text-2xl text-orange-400'>About</span>
           </div>
         </div>
       </div>

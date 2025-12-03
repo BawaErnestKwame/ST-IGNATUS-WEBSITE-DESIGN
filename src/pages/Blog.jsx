@@ -21,7 +21,7 @@ const Blog = () => {
         }}
       >
         <div>
-          <h1 className="text-white text-2xl md:text-6xl">Blog List</h1>
+          <h1 className="text-white text-2xl md:text-8xl font-bold">Blog List</h1>
           <div className="flex items-center gap-1 text-white">
             <Link
               to="/"

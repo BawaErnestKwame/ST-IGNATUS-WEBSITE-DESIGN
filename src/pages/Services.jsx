@@ -20,7 +20,7 @@ const Services = () => {
       }}
     >
       <div className="">
-        <h1 className='text-white text-2xl md:text-6xl'>Service</h1>
+        <h1 className='text-white text-2xl md:text-8xl font-bold'>Service</h1>
       {/* style={{fontFamily:"Montserrat"}} */}
       <div className="flex items-center gap-1 text-white">
         

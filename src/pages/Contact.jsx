@@ -17,7 +17,7 @@ const Contact = () => {
       }}
     >
       <div className="">
-        <h1 className='text-white text-2xl md:text-6xl'>Contact Us</h1>
+        <h1 className='text-white text-2xl md:text-8xl font-bold'>Contact Us</h1>
       {/* style={{fontFamily:"Montserrat"}} */}
       <div className="flex items-center gap-1 text-white">
         
@@ -29,7 +29,7 @@ const Contact = () => {
           Home
         </Link>
          <ArrowForwardIosIcon sx={{fontSize:"16px", fontWeight:"900", color:"white"}} />
-        <span className='text-2xl'
+        <span className='text-2xl text-orange-400'
         >Contact</span>
       </div>
     </div>
