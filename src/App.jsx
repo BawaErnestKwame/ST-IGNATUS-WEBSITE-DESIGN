@@ -40,7 +40,7 @@ import Comprehensive from "./pages/serviceList/Comprehensive.jsx";
 // Page transition variants
 const pageVariants = {
   initial: {
-    opacity: 0.4,
+    opacity: 0.7,
     y: 10
   },
   animate: {
@@ -52,7 +52,7 @@ const pageVariants = {
     }
   },
   exit: {
-    opacity: 0.4,
+    opacity: 0.7,
     y: -10,
     transition: {
       duration: 0.3,
