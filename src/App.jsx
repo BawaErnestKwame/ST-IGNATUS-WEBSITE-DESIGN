@@ -51,13 +51,13 @@ const App = () => {
         </Route>
 
         {/* Services section with nested routes */}
-        <Route path="/services" element={<Services />}>
-          <Route index element={<Glaucoma />} />
-          <Route path="dvlEyeTeste" element={<DvlEyeTeste />} />
-          <Route path="eyeSurgeries" element={<EyeSurgeries />} />
-          <Route path="refraction" element={<Refraction />} />
-          <Route path="institutionalEye" element={<InstitutionalEye />} />
-        </Route>
+  <Route path="/services" element={<Services />}>
+  <Route index element={<Glaucoma />} />
+  <Route path="eyeSurgeries" element={<EyeSurgeries />} />
+  <Route path="refraction" element={<Refraction />} />
+  <Route path="dvlEyeTeste" element={<DvlEyeTeste />} />
+  <Route path="institutionalEye" element={<InstitutionalEye />} />
+</Route>
 
         <Route path="/branches" element={<Branches />} />
         <Route path="/blog" element={<Blog />} />

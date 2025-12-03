@@ -5,7 +5,7 @@ import { MdContactEmergency } from "react-icons/md";
 
 const HospitalOverview = () => {
   const links = [
-    { path: "/about", label: "Who We Are", end: true }, // <-- FIXED
+    { path: "/about", label: "Who We Are", end: true },
     { path: "/about/mission", label: "Our Mission" },
     { path: "/about/awards", label: "Awards" },
     { path: "/about/experience", label: "Experience" },
@@ -19,12 +19,11 @@ const HospitalOverview = () => {
       <div className="w-full lg:w-1/3">
         <div className="flex flex-col justify-between p-4 shadow">
           <ul className="flex flex-col gap-3 mb-8">
-
             {links.map((link, index) => (
               <NavLink
                 key={index}
                 to={link.path}
-                end={link.end || false}     // <-- IMPORTANT FIX
+                end={link.end || false}
                 className={({ isActive }) =>
                   `flex justify-between items-center py-2 px-3 border-b-2 border-gray-300 rounded transition-all duration-200 ${
                     isActive
@@ -37,7 +36,6 @@ const HospitalOverview = () => {
                 <ArrowForwardIosIcon sx={{ fontSize: "12px", color: "inherit" }} />
               </NavLink>
             ))}
-
           </ul>
         </div>
 

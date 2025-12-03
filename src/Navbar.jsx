@@ -117,12 +117,16 @@ const Navbar = () => {
           >
             <div className="flex items-center gap-1">
               <MdEmail className="text-blue-600" />
-              <span className="truncate">st.ignatiuseyecaregh@gmail.com</span>
+              <span className="truncate"
+              style={{ fontFamily: "Montserrat" }}
+              >st.ignatiuseyecaregh@gmail.com</span>
             </div>
 
             <div className="flex items-center gap-1">
               <FiPhone className="text-blue-600" />
-              <span>+233 20 716 4944</span>
+              <span
+              style={{ fontFamily: "Montserrat" }}
+              >+233 20 716 4944</span>
             </div>
           </div>
           <button onClick={toggleMobileMenu}>
@@ -150,13 +154,18 @@ const Navbar = () => {
               <div className="flex gap-4">
                 <div className="flex items-center gap-2">
                   <MdEmail className="text-blue-600" />
-                  <span className="truncate">
+                  <span className="truncate"
+                  style={{ fontFamily: "Montserrat" }}
+                  
+                  >
                     st.ignatiuseyecaregh@gmail.com
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <FiPhone className="text-blue-600" />
-                  <span>+233 20 716 4944</span>
+                  <span
+                  style={{ fontFamily: "Montserrat" }}
+                  >+233 20 716 4944</span>
                 </div>
               </div>
 
@@ -177,7 +186,10 @@ const Navbar = () => {
 
                 {/* ABOUT DROPDOWN */}
                 <div className="relative group">
-                  <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600">
+                  <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+                  style={{ fontFamily: "Montserrat" }}
+                  
+                  >
                     About <ArrowDropDownIcon />
                   </span>
                   <ul className="absolute left-0 mt-2 bg-white w-32 shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
@@ -191,6 +203,8 @@ const Navbar = () => {
                               : "hover:text-blue-600"
                           }`
                         }
+
+                        style={{ fontFamily: "Montserrat" }}
                       >
                         About Us
                       </NavLink>
@@ -227,7 +241,10 @@ const Navbar = () => {
 
                 {/* BRANCHES DROPDOWN */}
                 <div className="relative group">
-                  <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600">
+                  <span className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+                  style={{ fontFamily: "Montserrat" }}
+                  
+                  >
                     Branches <ArrowDropDownIcon />
                   </span>
                   <ul className="absolute left-0 mt-2 bg-white shadow-md w-32 rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
