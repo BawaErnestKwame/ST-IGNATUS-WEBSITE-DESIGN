@@ -32,7 +32,6 @@ const DrIgnatus = () => {
               IGNATIUS KWAKU YEBOAH
             </h1>
             <p className="text-gray-500 font-medium">CEO & Founder</p>
-            <p className='text-blue-500'>st.ignatiuseyecaregh@gmail.com </p>
           </div>
         </motion.div>
 

@@ -99,7 +99,7 @@ const Navbar = () => {
       <div className="h-[100px] lg:h-[120px]" />
 
       {/* HEADER */}
-      <header className="w-full shadow border-b py-4 border-gray-400 z-50 fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md">
+      <header className="w-full shadow border-b py-2 lg:py-4 border-gray-400 z-50 fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md">
 
         {/* FIXED & SMOOTH SCROLL PROGRESS BAR */}
         <div
