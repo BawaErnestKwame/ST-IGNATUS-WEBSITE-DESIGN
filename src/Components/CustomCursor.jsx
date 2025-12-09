@@ -5,6 +5,15 @@ const CustomCursor = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
   const [isClicking, setIsClicking] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  // Detect screen size
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth <= 768); // small screen breakpoint
+    handleResize(); // initialize
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const move = (e) => {
@@ -25,20 +34,20 @@ const CustomCursor = () => {
     };
   }, []);
 
-  // Smooth cursor following with slight delay
+  // Smooth cursor following
   useEffect(() => {
     const animate = () => {
       setCursorPosition((prev) => ({
         x: prev.x + (position.x - prev.x) * 0.15,
         y: prev.y + (position.y - prev.y) * 0.15,
       }));
+      requestAnimationFrame(animate);
     };
-
     const id = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(id);
-  }, [position, cursorPosition]);
+  }, [position]);
 
-  // Detect hoverable elements
+  // Hover detection
   useEffect(() => {
     const handleMouseOver = (e) => {
       const target = e.target;
@@ -52,9 +61,7 @@ const CustomCursor = () => {
       }
     };
 
-    const handleMouseOut = () => {
-      setIsHovering(false);
-    };
+    const handleMouseOut = () => setIsHovering(false);
 
     document.addEventListener("mouseover", handleMouseOver);
     document.addEventListener("mouseout", handleMouseOut);
@@ -65,24 +72,36 @@ const CustomCursor = () => {
     };
   }, []);
 
+  // Sizes based on screen
+  const outerSize = isSmallScreen
+    ? 20 // tiny ring for mobile
+    : isHovering
+    ? 60
+    : isClicking
+    ? 70
+    : 70;
+
+  const innerSize = isSmallScreen ? 4 : 12; // tiny dot for mobile
+
+  // Hide cursor completely on very small screens (optional)
+  const cursorStyle = isSmallScreen
+    ? { display: "none" }
+    : {};
+
   return (
     <>
-      {/* Hide default cursor */}
-      <style>{`
-        * {
-          cursor: none !important;
-        }
-      `}</style>
+      <style>{`* { cursor: none !important; }`}</style>
 
-      {/* Outer ring - follows with delay */}
+      {/* Outer ring */}
       <div
         className="fixed top-0 left-0 pointer-events-none z-[9999] transition-all duration-300 ease-out"
         style={{
+          ...cursorStyle,
           transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
-          width: isHovering ? "60px" : isClicking ? "70px" : "70px",
-          height: isHovering ? "60px" : isClicking ? "70px" : "70px",
-          marginLeft: isHovering ? "-30px" : isClicking ? "-20px" : "-25px",
-          marginTop: isHovering ? "-30px" : isClicking ? "-20px" : "-25px",
+          width: `${outerSize}px`,
+          height: `${outerSize}px`,
+          marginLeft: `-${outerSize / 2}px`,
+          marginTop: `-${outerSize / 2}px`,
         }}
       >
         <div
@@ -99,17 +118,18 @@ const CustomCursor = () => {
         />
       </div>
 
-      {/* Inner dot - follows directly */}
+      {/* Inner dot */}
       <div
         className="fixed top-0 left-0 pointer-events-none z-[10000] transition-all duration-100"
         style={{
+          ...cursorStyle,
           transform: `translate(${position.x}px, ${position.y}px) scale(${
             isClicking ? 0.6 : 1
           })`,
-          width: isHovering ? "12px" : "12px",
-          height: isHovering ? "12px" : "12px",
-          marginLeft: isHovering ? "-6px" : "-4px",
-          marginTop: isHovering ? "-6px" : "-4px",
+          width: `${innerSize}px`,
+          height: `${innerSize}px`,
+          marginLeft: `-${innerSize / 2}px`,
+          marginTop: `-${innerSize / 2}px`,
         }}
       >
         <div
@@ -125,4 +145,5 @@ const CustomCursor = () => {
     </>
   );
 };
+
 export default CustomCursor;

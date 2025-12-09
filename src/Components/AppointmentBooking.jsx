@@ -33,8 +33,8 @@ export default function AppointmentBooking() {
           {/* Left Section */}
           <motion.div
             className="space-y-8 mt-20"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             viewport={{ once: false }}
           >
@@ -51,7 +51,7 @@ export default function AppointmentBooking() {
             {/* Contact Information */}
             <motion.div
               className="bg-gray-200 rounded-xl p-6 shadow-sm"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
@@ -107,8 +107,8 @@ export default function AppointmentBooking() {
           {/* Right Section - Form */}
           <motion.div
             className="bg-blue-100 rounded-2xl p-8"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >

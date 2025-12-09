@@ -57,8 +57,8 @@ const AboutStIgnatus = () => {
           <motion.div
             className="flex items-start gap-4"
             variants={{
-              hidden: { opacity: 0, x: -40 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.6 }}
           >
@@ -78,8 +78,8 @@ const AboutStIgnatus = () => {
           <motion.div
             className="flex items-start gap-4"
             variants={{
-              hidden: { opacity: 0, x: -40 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -40 },
+              visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.6 }}
           >
@@ -106,8 +106,8 @@ const AboutStIgnatus = () => {
       {/* Left section - images */}
       <motion.div
         className="lg:w-1/2 flex gap-4 items-center justify-center relative"
-        initial={{ opacity: 0, x: 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
         viewport={{ once: true }}
       >
@@ -133,7 +133,7 @@ const AboutStIgnatus = () => {
             src={eye3}
             alt="patient 1"
             className="relative -top-10 h-72 object-cover rounded-lg shadow-md -z-10"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
@@ -145,8 +145,8 @@ const AboutStIgnatus = () => {
             src={eye2}
             alt="patient 2"
             className="w-100 h-52 object-cover rounded-lg shadow-md"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
           />
@@ -155,8 +155,8 @@ const AboutStIgnatus = () => {
             src={eye1}
             alt="patient 3"
             className="h-52 object-cover rounded-lg shadow-md"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           />
