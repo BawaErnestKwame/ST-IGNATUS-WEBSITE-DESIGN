@@ -61,7 +61,7 @@ const Team = () => {
     <>
       {/* HERO SECTION */}
       <div
-        className="w-full h-[30vh] md:h-[55vh] flex flex-col justify-center items-center text-center px-6 mb-16 relative"
+        className="w-full h-[35vh] md:h-[55vh] flex flex-col justify-center items-center text-center px-6 mb-16 relative"
         style={{
           backgroundImage: `linear-gradient(to right, #04207AE3 35%, #05207AD0), url(${teamImage})`,
           backgroundSize: 'cover',

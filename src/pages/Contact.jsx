@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
      <div
-      className="w-full h-[50vh] flex items-center px-4 md:px-8 lg:px-24"
+      className="w-full h-[35vh] md:h-[50vh] flex items-center px-4 md:px-8 lg:px-24"
       style={{
         backgroundImage: `linear-gradient(to right, #04207AFF 35%,#05207A45), url(${hero})`,
         backgroundSize: 'cover',
@@ -17,7 +17,7 @@ const Contact = () => {
       }}
     >
       <div className="">
-        <h1 className='text-white text-2xl md:text-8xl font-bold'>Contact Us</h1>
+        <h1 className='text-white text-5xl md:text-8xl font-bold'>Contact Us</h1>
       {/* style={{fontFamily:"Montserrat"}} */}
       <div className="flex items-center gap-1 text-white">
         

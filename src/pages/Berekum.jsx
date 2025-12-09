@@ -26,7 +26,7 @@ const heroCardsData = [
     <>
       {/* HERO SECTION */}
       <div
-        className="w-full h-[50vh] flex flex-col items-center text-center px-4 md:px-8 lg:px-24 mb-38 lg:mb-20 relative"
+        className="w-full h-[40vh] md:h-[50vh] flex flex-col items-center text-center px-4 md:px-8 lg:px-24 mb-38 lg:mb-20 relative"
         style={{
           backgroundImage: `linear-gradient(to right, #04207AE3 35%, #05207AD0), url(${hero})`,
           backgroundSize: 'cover',
@@ -34,7 +34,7 @@ const heroCardsData = [
         }}
       >
         <div className="max-w-3xl mt-10 space-y-4">
-          <h1 className="text-4xl md:text-8xl text-white font-bold leading-tight drop-shadow-lg">Berekum Branch</h1>
+          <h1 className="text-5xl md:text-8xl text-white font-bold leading-tight drop-shadow-lg">Berekum Branch</h1>
 
           <p className="text-white text-sm md:text-lg lg:text-xl leading-relaxed px-2">
            Abesim Dominase (Ohene Djan)

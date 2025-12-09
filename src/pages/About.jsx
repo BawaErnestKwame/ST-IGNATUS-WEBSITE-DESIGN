@@ -15,7 +15,7 @@ const About = () => {
     <>
       {/* Hero Section */}
       <div
-        className="w-full h-[50vh] flex items-center px-4 md:px-8 lg:px-24"
+        className="w-full h-[40vh] md:h-[50vh] flex items-center px-4 md:px-8 lg:px-24"
         style={{
           backgroundImage: `linear-gradient(to right, #04207AFF 35%,#05207A45), url(${hero})`,
           backgroundSize: 'cover',
@@ -23,7 +23,7 @@ const About = () => {
         }}
       >
         <div>
-          <h1 className='text-white text-2xl md:text-8xl font-bold'>About Us</h1>
+          <h1 className='text-white text-5xl md:text-8xl font-bold'>About Us</h1>
           <div className="flex items-center gap-1 text-white">
             <Link
               to="/"
