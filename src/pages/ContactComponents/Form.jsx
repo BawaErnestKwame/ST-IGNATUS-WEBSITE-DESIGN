@@ -56,9 +56,9 @@ export default function Form() {
             </p>
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Discuss Your<br />
-              <span>Chemical</span><br />
-              <span>Solution Needs</span>
+              Discuss <br />
+              <span>Your Eye</span><br />
+              <span>Health Needs</span>
             </h1>
 
             <p className="text-gray-600 text-base leading-relaxed mb-8">

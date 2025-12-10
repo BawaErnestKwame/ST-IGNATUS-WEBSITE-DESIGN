@@ -32,7 +32,7 @@ export default function AppointmentBooking() {
 
           {/* Left Section */}
           <motion.div
-            className="space-y-8 mt-20"
+            className="space-y-4"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
@@ -40,8 +40,9 @@ export default function AppointmentBooking() {
           >
             <div>
               <p className="text-blue-500 font-semibold mb-2">Make an Appointment</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-10 mb-4">
-                Book Your Visit,<br /> Make an Appointment Now
+              <h1 className="text-4xl  md:text-5xl font-bold text-gray-900 leading-14 mb-4">
+                <h1>Book Your Visit,</h1>
+                <span> Make an <span className='text-blue-500'>Appointment Now</span></span>
               </h1>
               <p className="text-gray-600 leading-relaxed">
                 Book your visit today and get personalized eye care from our experienced specialists.
