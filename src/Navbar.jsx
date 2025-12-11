@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaTiktok, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { FaUserPlus } from "react-icons/fa6";
@@ -170,10 +170,16 @@ const Navbar = () => {
               </div>
 
               <div className="flex items-center gap-4">
+
+                <Link to="https://www.facebook.com/profile.php?id=100063920837307" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
-                <FaTwitter className="hover:text-blue-600 cursor-pointer" />
-                <FaLinkedinIn className="hover:text-blue-600 cursor-pointer" />
-                <FaInstagram className="hover:text-blue-600 cursor-pointer" />
+                </Link>
+                <Link to="https://www.tiktok.com/@st.ignatiuseyecentre?_r=1&_d" target="_blank" rel="noopener noreferrer">
+                <FaTiktok className="hover:text-blue-600 cursor-pointer" />
+                </Link>
+                <Link to="https://www.instagram.com/st.ignatiuseyecentre?igsh=aTBka3JoYTE2M3gx" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="hover:text-blue-600 cursor-pointer"/>
+                </Link>
               </div>
             </div>
 
