@@ -83,10 +83,11 @@ export default function Form() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Phone Number</p>
-                  <p className="text-gray-900 font-semibold">+233 20 716 4944</p>
+                  <p className="text-gray-900 font-semibold">+233 508 249 `775. 
+</p>
                 </div>
               </div>
-            </div>
+            </div>``
           </div>
 
           {/* RIGHT FORM */}

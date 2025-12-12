@@ -9,7 +9,7 @@ import { Link } from "react-router";
 const Hero = () => {
   const heroSlides = [
     {
-      title: "The Gift Of Clear Vision",
+      title: "Excellent Eye Care",
       description: "Your eyes deserve expert care and attention. We provide trusted solutions to protect, restore, and enhance your sight helping you see the beauty of life with clarity and confidence.",
       image: hero1,
     },
@@ -36,7 +36,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
-    }, 5000);
+    }, 15000);
     return () => clearInterval(interval);
   }, [heroSlides.length]);
 

@@ -126,7 +126,7 @@ const Navbar = () => {
               <FiPhone className="text-blue-600" />
               <span
               style={{ fontFamily: "Montserrat" }}
-              >+233 20 716 4944</span>
+              >+233 508 2497 75</span>
             </div>
           </div>
           <button onClick={toggleMobileMenu}>
@@ -165,7 +165,7 @@ const Navbar = () => {
                   <FiPhone className="text-blue-600" />
                   <span
                   style={{ fontFamily: "Montserrat" }}
-                  >+233 20 716 4944</span>
+                  > +233 508 2497 75</span>
                 </div>
               </div>
 

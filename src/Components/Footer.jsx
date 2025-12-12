@@ -79,7 +79,8 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
-                  +233 20 716 4944
+                  +233 508 249 775. 
+
                 </span>
               </div>
 
@@ -142,20 +143,13 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm">
               <li className="flex justify-between">
-                <span>Mon - Tue:</span>
-                <span className="text-gray-300">9.00 - 17.00</span>
+                <span>Monday - Friday:</span>
+                <span className="text-gray-300">8.00 - 18.00</span>
               </li>
-              <li className="flex justify-between">
-                <span>Wed - Thur:</span>
-                <span className="text-gray-300">9.00 - 16.00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Fri - Sat:</span>
-                <span className="text-gray-300">9.00 - 12.00</span>
-              </li>
+              
               <li className="flex justify-between">
                 <span>Saturday:</span>
-                <span className="text-gray-300">9.00 - 14.00</span>
+                <span className="text-gray-300">9.00 - 15.00</span>
               </li>
               <li className="flex justify-between">
                 <span>Sunday:</span>
