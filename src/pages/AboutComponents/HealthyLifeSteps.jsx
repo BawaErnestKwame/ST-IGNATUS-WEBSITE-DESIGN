@@ -105,7 +105,7 @@ const HealthyLifeSteps = () => {
                       </div>
 
                       {/* Step Number Badge */}
-                      <div className="absolute -top-2 -left-2 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                      <div className="absolute number -top-2 -left-2 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
                         <span className="text-white font-bold text-lg">
                           {step.number}
                         </span>

@@ -16,22 +16,52 @@ p,li,button,label, input, option,textarea, select, .contact{
 
 .arrow{
     animation-name: arrow;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 @keyframes arrow {
-    0%{
-        transform: translateY(-20px);
-    }
-    
-    100%{
-        transform: translateY(0px);
-
-    }
-    
+   
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
 }
+   
+.scroll-totop{
+  animation-name: scrolltop;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  
+
+}
+
+@keyframes scrolltop{
+   
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+.number{
+   animation-name: number;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes number{
+   
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+
 /* Hide scrollbar for all browsers */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
