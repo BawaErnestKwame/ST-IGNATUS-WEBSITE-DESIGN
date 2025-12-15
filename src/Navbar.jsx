@@ -103,7 +103,7 @@ const Navbar = () => {
 
         {/* FIXED & SMOOTH SCROLL PROGRESS BAR */}
         <div
-          className="absolute top-0 left-0 h-1 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 transition-[width] duration-200 ease-out"
+          className="absolute top-0 left-0 h-1 bg-gradient-to-r from-red-500 via-red-600 to-red-700 transition-[width] duration-200 ease-out"
           style={{ width: `${scrollProgress}%` }}
         ></div>
 
@@ -313,7 +313,7 @@ const Navbar = () => {
               {/* BOOK APPOINTMENT BUTTON */}
               <button
                 onClick={openAppointment}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md flex items-center gap-2"
+                className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-md flex items-center gap-2"
               >
                 <FaUserPlus /> Book Appointment
               </button>

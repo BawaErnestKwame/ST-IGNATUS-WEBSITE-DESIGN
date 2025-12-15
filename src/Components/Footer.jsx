@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import image from '../assets/footerImage2.jpg';
 import logo from '../assets/logo.png';
+import {FaTiktok, FaInstagram } from "react-icons/fa";
 import {
   MapPin,
   Phone,
   Mail,
   Facebook,
-  Twitter,
-  Linkedin,
   Share2,
   MessageCircle,
   ArrowUp
@@ -55,17 +54,19 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-12 h-12 bg-gray-100 flex items-center justify-center">
-                <img src={logo} alt="MediLink logo" />
+                <img src={logo} alt="St. Ignatius Eye Centre logo" />
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg tracking-normal">ST.IGNATIUS</h3>
+                <h3 className="text-white font-bold text-lg tracking-normal">
+                  ST. IGNATIUS
+                </h3>
                 <p className="text-xs text-gray-400">EYE CENTRE</p>
               </div>
             </div>
 
             <p className="text-sm mb-6 leading-relaxed">
               Our doctors have years of experience in providing top-notch
-                healthcare.
+              healthcare.
             </p>
 
             <div className="space-y-3">
@@ -79,8 +80,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <span className="text-sm" style={{ fontFamily: 'Montserrat' }}>
-                  +233 508 249 775. 
-
+                  +233 508 249 775
                 </span>
               </div>
 
@@ -100,7 +100,34 @@ const Footer = () => {
               <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
             </h3>
             <ul className="space-y-2">
-              {['Dental Care', 'Medicine', 'Orthopedic', 'Emergency', 'Skilled Doctors', 'Certified Clinic'].map(
+              {[
+                'Dental Care',
+                'Medicine',
+                'Orthopedic',
+                'Emergency',
+                'Skilled Doctors',
+                'Certified Clinic',
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="text-sm hover:text-blue-400 transition-colors hover:pl-2 inline-block duration-300"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white font-bold text-lg mb-4">
+              Quick Links
+              <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
+            </h3>
+            <ul className="space-y-2">
+              {['About Us', 'What We Do', 'Appointment', 'Contact', '24/7 Support'].map(
                 (item) => (
                   <li key={item}>
                     <a
@@ -115,26 +142,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">
-              Quick Links
-              <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
-            </h3>
-            <ul className="space-y-2">
-              {['About Us', 'What We Do','Appointment', 'Contact', '24/7 Support'].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-sm hover:text-blue-400  transition-colors hover:pl-2 inline-block duration-300"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Opening Hours */}
           <div>
             <h3 className="text-white font-bold text-lg mb-4">
@@ -146,14 +153,15 @@ const Footer = () => {
                 <span>Monday - Friday:</span>
                 <span className="text-gray-300">8:00 AM - 18:00 PM</span>
               </li>
-              
               <li className="flex justify-between">
                 <span>Saturday:</span>
                 <span className="text-gray-300">9:00 AM - 15:00 PM</span>
               </li>
               <li className="flex justify-between">
                 <span>Sunday:</span>
-                <span className="text-white font-medium p-1 bg-red-700">10:00 AM - 15:00 PM</span>
+                <span className="text-white font-medium p-1 bg-red-700">
+                  10:00 AM - 15:00 PM
+                </span>
               </li>
             </ul>
           </div>
@@ -166,20 +174,32 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Social Links */}
             <div className="flex items-center gap-4">
-              <span className="text-sm font-medium" style={{ fontFamily: 'Montserrat' }}>
+              <span
+                className="text-sm font-medium"
+                style={{ fontFamily: 'Montserrat' }}
+              >
                 Follow Us:
               </span>
               <div className="flex gap-3">
                 {[
-                  { Icon: Facebook }, 
-                  { Icon: Twitter }, 
-                  { Icon: Linkedin }, 
-                  { Icon: Share2 }, 
-                  { Icon: MessageCircle }
-                ].map(({ Icon }, index) => (
+                  {
+                    Icon: Facebook,
+                    link: 'https://www.facebook.com/profile.php?id=100063920837307',
+                  },
+                  {
+                    Icon: FaTiktok,
+                    link: 'https://www.tiktok.com/@st.ignatiuseyecentre?_r=1&_d',
+                  },
+                  {
+                    Icon:  FaInstagram ,
+                    link: 'https://www.instagram.com/st.ignatiuseyecentre?igsh=aTBka3JoYTE2M3gx',
+                  },
+                ].map(({ Icon, link }, index) => (
                   <motion.a
                     key={index}
-                    href="#"
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-8 h-8 rounded-full group hover:bg-red-600 bg-blue-600/60 flex items-center justify-center transition-colors"
                     whileHover={{ rotate: 360, scale: 1.1 }}
                     transition={{ duration: 0.5 }}
@@ -190,7 +210,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Newsletter */}
+            {/* Newsletter Text */}
             <div className="flex items-center gap-3">
               <span
                 className="text-sm font-medium whitespace-nowrap"
@@ -203,10 +223,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Floating Scroll-to-Top Button */}
+      {/* Scroll to Top */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-50 scroll-totop w-11 h-11 rounded-full bg-red-600 flex items-center justify-center shadow-lg"
+        className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-red-600 flex items-center justify-center shadow-lg"
         animate={{
           opacity: showScroll ? 1 : 0,
           y: showScroll ? 0 : 20,
@@ -217,10 +237,10 @@ const Footer = () => {
         <ArrowUp className="w-5 h-5 text-white" />
       </motion.button>
 
-      {/* Copyright Section */}
+      {/* Copyright */}
       <div className="text-center py-4 bg-red-700 border-t border-blue-900">
         <p className="text-sm text-gray-300">
-          &copy; {new Date().getFullYear()} St.Ignatius Eye Centre. All rights reserved.
+          &copy; {new Date().getFullYear()} St. Ignatius Eye Centre. All rights reserved.
         </p>
       </div>
     </footer>

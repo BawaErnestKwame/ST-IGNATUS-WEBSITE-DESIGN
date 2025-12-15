@@ -20,7 +20,7 @@ const Servistlist = () => {
       
       {/* LEFT SIDE: Menu */}
       <div className="w-full mt-14 lg:w-1/3 flex flex-col gap-6">
-      <h1 className='text-2xl font-semibold text-red-600 md:text-4xl'>Select Service</h1>
+      <h1 className='text-2xl font-semibold text-blue-600 md:text-4xl'>Select Service</h1>
         <div className="flex flex-col justify-start p-4 shadow rounded-lg bg-white">
           
           <ul className="flex flex-col gap-3 mb-4">
@@ -32,7 +32,7 @@ const Servistlist = () => {
                 className={({ isActive }) =>
                   `flex justify-between items-center py-2 px-3 border-b-2 border-gray-300 rounded transition-all duration-200 ${
                     isActive
-                      ? 'bg-blue-600 text-white shadow'
+                      ? 'bg-red-600 text-white shadow'
                       : 'hover:bg-blue-100 text-gray-800'
                   }`
                 }
@@ -46,7 +46,7 @@ const Servistlist = () => {
 
         {/* Emergency Box */}
         <div className="mt-2 shadow border flex flex-col sm:flex-row items-start sm:items-center gap-3 p-4 border-gray-300 rounded-lg bg-gray-100">
-          <MdContactEmergency className="text-blue-600 text-4xl flex-shrink-0" />
+          <MdContactEmergency className="text-red-600 text-4xl flex-shrink-0" />
           <div>
             <h1
               className="text-gray-900 font-semibold"

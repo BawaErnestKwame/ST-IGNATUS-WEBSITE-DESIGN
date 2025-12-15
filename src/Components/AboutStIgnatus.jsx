@@ -112,7 +112,7 @@ const AboutStIgnatus = () => {
           <img src={arrow} alt="" className="arrow relative right-20 w-50" />
 
           <motion.div
-            className="w-60 -right-32 rounded h-24 relative top-2 z-10 bg-[#0627c2]
+            className="w-60 -right-32 rounded h-24 relative top-2 z-10 bg-red-600
             text-white flex flex-col md:flex-row items-center pl-8 gap-2 shadow-lg"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}

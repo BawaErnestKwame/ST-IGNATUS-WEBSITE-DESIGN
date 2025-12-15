@@ -78,7 +78,7 @@ const HealthyLifeSteps = () => {
                   {/* Mobile/Tablet Arrow */}
                   {index < steps.length - 1 && (
                     <div className="lg:hidden flex justify-center my-6">
-                      <ArrowRight className="w-8 h-8 text-orange-500" />
+                      <ArrowRight className="w-8 h-8 text-red-600" />
                     </div>
                   )}
 
@@ -88,7 +88,7 @@ const HealthyLifeSteps = () => {
                     <div className="relative mb-6">
                       {/* Dotted Border Circle */}
                       <div
-                        className="absolute inset-0 rounded-full border-8 border-dashed border-orange-600
+                        className="absolute inset-0 rounded-full border-8 border-dashed border-red-600
                        animate-[spin_20s_linear_infinite]"
                       ></div>
 
@@ -105,7 +105,7 @@ const HealthyLifeSteps = () => {
                       </div>
 
                       {/* Step Number Badge */}
-                      <div className="absolute number -top-2 -left-2 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                      <div className="absolute number -top-2 -left-2 w-14 h-14 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
                         <span className="text-white font-bold text-lg">
                           {step.number}
                         </span>

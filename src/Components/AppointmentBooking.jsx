@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Phone, Mail, Facebook, Instagram, Twitter, MessageCircle } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { FaFacebookF, FaTwitter, FaTiktok, FaInstagram } from "react-icons/fa";
-import { Link } from 'lucide-react';
-
 import { motion } from "framer-motion";
 
 export default function AppointmentBooking() {
@@ -43,7 +41,7 @@ export default function AppointmentBooking() {
           >
             <div>
               <p className="text-blue-500 font-semibold mb-2">Make an Appointment</p>
-              <h1 className="text-4xl  md:text-5xl font-bold text-gray-900 leading-14 mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-14 mb-4">
                 <h1>Book Your Visit,</h1>
                 <span> Make an <span className='text-blue-500'>Appointment Now</span></span>
               </h1>
@@ -81,7 +79,7 @@ export default function AppointmentBooking() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Email Address</p>
-                    <p className="text-gray-600 text-sm">st.ignatiuseyecaregh@gmail.com </p>
+                    <p className="text-gray-600 text-sm">st.ignatiuseyecaregh@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -94,15 +92,33 @@ export default function AppointmentBooking() {
                 <div className="flex-1 h-px bg-gray-300 ml-4"></div>
               </div>
               <div className="flex space-x-3">
-                <Link to="https://www.facebook.com/profile.php?id=100063920837307" target="_blank" rel="noopener noreferrer">
-                <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
-                </Link>
-                <Link to="https://www.tiktok.com/@st.ignatiuseyecentre?_r=1&_d" target="_blank" rel="noopener noreferrer">
-                <FaTiktok className="hover:text-blue-600 cursor-pointer" />
-                </Link>
-                <Link to="https://www.instagram.com/st.ignatiuseyecentre?igsh=aTBka3JoYTE2M3gx" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="hover:text-blue-600 cursor-pointer"/>
-                </Link>
+               <div className=" bg-blue-600 p-2 rounded flex items-center justify-center shadow">
+                 <a
+                  href="https://www.facebook.com/profile.php?id=100063920837307"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF className="text-white cursor-pointer" />
+                </a>
+               </div>
+               <div className="bg-blue-600 p-2 rounded flex items-center justify-center shadow">
+                 <a
+                  href="https://www.tiktok.com/@st.ignatiuseyecentre?_r=1&_d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTiktok className="text-white cursor-pointer" />
+                </a>
+               </div>
+                <div className="bg-blue-600 p-2 rounded flex items-center justify-center shadow">
+                  <a
+                  href="https://www.instagram.com/st.ignatiuseyecentre?igsh=aTBka3JoYTE2M3gx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="text-white cursor-pointer"/>
+                </a>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -232,7 +248,7 @@ export default function AppointmentBooking() {
               {/* Submit Button */}
               <motion.button
                 onClick={handleSubmit}
-                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors shadow-md"
+                className="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors shadow-md"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

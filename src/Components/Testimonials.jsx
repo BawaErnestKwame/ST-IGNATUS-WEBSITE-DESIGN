@@ -133,7 +133,7 @@ export default function TestimonialSection() {
 
               {/* Author Info Card */}
               <motion.div
-                className="bg-blue-800 text-white rounded-2xl p-4 flex items-center justify-between"
+                className="bg-red-600 text-white rounded-2xl p-4 flex items-center justify-between"
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
