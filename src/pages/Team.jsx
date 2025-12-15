@@ -17,40 +17,40 @@ const Team = () => {
   const specialists = [
     { name: 'IGNATIUS KWAKU YEBOAH ', 
       specialty: 'Cardiologist',
-       category: 'Cardiology', 
+       category: 'Sunyani', 
        image: testimonialimg1
        },
     { name: 'IGNATIUS KWAKU YEBOAH ',
        specialty: 'Endocrinologist', 
-       category: 'Endocrinology', 
+       category: 'Dormaa', 
        image: testimonialimg2 },
     { name: 'IGNATIUS KWAKU YEBOAH ', 
       specialty: 'Neurologist', 
-      category: 'Neurology', 
+      category: 'Berekum', 
       image: testimonialimg3 },
     { name: 'IGNATIUS KWAKU YEBOAH ', 
       specialty: 'Pediatrician', 
-      category: 'Pediatric', 
+      category: 'Dormaa', 
       image: testimonialimg4 },
     { name: 'IGNATIUS KWAKU YEBOAH ', 
       specialty: 'Endocrinologist', 
-      category: 'Endocrinology', 
+      category: 'Sunyani', 
       image: testimonialimg5 },
     { name: 'IGNATIUS KWAKU YEBOAH ',
        specialty: 'Neurologist', 
-       category: 'Neurology', 
+       category: 'Berekum', 
        image: testimonialimg6 },
     { name: 'IGNATIUS KWAKU YEBOAH ', 
       specialty: 'Neurologist', 
-      category: 'Neurology',
+      category: 'Berekum',
        image: testimonialimg7 },
     { name: 'IGNATIUS KWAKU YEBOAH ', 
       specialty: 'Eye Doctor',
-      category: 'Dental',
+      category: 'Dormaa',
       image: testimonialimg8}
   ];
 
-  const filters = ['All Team', 'Cardiology', 'Dental', 'Neurology'];
+  const filters = ['All Team', 'Sunyani', 'Dormaa', 'Berekum'];
 
   const filteredSpecialists =
     activeFilter === 'All Team'

@@ -7,8 +7,8 @@ const Servistlist = () => {
   const links = [
     { path: '', label: 'Glaucoma Services', end: true }, // Index route
     { path: '/services/eyeSurgeries', label: 'Eye Surgeries' },
-    { path: '/services/refraction', label: 'Refraction Services' },
-    { path: '/services/dvlEyeTeste', label: 'DVLA Eye Tests' },
+    { path: '/services/refraction', label: 'Refraction' },
+    { path: '/services/dvlEyeTeste', label: 'DVLA Eye Test' },
     { path: '/services/institutionalEye', label: 'Institutional Eye Screening' },
     { path: '/services/comprehensive', label: 'Comprehensive Eye Care' },
     { path: '/services/diagnostics', label: 'Ocular Diagnostics (O.C.T, V.F.T, etc.)' },
@@ -19,8 +19,10 @@ const Servistlist = () => {
     <div className="flex flex-col lg:flex-row px-4 md:px-8 lg:px-24 gap-10 py-10">
       
       {/* LEFT SIDE: Menu */}
-      <div className="w-full lg:w-1/3 flex flex-col gap-6">
+      <div className="w-full mt-14 lg:w-1/3 flex flex-col gap-6">
+      <h1 className='text-2xl font-semibold text-red-600 md:text-4xl'>Select Service</h1>
         <div className="flex flex-col justify-start p-4 shadow rounded-lg bg-white">
+          
           <ul className="flex flex-col gap-3 mb-4">
             {links.map((link, index) => (
               <NavLink
@@ -50,7 +52,7 @@ const Servistlist = () => {
               className="text-gray-900 font-semibold"
               style={{ fontFamily: 'Montserrat' }}
             >
-              Emergency Cases
+              Emergency
             </h1>
             <p className="text-blue-700 font-medium">+233 20 716 4944</p>
           </div>

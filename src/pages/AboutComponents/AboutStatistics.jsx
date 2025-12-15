@@ -11,9 +11,9 @@ const AboutStatistics = () => {
   const stats = [
     { value: 3, label: "Branches", suffix: "" },
     { value: 15, label: "Partners", suffix: "+" },
-    { value: 1000, label: "Patients Served", suffix: "+" },
-    { value: 500, label: "Eye Surgeries Performed", suffix: "+" },
-    { value: 25, label: "Specialists & Staff", suffix: "+" },
+    { value: 10000, label: "Patients Served", suffix: "+" },
+    { value: 300, label: "Eye Surgeries Performed", suffix: "+" },
+    { value: 30, label: "Specialists & Staff", suffix: "+" },
   ];
 
   return (

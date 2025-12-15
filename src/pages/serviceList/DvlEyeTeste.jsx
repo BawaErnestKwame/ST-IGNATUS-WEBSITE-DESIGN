@@ -30,12 +30,7 @@ const DvlEyeTeste = () => {
             className="w-full h-64 object-cover rounded-2xl shadow-md"
           />
 
-          {/* Play Button Overlay */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-white/80 w-16 h-16 rounded-full flex items-center justify-center shadow-lg cursor-pointer">
-              <div className="w-0 h-0 border-t-8 border-b-8 border-l-12 border-l-blue-600 border-transparent ml-1"></div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

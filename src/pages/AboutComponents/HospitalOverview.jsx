@@ -44,7 +44,7 @@ const HospitalOverview = () => {
           <MdContactEmergency className="text-blue-600 text-4xl" />
           <div>
             <h1 style={{ fontFamily: "Montserrat" }} className="text-gray-900 font-semibold">
-              Emergency Cases
+              Emergency
             </h1>
             <p className="text-blue-700 font-medium">+233 20 716 4944</p>
           </div>

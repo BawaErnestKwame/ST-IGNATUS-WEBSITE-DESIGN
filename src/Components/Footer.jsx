@@ -144,16 +144,16 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="flex justify-between">
                 <span>Monday - Friday:</span>
-                <span className="text-gray-300">8.00 - 18.00</span>
+                <span className="text-gray-300">8:00 AM - 18:00 PM</span>
               </li>
               
               <li className="flex justify-between">
                 <span>Saturday:</span>
-                <span className="text-gray-300">9.00 - 15.00</span>
+                <span className="text-gray-300">9:00 AM - 15:00 PM</span>
               </li>
               <li className="flex justify-between">
                 <span>Sunday:</span>
-                <span className="text-white font-medium p-1 bg-red-700">10:00 - 15:00</span>
+                <span className="text-white font-medium p-1 bg-red-700">10:00 AM - 15:00 PM</span>
               </li>
             </ul>
           </div>
@@ -206,7 +206,7 @@ const Footer = () => {
       {/* Floating Scroll-to-Top Button */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-50 scroll-totop w-11 h-11 rounded-full bg-blue-600 flex items-center justify-center shadow-lg"
+        className="fixed bottom-6 right-6 z-50 scroll-totop w-11 h-11 rounded-full bg-red-600 flex items-center justify-center shadow-lg"
         animate={{
           opacity: showScroll ? 1 : 0,
           y: showScroll ? 0 : 20,

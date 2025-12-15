@@ -24,7 +24,6 @@ import HospitalOverview from "./pages/AboutComponents/HospitalOverview.jsx";
 import WhoWeAre from "./pages/AboutComponents/WhoWeAre.jsx";
 import Mission from "./pages/AboutComponents/Mission.jsx";
 import Awards from "./pages/AboutComponents/Awards.jsx";
-import Experience from "./pages/AboutComponents/Experience.jsx";
 import SuccessStory from "./pages/AboutComponents/SuccessStory.jsx";
 
 // Service list pages
@@ -100,7 +99,6 @@ const App = () => {
             <Route index element={<WhoWeAre />} />
             <Route path="mission" element={<Mission />} />
             <Route path="awards" element={<Awards />} />
-            <Route path="experience" element={<Experience />} />
             <Route path="success" element={<SuccessStory />} />
           </Route>
 

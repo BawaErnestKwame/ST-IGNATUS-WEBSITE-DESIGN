@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Phone, Mail, Facebook, Instagram, Twitter, MessageCircle } from 'lucide-react';
+import { FaFacebookF, FaTwitter, FaTiktok, FaInstagram } from "react-icons/fa";
+import { Link } from 'lucide-react';
+
 import { motion } from "framer-motion";
 
 export default function AppointmentBooking() {
@@ -68,7 +71,7 @@ export default function AppointmentBooking() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Call Center</p>
-                    <p className="text-gray-600 text-sm">+233 20 716 4944</p>
+                    <p className="text-gray-600 text-sm">+233  0508 249 775</p>
                   </div>
                 </div>
 
@@ -91,16 +94,15 @@ export default function AppointmentBooking() {
                 <div className="flex-1 h-px bg-gray-300 ml-4"></div>
               </div>
               <div className="flex space-x-3">
-                {[Facebook, Instagram, Twitter, MessageCircle].map((Icon, i) => (
-                  <motion.button
-                    key={i}
-                    whileHover={{ scale: 1.15 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-blue-600 hover:bg-blue-700 rounded-lg p-2 transition-colors"
-                  >
-                    <Icon className="w-5 h-5 text-white" />
-                  </motion.button>
-                ))}
+                <Link to="https://www.facebook.com/profile.php?id=100063920837307" target="_blank" rel="noopener noreferrer">
+                <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
+                </Link>
+                <Link to="https://www.tiktok.com/@st.ignatiuseyecentre?_r=1&_d" target="_blank" rel="noopener noreferrer">
+                <FaTiktok className="hover:text-blue-600 cursor-pointer" />
+                </Link>
+                <Link to="https://www.instagram.com/st.ignatiuseyecentre?igsh=aTBka3JoYTE2M3gx" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="hover:text-blue-600 cursor-pointer"/>
+                </Link>
               </div>
             </div>
           </motion.div>

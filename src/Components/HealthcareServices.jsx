@@ -18,7 +18,7 @@ const HealthcareFeatures = () => {
     { icon: <FaEye size={28} />, title: "Comprehensive Eye Care" },
     { icon: <FaTint size={28} />, title: "Glaucoma Services" },
     { icon: <FaUserMd size={28} />, title: "Eye Surgeries" },
-    { icon: <FaGlasses size={28} />, title: "Refraction Services" },
+    { icon: <FaGlasses size={28} />, title: "Refraction" },
     { icon: <FaUsers size={28} />, title: "Community/Institutional Eye Screening" },
     { icon: <FaMicroscope size={28} />, title: "Ocular Diagnostics (O.C.T, V.F.T, etc.)" },
     { icon: <MdOutlineAssignmentTurnedIn size={28} />, title: "DVLA Eye Tests" },

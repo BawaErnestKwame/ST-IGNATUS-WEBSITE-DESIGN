@@ -34,12 +34,7 @@ const Mission = () => {
             className="w-full object-cover rounded-2xl"
           />
 
-          {/* Play Icon Overlay */}
-          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-            <button className="text-white hover:scale-110 transition-transform">
-              <PlayCircleIcon sx={{ fontSize: 80 }} />
-            </button>
-          </div>
+          
         </div>
       </div>
     </div>

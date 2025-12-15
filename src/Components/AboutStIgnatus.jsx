@@ -27,21 +27,18 @@ const AboutStIgnatus = () => {
         </div>
 
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
-          Excellence Eye Care <br />{" "}
-          <span className="text-blue-600">You Can Trust!</span>
+          Excellence In Eye Care <br />{" "}
         </h1>
 
         <p className="text-gray-600">
-          At St. Ignatius Eye Centre, we are committed to delivering excellence
-          in eye care you can trust. With advanced technology, skilled
-          professionals, and compassionate service, we ensure every patient
-          receives precise diagnosis, quality treatment, and personalized
-          attention for clearer, healthier vision.”
+          Headquartered in Abesim, St. Ignatius Eye Centre extends its services through two additional branches located in Dormaa and Berekum, making quality eye care accessible to a wider community. We are a dedicated eye health facility committed to delivering excellence in eye care you can trust.
+
+          At St. Ignatius Eye Centre, we combine advanced diagnostic technology with the expertise of skilled eye care professionals to provide accurate diagnosis, effective treatment, and personalized patient care. Our services range from routine eye examinations and vision correction to the management of various eye conditions, all delivered with compassion and professionalism.
         </p>
 
         <p className="text-gray-700 font-medium">
           Need to take care of your family’s health? Call{" "}
-          <span className="text-blue-600 font-bold">+233 20 716 4944</span>
+          <span className="text-red-600 font-bold">+233 508 249 775</span>
         </p>
 
         <motion.div
@@ -66,7 +63,7 @@ const AboutStIgnatus = () => {
               <FaStethoscope size={28} />
             </div>
             <div>
-              <h3 className="font-semibold text-lg">Experienced Physicians</h3>
+              <h3 className="font-semibold text-lg">Experienced Professionals</h3>
               <p className="text-gray-500 text-sm">
                 Our doctors have years of experience in providing top-notch
                 healthcare.

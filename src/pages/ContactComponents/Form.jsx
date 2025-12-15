@@ -56,19 +56,18 @@ export default function Form() {
             </p>
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Discuss <br />
-              <span>Your Eye</span><br />
+              Discuss <span>Your Eye</span><br />
               <span>Health Needs</span>
             </h1>
 
             <p className="text-gray-600 text-base leading-relaxed mb-8">
-              Are you looking for top-quality chemical solutions tailored to your needs? Reach out to us.
+             Talk to our eye care professionals about your vision and eye concerns. Whether you need a routine check-up or have eye discomfort, we are here to listen and provide the right care for your eye health..
             </p>
 
             {/* Contact Details */}
             <div className="space-y-5">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
                 <div>
@@ -83,7 +82,7 @@ export default function Form() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Phone Number</p>
-                  <p className="text-gray-900 font-semibold">+233 508 249 `775. 
+                  <p className="text-gray-900 font-semibold">+233 508 249 775. 
 </p>
                 </div>
               </div>
@@ -121,7 +120,7 @@ export default function Form() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Industry</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Select Service</label>
                 <select
                   name="industry"
                   value={formData.industry}
@@ -130,11 +129,13 @@ export default function Form() {
                   focus:ring-2 focus:ring-blue-500 outline-none cursor-pointer"
                 >
                   <option value="">Select</option>
-                  <option value="pharmaceutical">Pharmaceutical</option>
-                  <option value="manufacturing">Manufacturing</option>
-                  <option value="agriculture">Agriculture</option>
-                  <option value="research">Research & Development</option>
-                  <option value="oil-gas">Oil & Gas</option>
+                  <option value="pharmaceutical">Glaucoma</option>
+                  <option value="manufacturing">Eye Surgeries</option>
+                  <option value="agriculture">Refraction</option>
+                  <option value="research">Institutional Eye Screening</option>
+                  <option value="oil-gas">Comprehensive Eye Care</option>
+                  <option value="oil-gas">Ocular Diagnostics (O.C.T, V.F.T, etc.)</option>
+                  <option value="oil-gas">Sale & Repair of Spectacles & Contact Lenses</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -155,7 +156,7 @@ export default function Form() {
               <button
                 onClick={handleSubmit}
                 disabled={isSubmitting || submitted}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3.5 px-6 
+                className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3.5 px-6 
                 rounded-xl flex items-center justify-center gap-2 transition-all 
                 hover:scale-[1.02] disabled:opacity-70 shadow-lg shadow-blue-500/30"
               >
