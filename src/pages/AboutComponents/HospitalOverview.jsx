@@ -8,7 +8,6 @@ const HospitalOverview = () => {
     { path: "/about", label: "Who We Are", end: true },
     { path: "/about/mission", label: "Our Mission" },
     { path: "/about/awards", label: "Awards" },
-    { path: "/about/experience", label: "Experience" },
     { path: "/about/success", label: "Success Story" },
   ];
 
@@ -27,7 +26,7 @@ const HospitalOverview = () => {
                 className={({ isActive }) =>
                   `flex justify-between items-center py-2 px-3 border-b-2 border-gray-300 rounded transition-all duration-200 ${
                     isActive
-                      ? "bg-blue-600 text-white shadow"
+                      ? "bg-red-600 text-white shadow"
                       : "hover:bg-blue-100 text-gray-800"
                   }`
                 }
@@ -41,7 +40,7 @@ const HospitalOverview = () => {
 
         {/* Emergency box */}
         <div className="mt-2 shadow border flex items-center gap-3 p-4 border-gray-300 rounded-lg bg-gray-100">
-          <MdContactEmergency className="text-blue-600 text-4xl" />
+          <MdContactEmergency className="text-red-600 text-4xl" />
           <div>
             <h1 style={{ fontFamily: "Montserrat" }} className="text-gray-900 font-semibold">
               Emergency

@@ -116,14 +116,14 @@ const Navbar = () => {
             style={{ fontFamily: "Montserrat" }}
           >
             <div className="flex items-center gap-1">
-              <MdEmail className="text-blue-600" />
+              <MdEmail className="text-red-600" />
               <span className="truncate"
               style={{ fontFamily: "Montserrat" }}
               >st.ignatiuseyecaregh@gmail.com</span>
             </div>
 
             <div className="flex items-center gap-1">
-              <FiPhone className="text-blue-600" />
+              <FiPhone className="text-red-600" />
               <span
               style={{ fontFamily: "Montserrat" }}
               >+233 508 2497 75</span>

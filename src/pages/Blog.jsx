@@ -103,7 +103,7 @@ const Blog = () => {
         All Eye<br />Care Service
       </h1>
       <Link to='/services'>
-      <button className="cursor-pointer bg-blue-600 text-white px-8 py-3 rounded hover:bg-blue-700 transition-colors mt-6">
+      <button className="cursor-pointer bg-red-600 text-white px-8 py-3 rounded hover:bg-red-700 transition-colors mt-6">
         Read More
       </button>
       </Link>
@@ -128,7 +128,7 @@ const Blog = () => {
         Keep In<br /> Touch With Us
       </h1>
       <Link to='/contact'>
-      <button className="cursor-pointer bg-blue-600 text-white px-8 py-3 rounded hover:bg-blue-700 transition-colors mt-6">
+      <button className="cursor-pointer bg-red-600 text-white px-8 py-3 rounded hover:bg-red-700 transition-colors mt-6">
         Contact Us
       </button>
       </Link>

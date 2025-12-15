@@ -115,7 +115,7 @@ const Department = () => {
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-600 transition-colors">
                     <IconComponent
-                      className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors"
+                      className="w-8 h-8 text-red-600 group-hover:text-white transition-colors"
                       strokeWidth={1.5}
                     />
                   </div>
