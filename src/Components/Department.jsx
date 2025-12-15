@@ -18,9 +18,11 @@ const departments = [
   { id: 1, number: '01.', icon: Eye, title: 'Ophthalmology Department', description: 'Provides medical and surgical eye care for conditions like cataracts, glaucoma, and retinal diseases.' },
   { id: 2, number: '02.', icon:HeartPulse, title: 'Optometry Department', description: 'Focuses on vision testing, eye examinations, and prescription of corrective lenses. Optometrists here provide primary eye care and detect vision problems early.' },
   { id: 3, number: '03.', icon:  Glasses, title: 'Optical Services Department', description: 'Handles lens fitting, frame selection, and dispensing of eyeglasses and contact lenses.' },
-  { id: 4, number: '04.', icon: Scan, title: ' Laser Unit', description: 'Performs cataract, glaucoma, and other specialized eye surgeries using advanced technology.' },
+  { id: 4, number: '04.', icon: Scan, title: 'Eye Surgery ',
+     description: 'Performs cataract, glaucoma, and other specialized eye surgeries using advanced technology.' },
   { id: 5, number: '05.', icon: ClipboardList, title: 'Diagnostic & Imaging Departmenretinal imaging for accurate diagnosis.' },
-  { id: 6, number: '06.', icon: Baby, title: 'Pediatric & General Eye Ct', description: 'Conducts eye scans and tests such as OCT, visual field, and are Department', description: 'Focuses on children’s eye health, treating issues like lazy eye, squint, and general vision problems.' },
+  { id: 6, number: '06.', icon: Baby, title: 'Pediatric & General Eye Ct', 
+    description: 'Conducts eye scans and tests such as OCT, visual field, and are Department', description: 'Focuses on children’s eye health, treating issues like lazy eye, squint, and general vision problems.' },
   { id: 7, number: '07.', icon: Pill, title: 'Pharmacy Department', description: 'Dispenses prescribed eye medications and provides guidance on safe and effective usage.' },
   { id: 8, number: '08.', icon: Building2, title: 'Administration & Patient Support Services', description: 'Manages appointments, billing, and patient records for smooth and efficient clinic operations.' },
 ];
@@ -111,7 +113,7 @@ const Department = () => {
                 viewport={{ once: false }}
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-xl transition-all duration-300 group"
               >
-                <p className="text-gray-300 text-xl font-light mb-4">{dept.number}</p>
+                <p className="text-blue-500 text-xl font-light mb-4">{dept.number}</p>
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-600 transition-colors">
                     <IconComponent

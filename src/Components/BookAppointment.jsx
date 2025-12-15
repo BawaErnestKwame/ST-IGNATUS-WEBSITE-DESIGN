@@ -18,12 +18,12 @@ const BookAppointment = ({ isOpen, onClose }) => {
 
   const services = [
     "Comprehensive Eye Care",
-    "Glaucoma Services",
+    "Glaucoma",
     "Eye Surgeries",
-    "Refraction Services",
+    "Refraction",
     "Community/Institutional Eye Screening",
     "Ocular Diagnostics (O.C.T, V.F.T, etc.)",
-    "DVLA Eye Tests",
+    "DVLA Eye Test",
     "Sale & Repair of Spectacles & Contact Lenses"
   ];
 
@@ -107,7 +107,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
               {/* Close */}
               <button
                 onClick={onClose}
-                className="absolute top-3 right-4 text-2xl text-gray-500 hover:text-red-500"
+                className="absolute top-3 right-4 text-3xl px-2 rounded-2xl transition-all duration-500 hover:text-white text-gray-600 hover:bg-red-600"
                 aria-label="Close appointment dialog"
                 type="button"
               >
@@ -124,10 +124,10 @@ const BookAppointment = ({ isOpen, onClose }) => {
               <div className="flex justify-between mb-6">
                 {[1, 2, 3].map((num) => (
                   <div key={num} className="flex items-center">
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${step >= num ? 'bg-indigo-600 text-white' : 'bg-gray-200 w-10 h-10 rounded-full text-gray-500'}`}>
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${step >= num ? 'bg-blue-600 text-white' : 'bg-gray-200 w-10 h-10 rounded-full text-gray-500'}`}>
                       {num}
                     </div>
-                    {num < 3 && <div className={`w-full h-1 mx-2 ${step > num ? 'bg-indigo-600' : 'bg-gray-200'}`} />}
+                    {num < 3 && <div className={`w-full h-1 mx-2 ${step > num ? 'bg-blue-600' : 'bg-gray-200'}`} />}
                   </div>
                 ))}
               </div>
@@ -145,7 +145,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
                       <button
                         key={service}
                         onClick={() => handleInputChange('service', service)}
-                        className={`p-4 rounded-lg border-2 text-left transition-all ${formData.service === service ? 'border-indigo-600 bg-indigo-50' : 'border-gray-200 hover:border-indigo-300'}`}
+                        className={`p-4 rounded-lg border-2 text-left transition-all ${formData.service === service ? 'border-blue-600 bg-indigo-50' : 'border-gray-200 hover:border-blue-300'}`}
                         type="button"
                       >
                         <span className="font-medium text-gray-800">{service}</span>
@@ -156,8 +156,8 @@ const BookAppointment = ({ isOpen, onClose }) => {
                   <button
                     onClick={() => setStep(2)}
                     disabled={!formData.service}
-                    className="w-full py-3 bg-indigo-600 text-white rounded-lg
-                     font-semibold hover:bg-indigo-700 disabled:bg-gray-300"
+                    className="w-full py-3 bg-red-600 text-white rounded-lg
+                     font-semibold hover:bg-red-700 disabled:bg-gray-300"
                     type="button"
                   >
                     Continue
@@ -192,7 +192,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
                         <button
                           key={time}
                           onClick={() => handleInputChange('time', time)}
-                          className={`p-3 rounded-lg border-2 ${formData.time === time ? 'border-indigo-600 bg-indigo-50' : 'border-gray-200 hover:border-indigo-300'}`}
+                          className={`p-3 rounded-lg border-2 ${formData.time === time ? 'border-blue-600 bg-blue-50' : 'border-gray-200 hover:border-blue-300'}`}
                           type="button"
                         >
                           {time}
@@ -203,7 +203,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
 
                   <div className="flex gap-3">
                     <button onClick={() => setStep(1)} className="flex-1 py-3 border-2 rounded-lg" type="button">Back</button>
-                    <button onClick={() => setStep(3)} disabled={!formData.date || !formData.time} className="flex-1 py-3 bg-indigo-600 text-white rounded-lg" type="button">Continue</button>
+                    <button onClick={() => setStep(3)} disabled={!formData.date || !formData.time} className="flex-1 py-3 bg-red-600 text-white rounded-lg" type="button">Continue</button>
                   </div>
                 </div>
               )}
@@ -229,7 +229,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
                   </div>
                   <div className="flex gap-3">
                     <button onClick={() => setStep(2)} type="button" className="flex-1 py-3 border-2 rounded-lg">Back</button>
-                    <button type="submit" className="flex-1 py-3 bg-indigo-600 text-white rounded-lg">Book Appointment</button>
+                    <button type="submit" className="flex-1 py-3 bg-red-600 text-white rounded-lg">Book Appointment</button>
                   </div>
                 </form>
               )}
@@ -237,7 +237,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
               {/* Step 4 */}
               {step === 4 && (
                 <div className="text-center space-y-6">
-                  <CheckCircle className="w-20 h-20 text-green-500 mx-auto" />
+                  <CheckCircle className="w-20 h-20 text-red-500 mx-auto" />
                   <h2 className="text-2xl font-bold">Appointment Confirmed!</h2>
 
                   <div className="bg-gray-50 p-4 rounded-lg text-left">
@@ -249,7 +249,7 @@ const BookAppointment = ({ isOpen, onClose }) => {
                     <p><strong>Phone:</strong> {formData.phone}</p>
                   </div>
 
-                  <button onClick={resetForm} className="w-full py-3 bg-indigo-600 text-white rounded-lg">Book Another Appointment</button>
+                  <button onClick={resetForm} className="w-full py-3 bg-red-600 text-white rounded-lg">Book Another Appointment</button>
                 </div>
               )}
             </motion.div>

@@ -18,7 +18,6 @@ const Dormaa = () => {
   const heroCardsData = [
     { name: "DVLA Test", icon: <DirectionsCarIcon className="text-white" />},
     { name: "Spectacles", icon: <GiSpectacles className="text-white text-3xl"/>  },
-    { name: "NHIS", icon: <LocalHospitalIcon className="text-white" />},
     { name: "Pharmacy", icon: <LocalPharmacyIcon className="text-white" />},
 ];
 

@@ -12,7 +12,7 @@ const HealthyLifeSteps = () => {
       icon: Calendar,
       title: 'Get Appointment',
       description:
-        "Book & pay online. We'll match you with a trusted house cleaner",
+        "Get appointment easily by booking your visit with our professionals.",
       image: cycle,
     },
     {
@@ -21,7 +21,7 @@ const HealthyLifeSteps = () => {
       icon: Stethoscope,
       title: 'Start Check-Up',
       description:
-        'Every cleaner is friendly and reliable. They have been experts',
+        'Begin your eye check-up with our professionals to check your vision and eye health.',
       image: cycle1,
     },
     {
@@ -29,7 +29,7 @@ const HealthyLifeSteps = () => {
       number: '03',
       icon: Heart,
       title: 'Enjoy Healthy Life',
-      description: 'Quisqu tell us risus adpis viera bibe um urna.',
+      description: 'Good eye care helps you see better and live healthier every day.',
       image: cycle2,
     },
   ];

@@ -21,7 +21,7 @@ const HealthcareFeatures = () => {
     { icon: <FaGlasses size={28} />, title: "Refraction" },
     { icon: <FaUsers size={28} />, title: "Community/Institutional Eye Screening" },
     { icon: <FaMicroscope size={28} />, title: "Ocular Diagnostics (O.C.T, V.F.T, etc.)" },
-    { icon: <MdOutlineAssignmentTurnedIn size={28} />, title: "DVLA Eye Tests" },
+    { icon: <MdOutlineAssignmentTurnedIn size={28} />, title: "DVLA Eye Test" },
     { icon: <FaTools size={28} />, title: "Sale & Repair of Spectacles & Contact Lenses" },
   ];
 

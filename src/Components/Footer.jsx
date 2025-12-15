@@ -226,7 +226,7 @@ const Footer = () => {
       {/* Scroll to Top */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-red-600 flex items-center justify-center shadow-lg"
+        className="fixed bottom-6 scroll-totop right-6 z-50 w-11 h-11 rounded-full bg-red-600 flex items-center justify-center shadow-lg"
         animate={{
           opacity: showScroll ? 1 : 0,
           y: showScroll ? 0 : 20,
