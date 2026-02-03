@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../assets/branches.webp';
+import hero from '../assets/team/group.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ExpertCare from '../Components/ExpertCare';

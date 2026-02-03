@@ -86,7 +86,7 @@ const Team = () => {
     }
   ];
 
-  const filters = ['All Team', 'Sunyani', 'Dormaa', 'Berekum'];
+  const filters = ['All Team'];
 
   const filteredSpecialists =
     activeFilter === 'All Team'
