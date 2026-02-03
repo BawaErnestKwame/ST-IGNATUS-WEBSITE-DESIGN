@@ -1,53 +1,89 @@
 import React, { useState } from 'react';
 import { Facebook, Twitter, Linkedin } from 'lucide-react';
-import teamImage from '../assets/teamimg.webp';
-import testimonialimg1 from '../assets/testimonial1.jpg'
-import testimonialimg2 from '../assets/testimonial2.jpg'
-import testimonialimg3 from '../assets/testimonial3.jpg'
-import testimonialimg4 from '../assets/testimonial4.jpg'
-import testimonialimg5 from '../assets/testimonial5.jpg'
-import testimonialimg6 from '../assets/testimonial6.jpg'
-import testimonialimg7 from '../assets/testimonial7.jpg'
-import testimonialimg8 from '../assets/testimonial8.jpg'
+import teamImage from '../assets/team/group.jpg';
+// import testimonialimg1 from '../assets/team/picture1.jpg'
+// import testimonialimg2 from '../assets/team/picture2.jpg'
+// import testimonialimg3 from '../assets/team/picture3.jpg'
+import testimonialimg4 from '../assets/team/picture4.jpg'
+import testimonialimg5 from '../assets/team/picture6.jpg'
+import testimonialimg6 from '../assets/team/picture7.jpg'
+import testimonialimg7 from '../assets/team/picture8.jpg'
+import testimonialimg8 from '../assets/team/picture9.jpg'
+import testimonialimg9 from '../assets/team/picture10.jpg'
+import testimonialimg10 from '../assets/team/picture11.jpg'
+import testimonialimg11 from '../assets/team/picture12.jpg'
+import testimonialimg12 from '../assets/team/picture5.jpg'
 import { Link } from 'react-router';
 
 const Team = () => {
   const [activeFilter, setActiveFilter] = useState('All Team');
 
   const specialists = [
-    { name: 'IGNATIUS KWAKU YEBOAH ', 
-      specialty: 'Cardiologist',
-       category: 'Sunyani', 
-       image: testimonialimg1
-       },
-    { name: 'IGNATIUS KWAKU YEBOAH ',
-       specialty: 'Endocrinologist', 
-       category: 'Dormaa', 
-       image: testimonialimg2 },
-    { name: 'IGNATIUS KWAKU YEBOAH ', 
-      specialty: 'Neurologist', 
-      category: 'Berekum', 
-      image: testimonialimg3 },
-    { name: 'IGNATIUS KWAKU YEBOAH ', 
-      specialty: 'Pediatrician', 
+    // { name: 'IGNATIUS KWAKU YEBOAH ', 
+    //   specialty: 'Cardiologist',
+    //    category: 'Sunyani', 
+    //    image: testimonialimg1
+    //    },
+    // { name: 'IGNATIUS KWAKU YEBOAH ',
+    //    specialty: 'Endocrinologist', 
+    //    category: 'Dormaa', 
+    //    image: testimonialimg2 },
+    // { name: 'IGNATIUS KWAKU YEBOAH ', 
+    //   specialty: 'Neurologist', 
+    //   category: 'Berekum', 
+    //   image: testimonialimg3 },
+    { name: 'ROBERT DANSO', 
+      specialty: 'ADMINISTRATIVE ASSISTANT', 
       category: 'Dormaa', 
       image: testimonialimg4 },
-    { name: 'IGNATIUS KWAKU YEBOAH ', 
-      specialty: 'Endocrinologist', 
+    { name: 'DR. DANIEL ADU SAKYI', 
+      specialty: 'OPTOMETRIST', 
       category: 'Sunyani', 
       image: testimonialimg5 },
-    { name: 'IGNATIUS KWAKU YEBOAH ',
-       specialty: 'Neurologist', 
+      
+    { name: 'AKUA ASUAMAH TAWIAH',
+       specialty: 'PRACTICE MANAGER', 
        category: 'Berekum', 
        image: testimonialimg6 },
-    { name: 'IGNATIUS KWAKU YEBOAH ', 
-      specialty: 'Neurologist', 
+    { name: 'JOYCELYN NKETIAH ', 
+      specialty: 'ADMINISTRATIVE ASSISTANT', 
       category: 'Berekum',
-       image: testimonialimg7 },
-    { name: 'IGNATIUS KWAKU YEBOAH ', 
-      specialty: 'Eye Doctor',
+       image: testimonialimg7 }
+       ,
+
+    { name: 'ISAAC ADOMAH', 
+      specialty: 'ADMINISTRATOR',
       category: 'Dormaa',
-      image: testimonialimg8}
+      image: testimonialimg8
+    }
+       ,
+
+    { name: 'BERNICE OWUSUAA OPPONG ', 
+      specialty: 'PRACTICE MANAGER',
+      category: 'Dormaa',
+      image: testimonialimg9
+    }
+       ,
+
+    { name: 'DESMOND TSITU ', 
+      specialty: 'OPTICAL TECHNICIAN',
+      category: 'Dormaa',
+      image: testimonialimg10
+    }
+       ,
+
+    { name: 'DR. KYEI BAFFOUR NTIAMOAH', 
+      specialty: 'OPTOMETRIST',
+      category: 'Dormaa',
+      image: testimonialimg11
+    }
+       ,
+
+    { name: 'DR. AGNES BEMA APPIAGYEI', 
+      specialty: 'OPTOMETRIST',
+      category: 'Dormaa',
+      image: testimonialimg12
+    }
   ];
 
   const filters = ['All Team', 'Sunyani', 'Dormaa', 'Berekum'];
@@ -61,7 +97,7 @@ const Team = () => {
     <>
       {/* HERO SECTION */}
       <div
-        className="w-full h-[35vh] md:h-[55vh] flex flex-col justify-center items-center text-center px-6 mb-16 relative"
+        className="w-full h-[35vh] md:h-[55vh] lg:h-[60vh] flex flex-col justify-center items-center text-center px-6 mb-16 relative"
         style={{
           backgroundImage: `linear-gradient(to right, #04207AE3 35%, #05207AD0), url(${teamImage})`,
           backgroundSize: 'cover',

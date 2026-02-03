@@ -1,13 +1,13 @@
 import React from 'react';
-import expert1 from '../assets/expert1.jpg';
-import expert2 from '../assets/expert2.jpg';
-import expert3 from '../assets/expert3.jpg';
+import expert1 from '../assets/team/picture1.jpg';
+import expert2 from '../assets/team/picture2.jpg';
+import expert3 from '../assets/team/picture3.jpg';
 import { Link } from 'react-router';
 
 const doctors = [
-  { id: 1, name: 'IGNATIUS KWAKU YEBOAH', specialty: 'Optometrist', image: expert1 },
-  { id: 2, name: 'IGNATIUS KWAKU YEBOAH', specialty: 'Optometrist', image: expert2 },
-  { id: 3, name: 'IGNATIUS KWAKU YEBOAH', specialty: 'Optometrist', image: expert3 },
+  { id: 1, name: 'DR. IGNATIUS YEBOAH C.E.O/ LEAD', specialty: 'OPTOMETRIST', image: expert1 },
+  { id: 2, name: 'DR.DARREN AFRIFA-YAMOAH SNR OPTOMETRIST /CLINICAL DIRECTOR', specialty: 'Optometrist', image: expert2 },
+  { id: 3, name: 'DR. THELMA APPIAH-WARDEN OPTOMETRIST/OUTREACH LEAD', specialty: 'Optometrist', image: expert3 },
 ];
 
 const ExpertCare = () => {
