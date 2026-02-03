@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '/ignatus.jpg'
+import image from '../Assets/team/picture1.jpg'
 import { motion } from 'framer-motion' // <-- ADDED
 
 const DrIgnatus = () => {

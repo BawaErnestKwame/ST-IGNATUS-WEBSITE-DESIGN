@@ -35,7 +35,7 @@ import InstitutionalEye from './pages/serviceList/InstitutionalEye.jsx';
 import ContactLenses from './pages/serviceList/ContactLenses';
 import Diagnostics from './pages/serviceList/Diagnostics';
 import Comprehensive from "./pages/serviceList/Comprehensive.jsx";
-import CustomCursor from "./Components/CustomCursor.jsx";
+// import CustomCursor from "./Components/CustomCursor.jsx";
 
 // Page transition variants
 const pageVariants = {
@@ -78,7 +78,6 @@ const App = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <CustomCursor/>
       <ScrollToTop />
       <Navbar />
       
