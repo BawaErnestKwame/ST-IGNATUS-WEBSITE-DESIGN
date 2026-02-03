@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import teamImage from '../assets/team/group.jpg';
-// import testimonialimg1 from '../assets/team/picture1.jpg'
-// import testimonialimg2 from '../assets/team/picture2.jpg'
-// import testimonialimg3 from '../assets/team/picture3.jpg'
+import testimonialimg1 from '../assets/team/picture1.jpg'
+import testimonialimg2 from '../assets/team/picture2.jpg'
+import testimonialimg3 from '../assets/team/picture3.jpg'
 import testimonialimg4 from '../assets/team/picture4.jpg'
 import testimonialimg5 from '../assets/team/picture6.jpg'
 import testimonialimg6 from '../assets/team/picture7.jpg'
@@ -19,19 +19,19 @@ const Team = () => {
   const [activeFilter, setActiveFilter] = useState('All Team');
 
   const specialists = [
-    // { name: 'IGNATIUS KWAKU YEBOAH ', 
-    //   specialty: 'Cardiologist',
-    //    category: 'Sunyani', 
-    //    image: testimonialimg1
-    //    },
-    // { name: 'IGNATIUS KWAKU YEBOAH ',
-    //    specialty: 'Endocrinologist', 
-    //    category: 'Dormaa', 
-    //    image: testimonialimg2 },
-    // { name: 'IGNATIUS KWAKU YEBOAH ', 
-    //   specialty: 'Neurologist', 
-    //   category: 'Berekum', 
-    //   image: testimonialimg3 },
+    { name: 'DR. IGNATIUS YEBOAH C.E.O/ LEAD ', 
+      specialty: 'OPTOMETRIST',
+       category: 'Sunyani', 
+       image: testimonialimg1
+       },
+    { name: 'DR.DARREN AFRIFA-YAMOAH SNR CLINICAL DIRECTOR ',
+       specialty: 'OPTOMETRIST', 
+       category: 'Dormaa', 
+       image: testimonialimg2 },
+    { name: 'DR. THELMA APPIAH-WARDEN /OUTREACH LEAD', 
+      specialty: 'OPTOMETRIST', 
+      category: 'Berekum', 
+      image: testimonialimg3 },
     { name: 'ROBERT DANSO', 
       specialty: 'ADMINISTRATIVE ASSISTANT', 
       category: 'Dormaa', 
