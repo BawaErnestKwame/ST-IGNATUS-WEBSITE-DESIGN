@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-
+import { Link } from "react-router";
 const BookYourVisit = () => {
   return (
     <div className=" bg-[#0627c2]  py-8 px-4 sm:px-6 lg:px-8 mb">
@@ -15,10 +15,12 @@ const BookYourVisit = () => {
 
           {/* CTA Button */}
           <div className="flex-shrink-0">
+            <Link to="/contact">
             <button className="group flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap">
               <span>Book Your Visit</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
+            </Link>
           </div>
         </div>
       </div>
