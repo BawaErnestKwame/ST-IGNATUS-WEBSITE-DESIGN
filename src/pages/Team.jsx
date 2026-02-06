@@ -149,7 +149,7 @@ const Team = () => {
                 <img
                   src={specialist.image}
                   alt={specialist.name}
-                  className="w-full h-64 object-cover rounded-lg"
+                  className="w-full h-auto object-cover  rounded-lg"
                 />
 
               
