@@ -99,7 +99,7 @@ const Footer = () => {
               Departments
               <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex flex-col">
               {[
                 'Dental Care',
                 'Medicine',
@@ -108,13 +108,10 @@ const Footer = () => {
                 'Skilled Doctors',
                 'Certified Clinic',
               ].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-sm hover:text-blue-400 transition-colors hover:pl-2 inline-block duration-300"
-                  >
+                <li key={item} className='text-sm cursor-pointer hover:text-red-500 transition-colors hover:pl-2 inline-block duration-300'>
+           
                     {item}
-                  </a>
+                
                 </li>
               ))}
             </ul>
@@ -126,16 +123,14 @@ const Footer = () => {
               Quick Links
               <div className="w-12 h-1 bg-red-500 rounded-2xl"></div>
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex flex-col">
               {['About Us', 'What We Do', 'Appointment', 'Contact', '24/7 Support'].map(
                 (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="text-sm hover:text-blue-400 transition-colors hover:pl-2 inline-block duration-300"
-                    >
+                  <li key={item} className="text-sm cursor-pointer hover:text-red-500 transition-colors hover:pl-2 inline-block duration-300">
+                    
+                  
                       {item}
-                    </a>
+                    
                   </li>
                 )
               )}

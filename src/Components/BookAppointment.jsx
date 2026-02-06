@@ -215,17 +215,17 @@ const BookAppointment = ({ isOpen, onClose }) => {
 
                   <div>
                     <label className="block mb-2"><User className="inline w-4 h-4 mr-1" /> Full Name</label>
-                    <input type="text" value={formData.name} onChange={(e) => handleInputChange('name', e.target.value)} required className="w-full p-3 border-2 rounded-lg" placeholder="John Doe" />
+                    <input type="text" value={formData.name} onChange={(e) => handleInputChange('name', e.target.value)} required className="w-full p-3 border-2 rounded-lg" placeholder="Name" />
                   </div>
 
                   <div>
                     <label className="block mb-2"><Mail className="inline w-4 h-4 mr-1" /> Email</label>
-                    <input type="email" value={formData.email} onChange={(e) => handleInputChange('email', e.target.value)} required className="w-full p-3 border-2 rounded-lg" placeholder="john@example.com" />
+                    <input type="email" value={formData.email} onChange={(e) => handleInputChange('email', e.target.value)} required className="w-full p-3 border-2 rounded-lg" placeholder="Email" />
                   </div>
 
                   <div>
                     <label className="block mb-2"><Phone className="inline w-4 h-4 mr-1" /> Phone</label>
-                    <input type="tel" value={formData.phone} onChange={(e) => handleInputChange('phone', e.target.value)} required className="w-full p-3 border-2 rounded-lg" placeholder="+233 000 0000" />
+                    <input type="tel" value={formData.phone} onChange={(e) => handleInputChange('phone', e.target.value)} required className="w-full p-3 border-2 rounded-lg" placeholder="phone" />
                   </div>
                   <div className="flex gap-3">
                     <button onClick={() => setStep(2)} type="button" className="flex-1 py-3 border-2 rounded-lg">Back</button>

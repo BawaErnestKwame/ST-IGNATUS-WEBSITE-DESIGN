@@ -46,8 +46,8 @@ const HealthcareFeatures = () => {
         <h4 className="text-2xl tracking-[.8px]  text-white font-semibold uppercase">
           Our Key Features
         </h4>
-        <h1 className="text-4xl md:text-5xl lg:text-8xl font-bold font-heading leading-20">
-          We Provide<br/>Best Healthcare<br/>Services
+        <h1 className="text-4xl md:text-5xl lg:text-8xl w-full md:w-[80%] font-bold font-heading lg:leading-20">
+          We Provide Best Healthcare Services
         </h1>
         <Link to='/services'>
         <button className="mt-8 border border-gray-300 hover:border-white text-gray-200 hover:translate-y-2 px-6 py-3 rounded-full flex items-center gap-3 transition-all duration-300">

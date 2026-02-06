@@ -6,8 +6,8 @@ import { Link } from 'react-router';
 
 const doctors = [
   { id: 1, name: 'DR. IGNATIUS YEBOAH C.E.O/ LEAD', specialty: 'OPTOMETRIST', image: expert1 },
-  { id: 2, name: 'DR.DARREN AFRIFA-YAMOAH SNR CLINICAL DIRECTOR', specialty: 'Optometrist', image: expert2 },
-  { id: 3, name: 'DR. THELMA APPIAH-WARDEN OPTOMETRIST/OUTREACH LEAD', specialty: 'Optometrist', image: expert3 },
+  { id: 2, name: 'DR.DARREN AFRIFA-YAMOAH SNR CLINICAL DIRECTOR', specialty: 'OPTOMETRIST', image: expert2 },
+  { id: 3, name: 'DR. THELMA APPIAH-WARDEN OPTOMETRIST/OUTREACH LEAD', specialty: 'OPTOMETRIST', image: expert3 },
 ];
 
 const ExpertCare = () => {
